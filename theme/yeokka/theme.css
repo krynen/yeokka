@@ -1,0 +1,118 @@
+/* 폰트 로드 */
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+/* 애니메이션 정의 */
+@keyframes ToBottom {
+	0%	{ transform:translateY(-30%) scaleY(0); }
+	to	{ transform:none; } }
+.chat_outer_box	{ animation:ToBottom .3s ease forwards; }
+
+/* 위치 기본 설정 */
+html 	{	overflow:hidden; }
+body 	{	margin:0; position:absolute;
+				right:0; left:0; bottom:0;}
+				
+img.twitch_emote	{	max-height:50px; }
+
+/* 구독자 및 후원 메세지 설정 */
+@keyframes SubsAni { 50% { color:rgb(5,50,190); } }
+.chat_msg_box .chat_subscribe_box,
+.chat_msg_box .chat_cheer_box			{	text-align:center; 
+																		animation:SubsAni 6 1s ease; }
+/* 후원 금액 */
+.chat_cheer_text									{ color:red; display:inline-block; }
+/* 후원 아이콘 */
+.chat_cheer_text img.cheer_icon		{	max-height:1em; vertical-align: middle; }
+
+/* 배경 설정 */
+#background	{	display:none; }
+
+
+
+/* 폰트 설정 */
+html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
+											font-size:20px; line-height:1em; color:white; 
+
+											text-shadow:
+	-1px -1px 1px rgba(40,79,229,0.8), -1px   0 1px rgba(40,79,229,0.8),
+	-1px  1px 1px rgba(40,79,229,0.8),    0 1px 1px rgba(40,79,229,0.8),
+	 1px  1px 1px rgba(40,79,229,0.8),  1px   0 1px rgba(40,79,229,0.8),
+	 1px -1px 1px rgba(40,79,229,0.8),   0 -1px 1px rgba(40,79,229,0.8),
+    
+					-1px -1px 3px rgb(0,25,205), -1px   0 3px rgb(0,25,205),
+					-1px  1px 3px rgb(0,25,205),    0 1px 3px rgb(0,25,205),
+					 1px  1px 3px rgb(0,25,205),  1px   0 3px rgb(0,25,205),
+					 1px -1px 3px rgb(0,25,205),   0 -1px 3px rgb(0,25,205); }
+.chat_nickname_box	{	font-size:0.75em; }
+
+
+
+/* 채팅창 이미지 설정 */
+.chat_nickname_box			{	border-style:solid; box-sizing:border-box;
+													border-image-source:url("ear.png");
+													border-image-slice:9 26 0 fill;
+													border-width:9px 26px 0;
+													margin:1px 0 0; }
+
+.chat_msg_box						{	position:relative; }
+.chat_msg_box::after		{	content:""; position:absolute;
+													top:0; bottom:0; left:0; right:0;
+													border-image-source:url("blob.png");
+													border-style:solid; z-index:-1;
+													border-image-slice:6 39 6 6 fill;
+													border-image-repeat:repeat;
+													border-width:6px 39px 6px 6px; }
+.chat_inner_box::after	{	content:""; background-image:url("tail.png");
+													display:block; float:right;
+													height:30px; width:40px; }
+
+
+
+/* 닉네임, 뱃지 위치 설정 */
+.chat_nickname_box,
+.chat_badge_box 		{	display:inline-block; }
+.chat_text_nickname {	padding:5px 5px 3px 5px;
+											min-width:45px; text-align:center; }
+.chat_badge_box img	{ vertical-align:baseline; height:0.7em;
+											margin:0 0.2em -0.3em 0; }
+
+
+			
+.chat_outer_box						{ margin-top:5px; }
+.chat_msg_box							{ white-space:pre-line; word-break:break-word;
+														max-height:100px; padding:12px; }
+.chat_msg_box.image_only	{ text-align:center; }
+
+
+
+
+.clip_included .chat_msg_box	{	max-height:200px; }
+.chat_clip_box								{	max-height:100px; position:relative; }	
+
+.chat_clip_box img				{	height:100px; float:left; }
+.chat_clip_title					{	line-height:100px; text-align:center; }
+.chat_clip_by							{	position:absolute; bottom:0; right:0;
+														font-size:0.7em; }
+.chat_clip_box.text_only	{	text-align:center; }
+
+
+														
+/* 스트리머 스으페샬 */
+@keyframes CharEye {
+	0%, 15%, 22%, to	{ background-image:url("char1.png"); }
+									20% { background-image:url("char2.png"); } }
+.user_yeokka.chat_outer_box					{	max-height:180px; height:180px;
+																			padding-top:50px; width:100%;
+																			display:table; position:relative;
+																			box-sizing:border-box; }
+.user_yeokka .chat_inner_box				{	display:none; }
+.user_yeokka .chat_msg_box 					{	display:table-cell; vertical-align:middle;
+																			padding-left:112px; height:180px; }
+.user_yeokka .chat_msg_box::before	{	content:"";
+																			background-repeat:no-repeat;
+																			position:absolute; left:0; top:0;
+																			width:120px; height:180px;
+											/* 미리로딩 */	background-image:url("char2.png");
+																			animation:CharEye 5s linear infinite; }
