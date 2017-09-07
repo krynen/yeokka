@@ -141,6 +141,16 @@ dcConsData = [
 	{"name":"우리핵안녕.gif",					"keywords":["우리핵안녕"],														"tags":["우리핵", "움짤"]},
 	{"name":"우리핵투정.gif",					"keywords":["우리핵투정"], 														"tags":["우리핵", "움짤"]},
 		
+	{"name":"배그로드킬1.png",				"keywords":["로드킬", "로드킬1"],											"tags":["케장콘", "배그"]},
+	{"name":"배그로드킬2.png",				"keywords":["로드킬2"], 															"tags":["케장콘", "배그"]},
+	{"name":"배그빳다죠.png",					"keywords":["밀베빳다죠"], 														"tags":["배그"]},
+	{"name":"배그사이가.png",					"keywords":["사이가"], 																"tags":["배그", "총박이"]},
+	{"name":"배그석궁.png",						"keywords":["석궁"], 																	"tags":["케장콘", "배그"]},
+	{"name":"배그우지.png",						"keywords":["우지"], 																	"tags":["배그", "총박이"]},
+	{"name":"배그은신.png",						"keywords":["은신"], 																	"tags":["배그"]},
+	{"name":"배그잘나신분.png",				"keywords":["잘나신분"], 															"tags":["케장콘", "배그"]},
+	{"name":"배그한심.gif",						"keywords":["배그한심"], 															"tags":["케장콘", "배그", "움짤"]},
+		
 	{"name":"레바그안키.png",					"keywords":["그안키", "안키우는데요"],								"tags":["레바"]},
 	{"name":"레바띠용.png",						"keywords":["레바띠용"],															"tags":["레바"]},
 	{"name":"레바설명.png",						"keywords":["설명들갑"], 															"tags":["레바"]},
@@ -185,17 +195,49 @@ dcConsData = [
 	{"name":"캐피탈퍄산.png",					"keywords":["퍄산", "파산"],													"tags":["캐피탈리즘호", "루세트"]},
 	{"name":"캐피탈폴짝.png",					"keywords":["폴짝"],																	"tags":["캐피탈리즘호", "루세트"]},
 	{"name":"캐피탈이지붐.jpg",				"keywords":["이지붐"],																"tags":["이지붐", "캐피탈리즘호"]},
-	{"name":"캐피탈이지빳다죠.png",		"keywords":["이지빳다죠"],														"tags":["케장콘", "이지붐"], "name":""},
+	{"name":"캐피탈이지빳다죠.png",		"keywords":["이지빳다죠"],														"tags":["케장콘", "이지붐"]},
+	{"name":"캐피탈저딴망겜.png",			"keywords":["저딴망겜"],															"tags":["케장콘", "이지붐"]},
+
+	{"name":"붓싼남이가1.png",				"keywords":["우리가남이가", "우리가남이가1"],					"tags":["붓싼문학"]},
+	{"name":"붓싼남이가2.png",				"keywords":["우리가남이가2"], 												"tags":["붓싼문학"]},
+	{"name":"붓싼갸아악1.png",				"keywords":["갸아악", "갸아악1"],											"tags":["붓싼문학"]},
+	{"name":"붓싼갸아악2.png",				"keywords":["갸아악2"], 															"tags":["붓싼문학"]},
+	{"name":"붓싼구와아악.png",				"keywords":["구와아악"], 															"tags":["붓싼문학"]},
 	
 	{"name":"러브말잇못.gif",					"keywords":["러브말을잇지못하는", "러브말잇못"], 			"tags":["케장콘", "움짤", "핑크"]},
 	{"name":"러브빳다죠.gif",					"keywords":["러브빳다죠"], 														"tags":["케장콘", "움짤", "핑크"]},
 	{"name":"러브알파카.gif",					"keywords":["러브알파카"], 														"tags":["케장콘", "움짤", "핑크"]},
 	{"name":"러브오홍홍.gif",					"keywords":["러브오홍홍"], 														"tags":["케장콘", "움짤", "핑크"]},
 	
+	{"name":"골든알않.gif",						"keywords":["골든알고싶지않은데스", "골든알않데스"],	"tags":["케장콘", "움짤", "금장"]},
+	{"name":"골든빳다죠.gif",					"keywords":["골든당근빳다죠", "골든빳다죠"],					"tags":["케장콘", "움짤", "금장"]},
+	{"name":"골든철도죠.gif",					"keywords":["골든철도죠"],														"tags":["케장콘", "움짤", "금장"]},
+	{"name":"골든도색.gif",						"keywords":["골든도색"],															"tags":["케장콘", "움짤", "금장"]},
+	
 	{"name":"문풍당당1.gif",					"keywords":["문풍당당1", "문풍당당"], 								"tags":["문과", "움짤"]},
 	{"name":"문풍당당2.gif",					"keywords":["문풍당당2"], 														"tags":["문과", "움짤"]},
 	{"name":"문풍당당3.gif",					"keywords":["문풍당당3"], 														"tags":["문과", "움짤"]},
 	
+	{"name":"토드흐뭇.png",						"keywords":["토드흐뭇"],															"tags":["베데스다"]},
+	{"name":"토드불만.png",						"keywords":["토드불만"],															"tags":["베데스다"]},
+	{"name":"토드분노.png",						"keywords":["토드분노"],															"tags":["베데스다"]},
+	
+	{"name":"핫산발상.png",						"keywords":["핫산발상"], 															"tags":["핫산"]},
+	{"name":"핫산쾅.png",							"keywords":["핫산쾅"], 																"tags":["핫산"]},
+	{"name":"핫산펑.png",							"keywords":["핫산펑"], 																"tags":["핫산"]},
+	
 	{"name":"AMD.png",								"keywords":["암드", "AMD", "amd"],										"tags":["컴갤콘"]},
 	{"name":"RYZEN.png", 							"keywords":["라이젠", "RYZEN", "ryzen"], 						"tags":["컴갤콘"]},
+	
+	{"name":"야인시대4딸라.png",			"keywords":["4딸라"],																	"tags":["김두한", "야인시대"]},
+	{"name":"야인시대오케이.png",			"keywords":["오케이땡큐"],														"tags":["김두한", "야인시대"]},
+	
+	{"name":"겐고로아아.png",					"keywords":["아아"],																	"tags":["겐고로"]},
+	{"name":"겐고로마치.png",					"keywords":["마치"],																	"tags":["겐고로"]},
+	
+	{"name":"기타게이븐.png",					"keywords":["게이븐"],																"tags":["스팀", "밸브"]},
+	{"name":"기타댕댕.gif",						"keywords":["댕댕콘"],																"tags":["시바", "움짤"]},
+	{"name":"기타사이버망령.png",			"keywords":["사이버망령"],														"tags":["케장콘", "록맨", "고인"]},
+	{"name":"기타매우정상.png",				"keywords":["매우정상"],															"tags":["원사운드"]},
+	{"name":"기타무지개깃발.gif",			"keywords":["무지개깃발"],														"tags":["LGBT", "움짤"]},
 ];
