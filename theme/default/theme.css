@@ -126,14 +126,12 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 .clip_included .chat_msg_box
 {
 	/* 클립과 일반 텍스트를 같이 보냈을 경우를 위해 높이를 높여준다 */
-	max-height:200px;
+	max-height:160px;
 }
 
 .chat_clip_box
 {
-	/* invalid clip은 이미지를 포함하지 않기 때문에 max height로 지정 */
-	/* invalid clip의 경우 .chat_clip_box에 .invalid를 포함하므로 이를 이용할 수도 있음 */
-	max-height:100px;
+	white-space:pre-line;
 	
 	/* .chat_clip_by의 absolute position을 위해 설정 */
 	position:relative;
@@ -142,15 +140,14 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 .chat_clip_box img
 {
 	/* 사실상 이 속성으로 .chat_clip_box의 높이를 조절 */
-	height:100px;
+	height:56px;
 	/* .chat_clip_box의 나머지 DOM을 오른쪽에 배치시키기 위해 float을 이용 */
 	float:left;
 }
-
 .chat_clip_title
 {
-	/* 가로세로로 모두 가운데정렬하기 위해 사용 */
-	line-height:100px;
+	/* 가로세로로 모두 가운데정렬하기 위해 사용. .chat_clip_box img의 높이와 맞춰준다 */
+	line-height:56px;
 	text-align:center;
 }
 
