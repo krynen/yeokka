@@ -15,6 +15,7 @@ body 	{	margin:0; position:absolute;
 				right:0; left:0; bottom:0;}
 				
 img.twitch_emote	{	max-height:50px; }
+img.dccon					{	max-height:100px; }
 
 /* 구독자 및 후원 메세지 설정 */
 @keyframes SubsAni { 50% { color:rgb(5,50,190); } }

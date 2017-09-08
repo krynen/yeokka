@@ -21,11 +21,9 @@ body
 	bottom:0;
 }
 
-img.twitch_emote
-{
-	/* 최대(기본) 크기는 112px */
-	max-height:50px;
-}
+/* 최대(기본) 크기는 112px */
+img.twitch_emote	{	max-height:50px; }
+img.dccon					{	max-height:100px; }
 
 
 /* 구독자 및 후원 메세지 설정 */
