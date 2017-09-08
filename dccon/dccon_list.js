@@ -144,7 +144,7 @@ dcConsData = [
 	{"name":"상점안내소.png",					"keywords":["안내소"],																"tags":["롤코타", "상점"]},
 	{"name":"상점음료수.png",					"keywords":["음료수가게"],														"tags":["롤코타", "상점"]},
 	{"name":"상점촉수.png",						"keywords":["촉수가게"],															"tags":["롤코타", "상점"]},
-	{"name":"상점치킨.png"						"keywords":["치킨가게"],															"tags":["롤코타", "상점"]},
+	{"name":"상점치킨.png",						"keywords":["치킨가게"],															"tags":["롤코타", "상점"]},
 	{"name":"상점치킨너겟.png",				"keywords":["치킨너겟가게"],													"tags":["롤코타", "상점"]},
 	{"name":"상점커피.png",						"keywords":["커피가게"],															"tags":["롤코타", "상점"]},
 	{"name":"상점케이크쿠키.png",			"keywords":["케이크가게", "쿠키가게", "쿠기가게"],		"tags":["롤코타", "상점"]},
