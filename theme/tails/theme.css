@@ -67,8 +67,9 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 
 
 
-.clip_included .chat_msg_box	{	max-height:200px; }
-.chat_clip_box								{	max-height:100px; position:relative; }	
+.clip_included .chat_msg_box	{	max-height:160px; }
+.chat_clip_box								{	white-space:pre-line; max-width:100px;
+																position:relative; }	
 
 .chat_clip_box img				{	height:100px; float:left; }
 .chat_clip_title					{	line-height:100px; text-align:center; }
