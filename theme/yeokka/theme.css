@@ -22,7 +22,7 @@ img.twitch_emote	{	max-height:50px; }
 .chat_msg_box .chat_cheer_box			{	text-align:center; 
 																		animation:SubsAni 6 1s ease; }
 /* 후원 금액 */
-.chat_cheer_text									{ color:red; display:inline-block; }
+.chat_cheer_text									{ color:color:rgb(5,50,190); display:inline-block; }
 /* 후원 아이콘 */
 .chat_cheer_text img.cheer_icon		{	max-height:1em; vertical-align: middle; }
 
@@ -60,7 +60,7 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 .chat_msg_box::after		{	content:""; position:absolute;
 													top:0; bottom:0; left:0; right:0;
 													border-image-source:url("blob.png");
-													border-style:solid; z-index:-1;
+													border-style:solid; background:rgba(255,255,255,0.2);
 													border-image-slice:6 39 6 6 fill;
 													border-image-repeat:repeat;
 													border-width:6px 39px 6px 6px; }
@@ -76,13 +76,14 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 .chat_text_nickname {	padding:5px 5px 3px 5px;
 											min-width:45px; text-align:center; }
 .chat_badge_box img	{ vertical-align:baseline; height:0.7em;
-											margin:0 0.2em -0.3em 0; }
+											margin:0 0.1em -0.3em 0; }
 
 
 			
 .chat_outer_box						{ margin-top:5px; }
 .chat_msg_box							{ white-space:pre-line; word-break:break-word;
-														max-height:100px; padding:12px; }
+														max-height:100px; padding:12px;
+														overflow:hidden; }
 .chat_msg_box.image_only	{ text-align:center; }
 
 
