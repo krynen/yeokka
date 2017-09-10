@@ -325,7 +325,6 @@ dcConsData = [
 	
 	{"name":"기타게이븐.png",					"keywords":["게이븐"],																"tags":["스팀", "밸브"]},
 	{"name":"기타댕댕.gif",						"keywords":["댕댕콘"],																"tags":["시바", "움짤"]},
-	{"name":"기타사이버망령.png",			"keywords":["사이버망령"],														"tags":["케장콘", "록맨", "고인"]},
 	{"name":"기타매우정상.png",				"keywords":["매우정상"],															"tags":["원사운드"]},
 	{"name":"기타무지개깃발.gif",			"keywords":["무지개깃발"],														"tags":["LGBT", "움짤"]},
 ];
