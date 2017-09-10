@@ -1,8 +1,5 @@
 dcConsData = [
 	{"name":"꾸동냥이.png", 					"keywords":["구독냥이", "꾸동냥이"], 									"tags":["역가"]},
-	{"name":"역가평가.png", 					"keywords":["역가평가", "이그레인평가"], 							"tags":["역가"]},
-	{"name":"역자평가.png", 					"keywords":["역자평가"], 															"tags":["주토피아", "피닉"]},
-	{"name":"식자평가.png",						"keywords":["식자평가"], 															"tags":["주토피아", "닉"]},
 	{"name":"주톱호랑이1.gif", 				"keywords":["호랑이1", "호랑이"], 										"tags":["주토피아", "움짤"]},
 	{"name":"주톱호랑이2.gif", 				"keywords":["호랑이2"],																"tags":["주토피아", "움짤"]},
 	{"name":"주톱호랑이3.gif", 				"keywords":["호랑이3"],																"tags":["주토피아", "움짤"]},
