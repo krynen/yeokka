@@ -19,8 +19,8 @@ img.dccon					{	max-height:100px; }
 
 /* 구독자 및 후원 메세지 설정 */
 @keyframes SubsAni { 50% { color:rgb(5,50,190); } }
-.chat_msg_box .chat_subscribe_box,
-.chat_msg_box .chat_cheer_box			{	text-align:center; 
+.chat_subscribe_box,
+.chat_cheer_box										{	text-align:center; 
 																		animation:SubsAni 6 1s ease; }
 /* 후원 금액 */
 .chat_cheer_text									{ color:color:rgb(5,50,190); display:inline-block; }
@@ -65,7 +65,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 													border-image-slice:6 39 6 6 fill;
 													border-image-repeat:repeat;
 													border-width:6px 39px 6px 6px; }
-.chat_inner_box::after	{	content:""; background-image:url("tail.png");
+.chat_inner_box::after,
+.chat_upper_box::after	{	content:""; background-image:url("tail.png");
 													display:block; float:right;
 													height:30px; width:40px; }
 
@@ -111,7 +112,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 																			padding-top:50px; width:100%;
 																			display:table; position:relative;
 																			box-sizing:border-box; }
-.user_yeokka .chat_inner_box				{	display:none; }
+.user_yeokka .chat_inner_box,
+.user_yeokka .chat_upper_box				{	display:none; }
 .user_yeokka .chat_msg_box 					{	display:table-cell; vertical-align:middle;
 																			padding-left:112px; height:130px; box-sizing:border-box; }
 .user_yeokka .chat_msg_box::before	{	content:""; background-repeat:no-repeat;

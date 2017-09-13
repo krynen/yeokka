@@ -14,8 +14,8 @@ img.dccon					{	max-height:100px; }
 
 /* 구독자 및 후원 메세지 설정 */
 @keyframes SubsAni { 50% { color:rgb(5,50,190); } }
-.chat_msg_box .chat_subscribe_box,
-.chat_msg_box .chat_cheer_box			{	text-align:center; 
+.chat_subscribe_box,
+.chat_cheer_box										{	text-align:center; 
 																		animation:SubsAni 6 1s ease; }
 /* 후원 금액 */
 .chat_cheer_text									{ color:red; display:inline-block; }
@@ -50,7 +50,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 											border-width:80px 37px 9px 12px; 
 											border-style:solid; box-sizing:border-box;
 											position:relative; z-index:0; overflow:visible; }
-.chat_inner_box			{	text-align:right; margin:-55px 0 0 -2px; height:27px; }
+.chat_inner_box,
+.chat_upper_box			{	text-align:right; margin:-55px 0 0 -2px; height:27px; }
 											
 .chat_nickname_box	{	display:inline-block; float:right; }
 .chat_badge_box 		{	display:inline-block; float:left; }
