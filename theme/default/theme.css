@@ -90,6 +90,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 .chat_nickname_box,
 .chat_badge_box 		{	display:inline-block; }
 .chat_badge_box			{ float:right; }
+.chat_outer_box .chat_msg_box,
+.chat_lower_box			{ clear:right; }
 
 .chat_msg_box							{	white-space:pre-line; word-break:break-word;
 														max-height:100px; padding:0 0 5px 0; }

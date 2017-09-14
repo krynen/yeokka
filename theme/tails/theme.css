@@ -55,6 +55,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 											
 .chat_nickname_box	{	display:inline-block; float:right; }
 .chat_badge_box 		{	display:inline-block; float:left; }
+.chat_outer_box .chat_msg_box,
+.chat_lower_box			{ clear:both; }
 
 .chat_nickname_box	{	margin-top:7px; }
 .chat_badge_box 		{	margin:4px 0 0; height:16px; }
