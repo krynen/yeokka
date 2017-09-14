@@ -13,7 +13,7 @@ img.twitch_emote	{	max-height:50px; }
 img.dccon					{	max-height:100px; }
 
 /* 구독자 및 후원 메세지 설정 */
-@keyframes SubsAni { 50% { color:rgb(5,50,190); } }
+@keyframes SubsAni { 50% { color:transparent; } }
 .chat_subscribe_box,
 .chat_cheer_box										{	text-align:center; 
 																		animation:SubsAni 6 1s ease; }

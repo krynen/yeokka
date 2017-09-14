@@ -23,7 +23,10 @@ img.dccon						{	max-height:90px; }
 
 
 /* 구독자 및 후원 메세지 설정 */
-@keyframes SubsAni { 50%	{ color:red; } }
+@keyframes SubsAni {
+	1%, 49%		{ color:red; }
+	50%				{ color:white; }
+}
 .chat_subscribe_box,
 .chat_cheer_box										{	text-align:center; 
 																		animation:SubsAni 6 1s ease; }
@@ -42,11 +45,10 @@ img.dccon						{	max-height:90px; }
 /* 폰트 설정 */
 html								{	font-family:'cwtexyen', 'NeoDungGeunMo', serif;
 											font-size:19px; color:white; font-smooth:never;
-											text-shadow:
-						-1px -1px 2px black, -1px   0 2px black,
-						-1px  1px 2px black,    0 1px 2px black,
- 						 1px  1px 2px black,  1px   0 2px black,
-						 1px -1px 2px black,   0 -1px 2px black; }
+											text-shadow:	 -1px -1px black, -1px    0 black,
+																		 -1px  1px black,    0  1px black,
+																		  1px  1px black,  1px    0 black,
+																		  1px -1px black,    0 -1px black; }
 
 
 .chat_outer_box			{	border-image-source:url("blob.png");
