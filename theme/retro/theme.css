@@ -67,7 +67,7 @@ html								{	font-family:'cwtexyen', 'NeoDungGeunMo', serif;
 .chat_lower_box			{ clear:right; }
 
 .chat_msg_box							{	white-space:pre-line; word-break:break-word;
-														max-height:90px; padding:0 0 5px 0; }
+														max-height:90px; }
 .chat_msg_box.image_only	{	text-align:center; }
 
 
