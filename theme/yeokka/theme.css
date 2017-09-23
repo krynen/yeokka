@@ -117,7 +117,7 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 																				box-sizing:border-box; }
 .user_yeokka .chat_lower_box::before	{	content:""; background-repeat:no-repeat;
 																				position:absolute;
-																				left:0; top:-50px; z-index:-1;
+																				left:0; top:-50px; z-index:1;
 																				width:120px; height:180px;
 												/* 미리로딩 */	background-image:url("char2.png");
 																				animation:CharEye 5s linear infinite; }
