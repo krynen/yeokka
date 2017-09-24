@@ -20,7 +20,7 @@ img.dccon					{	max-height:100px; }
 /* 구독자 및 후원 메세지 설정 */
 @keyframes SubsAni { 50% { color:rgb(5,50,190); } }
 .chat_subscribe_box,
-.chat_cheer_box										{	text-align:center; padding:0.4em 0;
+.chat_cheer_box										{	text-align:center; padding:0.4em 0 0;
 																		animation:SubsAni 6 1s ease; }
 /* 후원 금액 */
 .chat_cheer_text									{ color:color:rgb(5,50,190); display:inline-block; }
