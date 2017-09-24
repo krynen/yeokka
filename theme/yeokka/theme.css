@@ -85,20 +85,19 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 			
 .chat_outer_box						{ margin-top:5px; }
 .chat_msg_box							{ white-space:pre-line; word-break:break-word;
-														max-height:100px; padding:12px;
+														width:100%; max-height:100px; padding:12px;
 														overflow:hidden; }
 .chat_msg_box.image_only	{ text-align:center; }
 
 
 
-.chat_clip_box						{	position:relative;
-														margin-bottom:-24px; padding:0.4em 0; }	
+.chat_clip_box						{	position:relative; padding:0.4em 0; }	
 
-.chat_clip_box img				{	height:56px; float:left; }
+.chat_clip_box img				{	height:56px; float:left; margin:0 0.4em; }
 .chat_clip_title					{	line-height:56px; text-align:center;
 														white-space:pre; overflow:hidden;
 														text-overflow:ellipsis; }
-.chat_clip_by							{	position:absolute; bottom:0; right:0;
+.chat_clip_by							{	position:absolute; bottom:0; right:0.4em;
 														font-size:0.7em; }
 .chat_clip_box.text_only,
 .chat_clip_box.invalid		{	text-align:center; }
