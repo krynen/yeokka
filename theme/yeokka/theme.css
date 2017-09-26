@@ -57,11 +57,11 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 													border-width:9px 26px 0;
 													margin:1px 0 0; }
 
-.chat_lower_box					{	position:relative; }
+.chat_lower_box					{	position:relative; background:rgba(255,255,255,0.2); }
 .chat_lower_box::after	{	content:""; position:absolute;
 													top:0; bottom:0; left:0; right:0;
 													border-image-source:url("blob.png");
-													border-style:solid; background:rgba(255,255,255,0.2);
+													border-style:solid;
 													border-image-slice:6 39 6 6 fill;
 													border-image-repeat:repeat;
 													border-width:6px 39px 6px 6px; }
