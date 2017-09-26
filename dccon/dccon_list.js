@@ -1,10 +1,10 @@
 dcConsData = [
-	{"name":"역가꾸동냥이.png", 					"keywords":["구독냥이", "꾸동냥이"], 							"tags":["역가"]},
-	{"name":"역가평가.png", 							"keywords":["역가평가", "역자평가", "여까평가"],	"tags":["역가"]},
-	{"name":"역가로고.gif", 							"keywords":["역가", "우리역"],			 							"tags":["역가", "움짤"]},
-	{"name":"역가박수.png", 							"keywords":["우리역박수", "역가박수"],						"tags":["역가"]},
-	{"name":"역가눈물.png", 							"keywords":["눈물역가", "역가눈물"], 							"tags":["역가"]},
-	{"name":"역가복창펑.png", 						"keywords":["역가복창펑", "복창펑"], 							"tags":["역가"]},
+	{"name":"역가꾸동냥이.png", 			"keywords":["구독냥이", "꾸동냥이"], 									"tags":["역가"]},
+	{"name":"역가평가.png", 					"keywords":["역가평가", "역자평가", "여까평가"],			"tags":["역가"]},
+	{"name":"역가로고.gif", 					"keywords":["역가", "우리역"],			 									"tags":["역가", "움짤"]},
+	{"name":"역가박수.png", 					"keywords":["우리역박수", "역가박수"],								"tags":["역가"]},
+	{"name":"역가눈물.png", 					"keywords":["눈물역가", "역가눈물"], 									"tags":["역가"]},
+	{"name":"역가복창펑.png", 				"keywords":["역가복창펑", "복창펑"], 									"tags":["역가"]},
 	
 	{"name":"주톱호랑이1.gif", 				"keywords":["호랑이1", "호랑이"], 										"tags":["주토피아", "움짤"]},
 	{"name":"주톱호랑이2.gif", 				"keywords":["호랑이2"],																"tags":["주토피아", "움짤"]},
@@ -14,7 +14,7 @@ dcConsData = [
 	{"name":"싸닉.png",								"keywords":["싸닉"],																	"tags":["소닉"]},
 	{"name":"싸닉따일즈.png",					"keywords":["따일즈"],																"tags":["소닉", "테일즈"]},
 	{"name":"싸닉나클즈.png",					"keywords":["나클즈"],																"tags":["소닉", "너클즈"]},
-	{"name":"소닉링없찐.gif",					"keywords":["링없찐, 노링메타"]												"tags":["소닉", "움짤"]},
+	{"name":"소닉링없찐.gif",					"keywords":["링없찐", "노링메타"],										"tags":["소닉", "움짤"]},
 	{"name":"소닉결혼반지.png",				"keywords":["결혼반지"],															"tags":["소닉"]},
 	
 	{"name":"뿌요빠요엔1.png",				"keywords":["빠요엔", "빠요엔1"],										"tags":["뿌요뿌요", "양민학살"]},
