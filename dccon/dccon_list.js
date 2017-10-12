@@ -31,7 +31,7 @@ dcConsData = [
 	{"name":"기타유다희.png",					"keywords":["유다희", "유다이"],															"tags":["컵헤드"]},
 	{"name":"기타쟁반노래방.gif",			"keywords":["쟁반노래방"],																		"tags":["컵헤드", "움짤"]},
 	{"name":"기타파킨.gif",						"keywords":["파킨"],																					"tags":["언더테일"]},
-	{"name":"기타형이왜.gif",					"keywords":["형이왜", "형이왜거기서"],												"tags":["정형돈"]},
+	{"name":"기타형이왜.png",					"keywords":["형이왜", "형이왜거기서"],												"tags":["정형돈"]},
 	
 	{"name":"손님빨갱이.gif",					"keywords":["빨갱이", "화남"],																"tags":["롤코타", "손님", "움짤"]},
 	{"name":"손님멀미1.gif",					"keywords":["멀미", "멀미1"], 																"tags":["롤코타", "손님"]},
