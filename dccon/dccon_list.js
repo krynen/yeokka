@@ -17,6 +17,7 @@ dcConsData = [
 	{"name":"주톱호랑이4.gif", 				"keywords":["호랑이4"],																				"tags":["주토피아", "움짤"]},
 
 	{"name":"싸닉.png",								"keywords":["싸닉"],																					"tags":["소닉"]},
+	{"name":"싸닉골든.png",						"keywords":["골든싸닉"],																			"tags":["소닉"]},
 	{"name":"싸닉따일즈.png",					"keywords":["따일즈"],																				"tags":["소닉", "테일즈"]},
 	{"name":"싸닉나클즈.png",					"keywords":["나클즈"],																				"tags":["소닉", "너클즈"]},
 	{"name":"소닉링없찐.gif",					"keywords":["링없찐", "노링메타"],														"tags":["소닉", "움짤"]},
@@ -34,6 +35,8 @@ dcConsData = [
 	{"name":"기타쟁반노래방.gif",			"keywords":["쟁반노래방"],																		"tags":["컵헤드", "움짤"]},
 	{"name":"기타파킨.gif",						"keywords":["파킨"],																					"tags":["언더테일"]},
 	{"name":"기타형이왜.png",					"keywords":["형이왜", "형이왜거기서"],												"tags":["정형돈"]},
+	{"name":"기타토끼공듀1.png",			"keywords":["토끼공듀", "개노잼", "토끼공듀1"],							"tags":["고인물"]},
+	{"name":"기타토끼공듀2.png",			"keywords":["망겜이다", "토끼공듀2"],													"tags":["고인물"]},
 	
 	{"name":"손님빨갱이.gif",					"keywords":["빨갱이", "화남"],																"tags":["롤코타", "손님", "움짤"]},
 	{"name":"손님멀미1.gif",					"keywords":["멀미", "멀미1"], 																"tags":["롤코타", "손님"]},
