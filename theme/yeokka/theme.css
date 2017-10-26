@@ -55,7 +55,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 													border-image-source:url("ear.png");
 													border-image-slice:9 26 0 fill;
 													border-width:9px 26px 0;
-													margin:1px 0 0; }
+													margin:1px 0 0;
+													overflow-x:hidden; text-overflow:ellipsis; }
 
 .chat_lower_box					{	position:relative; background:rgba(255,255,255,0.2); }
 .chat_lower_box::after	{	content:""; position:absolute;
@@ -65,6 +66,7 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 													border-image-slice:6 39 6 6 fill;
 													border-image-repeat:repeat;
 													border-width:6px 39px 6px 6px; }
+.chat_upper_box					{ display:flex; }
 .chat_upper_box::after	{	content:""; background-image:url("tail.png");
 													display:block; float:right;
 													height:30px; width:40px; }
@@ -74,8 +76,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 
 
 /* 닉네임, 뱃지 위치 설정 */
-.chat_nickname_box,
-.chat_badge_box 		{	display:inline-block; }
+.chat_nickname_box	{	display:inline-block; }
+.chat_badge_box 		{	display:inline-flex; margin-top:auto; height:0.7em; }
 .chat_text_nickname {	padding:5px 5px 3px 5px;
 											min-width:45px; text-align:center; }
 .chat_badge_box img	{ vertical-align:baseline; height:0.7em;
