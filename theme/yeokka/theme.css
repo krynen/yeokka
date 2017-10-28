@@ -69,7 +69,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 .chat_upper_box					{ display:flex; }
 .chat_upper_box::after	{	content:""; background-image:url("tail.png");
 													display:block; float:right;
-													height:30px; width:40px; }
+													height:30px; width:40px; flex:1;
+													background-repeat:no-repeat; background-position:right; }
 .chat_outer_box .chat_msg_box,
 .chat_lower_box					{ clear:right; }
 
