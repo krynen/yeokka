@@ -1109,8 +1109,6 @@ textarea.fr-code									{	background: #333 !important;
 #article-reply-area 						{	background: #333 !important; }
 #article-reply-area > .header h5 
 																	{	color: #5f8cee !important }
-#article-reply-area #reply-real-area .reply.active 
-																	{	background-color: #32496c !important; }
 #article-reply-area #reply-real-area .reply>.reply-header 
 																	{	background: #3b3b3b !important;
 																		border-bottom-color: #434343 !important; }
@@ -1219,3 +1217,6 @@ fieldset[disabled] .btn-primary:hover,
 .fr-box.fr-basic.fr-top .fr-wrapper,
 .fr-toolbar.fr-bottom							{	border:1px solid #ddd !important; }
 .btn-primary											{	color: #ddd !important; }
+
+#article-reply-area #reply-real-area .reply.active 
+																	{	background-color: #303844 !important; }
