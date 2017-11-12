@@ -543,7 +543,6 @@ header #header-bar #header-top-notice a
 																		-moz-box-shadow: none;
 																		box-shadow: none;
 																		border-bottom-color: #ddd !important; }
-.fr-separator											{	background: #141414 !important; }
 .fr-view .fr-text-bordered				{	border-top-color: #ddd !important;
 																		border-bottom-color: #ddd !important; }
 .fr-image-resizer .fr-handler			{	background: #1e88e5;
@@ -794,6 +793,7 @@ fieldset[disabled] .btn-primary:hover,
 .fr-box.fr-basic.fr-top .fr-wrapper,
 .fr-toolbar.fr-bottom							{	border:1px solid #ddd !important; }
 .btn-primary											{	color: #ddd !important; }
+.fr-separator											{	background: #ddd !important; }
 
 
 #main .menu-wrapper>a>em,

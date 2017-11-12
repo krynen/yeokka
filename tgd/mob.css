@@ -1009,7 +1009,6 @@ nav#nav>#nav-schedule-list>a:hover
 .fr-toolbar.fr-bottom							{	-webkit-box-shadow: none;
 																		-moz-box-shadow: none;
 																		box-shadow: none; }
-.fr-separator											{	background: #141414 !important; }
 .fr-view table th									{	background: #e6e6e6; }
 .fr-view .fr-text-bordered				{	border-top-color: #ddd !important;
 																		border-bottom-color: #ddd !important; }
@@ -1217,6 +1216,7 @@ fieldset[disabled] .btn-primary:hover,
 .fr-box.fr-basic.fr-top .fr-wrapper,
 .fr-toolbar.fr-bottom							{	border:1px solid #ddd !important; }
 .btn-primary											{	color: #ddd !important; }
+.fr-separator											{	background: #ddd !important; }
 
 #article-reply-area #reply-real-area .reply.active 
 																	{	background-color: #303844 !important; }
