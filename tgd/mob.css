@@ -230,7 +230,7 @@ fieldset[disabled] .btn-primary:hover
 .btn-primary .badge								{	color: #337ab7;
 																		background-color: #333 !important; }
 .btn-success											{	color: #333 !important;
-																		background-color: #5cb85c;
+																		background-color: #5f87e3 !important;
 																		border-color: #4cae4c; }
 .btn-success.focus,
 .btn-success:focus								{	color: #333 !important;
@@ -266,9 +266,9 @@ fieldset[disabled] .btn-primary:hover
 fieldset[disabled] .btn-success.focus,
 fieldset[disabled] .btn-success:focus,
 fieldset[disabled] .btn-success:hover	
-																	{	background-color: #5cb85c;
+																	{	background-color: #5f87e3 !important;
 																		border-color: #4cae4c; }
-.btn-success .badge								{	color: #5cb85c;
+.btn-success .badge								{	color: #5f87e3 !important;
 																		background-color: #333 !important; }
 .btn-info													{	color: #333 !important;
 																		background-color: #5bc0de;
@@ -560,6 +560,7 @@ a.label:focus,
 a.label:hover										{	color: #333 !important; }
 .label-default[href]:focus,
 .label-default[href]:hover				{	background-color: #5e5e5e; }
+.label-success										{	background-color: #5f87e3 !important; }
 .label-info												{	background-color: #5bc0de; }
 .label-warning										{	background-color: #f0ad4e; }
 .label-warning[href]:focus,
@@ -598,6 +599,7 @@ a.badge:hover										{	color: #333 !important; }
 .progress-striped .progress-bar		{	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 																		background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 																		background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); }
+.progress-bar-success							{	background-color: #5f87e3 !important; }
 .progress-striped .progress-bar-success	
 																	{	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 																		background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
@@ -799,12 +801,16 @@ button.list-group-item-danger.active:hover
 .navbar .navbar-nav .open .dropdown-menu>.disabled>a:focus	
 																	{	color: #999 !important;
 																		background-color: transparent !important; }
+.btn-outline-success							{	color: #5f87e3 !important;
+																		border-color: #5f87e3 !important; }
 .btn-outline-success:hover				{	color: #333 !important;
-																		background-color: #5cb85c;
-																		border-color: #5cb85c; }
+																		background-color: #5f87e3 !important;
+																		border-color: #5f87e3 !important; }
+.btn-outline-primary							{	color: #d9534f !important;
+																		border-color: #d9534f !important; }
 .btn-outline-primary:hover				{	color: #333 !important;
-																		background-color: #0275d8;
-																		border-color: #0275d8; }
+																		background-color: #d9534f !important;
+																		border-color: #d9534f !important; }
 .btn-outline-danger:hover				{	color: #333 !important;
 																		background-color: #d9534f;
 																		border-color: #d9534f; }
@@ -861,7 +867,7 @@ nav#nav > #nav-upper #userDropdownContainer a
 nav#nav>#nav-upper-shortcut>.dropdown>a	
 																	{	color: #eee !important; }
 nav#nav>.nav-header							{	background: #2673e7 !important; }
-nav#nav > .nav-menu-area a				{	color: #ddd !important }
+nav#nav > .nav-menu-area a				{	color: #ddd !important; }
 nav#nav > .nav-menu-area a:hover,
 nav#nav > .nav-menu-area a.active	
 																	{	color: #2673e7 !important; }
@@ -1095,19 +1101,22 @@ textarea.fr-code									{	background: #333 !important;
 #article-list>.article-list-row:hover>.item>.list-header.v0>span	
 																	{	background: #383838 !important;
 																		color: #383838 !important; }
+span.a-badge i.fa.fa-star					{	color: #efc839 !important; }
 .pagination-area,
 #article-list-menu							{	background: #333 !important; }
+#article-list-menu>.btn.best		{	color: #efc839 !important;
+																		border-color: #efc839 !important; }
 #article-list-menu>.btn.best.enable
 																	{	color: #333 !important;
-																		background-color: #efc839;
-																		border-color: #efc839; }
+																		background-color: #efc839 !important;
+																		border-color: #efc839 !important; }
 #boardSearchForm								{	background: #333 !important; }
 #article-info 										{	background: #333 !important;
 																		border-bottom-color: #e1e1e1; }
 #article-content-wrapper 			{	background: #333 !important; }
 #article-reply-area 						{	background: #333 !important; }
 #article-reply-area > .header h5 
-																	{	color: #5f8cee !important }
+																	{	color: #5f8cee !important; }
 #article-reply-area #reply-real-area .reply>.reply-header 
 																	{	background: #3b3b3b !important;
 																		border-bottom-color: #434343 !important; }
@@ -1164,6 +1173,20 @@ header>#header-area>a>h1				{	background: url(https://krynen.github.io/yeokka/tg
 /* 메뉴헤더에 보라테달기 */
 nav#nav>.nav-header								{ background-image:
 																			linear-gradient(120deg,#83429c 17%,transparent 18%) !important; }
+		
+		
+/* 글쓰기 버튼 개조 */
+#comment-write-button-area button
+																	{ border-radius: 0; }
+#comment-write-button-area button.pull-right:hover
+																	{ color: #ddd !important; }
+.btn.square.write									{ color: #ddd !important;
+																		border-color: #2e6da4; }
+.btn.square.write.focus,
+.btn.square.write:focus					{	background-color: #286090;
+																		border-color: #122b40; }
+.btn.square.write:hover					{	background-color: #286090;
+																		border-color: #204d74; }
 
 
 /* 반전 없이 임의지정한 색상 */
