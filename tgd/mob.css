@@ -801,12 +801,14 @@ button.list-group-item-danger.active:hover
 .navbar .navbar-nav .open .dropdown-menu>.disabled>a:focus	
 																	{	color: #999 !important;
 																		background-color: transparent !important; }
-.btn-outline-success							{	color: #5f87e3 !important;
+.btn-outline-success,
+.btn-outline-success:focus				{	color: #5f87e3 !important;
 																		border-color: #5f87e3 !important; }
 .btn-outline-success:hover				{	color: #333 !important;
 																		background-color: #5f87e3 !important;
 																		border-color: #5f87e3 !important; }
-.btn-outline-primary							{	color: #d9534f !important;
+.btn-outline-primary,
+.btn-outline-primary:focus				{	color: #d9534f !important;
 																		border-color: #d9534f !important; }
 .btn-outline-primary:hover				{	color: #333 !important;
 																		background-color: #d9534f !important;

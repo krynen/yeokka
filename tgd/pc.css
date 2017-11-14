@@ -429,12 +429,14 @@ button.list-group-item-danger.active:hover
 																	{	background-color: #333 !important; }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a	
 																	{	color: #ccc !important; }
-.btn-outline-success							{	color: #5f87e3 !important;
+.btn-outline-success,
+.btn-outline-success:focus				{	color: #5f87e3 !important;
 																		border-color: #5f87e3 !important; }
 .btn-outline-success:hover				{	color: #333 !important;
 																		background-color: #5f87e3 !important;
 																		border-color: #5f87e3 !important; }
-.btn-outline-primary							{	color: #d9534f !important;
+.btn-outline-primary,
+.btn-outline-primary:focus				{	color: #d9534f !important;
 																		border-color: #d9534f !important; }
 .btn-outline-primary:hover				{	color: #333 !important;
 																		background-color: #d9534f !important;
