@@ -830,8 +830,6 @@ button.list-group-item-danger.active:hover
 .alertify .alert>*,
 .alertify .dialog>*								{	background: #333 !important;
 																		box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .14), 0 4px 5px 0 rgba(0, 0, 0, .098), 0 1px 10px 0 rgba(0, 0, 0, .084); }
-html,
-body															{	background: #0c0c0b !important; }
 .pagination>.active>a,
 .pagination>.active>a:focus,
 .pagination>.active>a:hover,
@@ -845,8 +843,7 @@ body															{	background: #0c0c0b !important; }
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover				{	color: #1f6fe6 !important; }
-header														{	border-bottom-color: #2673e7 !important;
-																		background: #0c0c0b !important; }
+header														{	border-bottom-color: #2673e7 !important; }
 header>#header-area>#header-bar-link	
 																	{	color: #aeaea6;
 																		padding: 0 16px 8px; }
@@ -857,9 +854,7 @@ header > #header-search-bar #header-search-input
 																	{	border-color: #2673e7 !important; }
 header > #header-search-bar #header-search-btn	
 																	{	color: #2673e7 !important; }
-#header-top-notice							{	background: #333 !important; }
-nav#nav														{	background: #0c0c0b !important;
-																		box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); }
+nav#nav														{	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); }
 nav#nav > #nav-upper #noteDropdownContainer,
 nav#nav > #nav-upper #userDropdownContainer	
 																	{	color: #eee !important; }
@@ -1066,8 +1061,7 @@ textarea.fr-code									{	background: #333 !important;
 .fr-box.fr-inline .fr-command.fr-btn.html-switch.fr-desktop:hover	
 																	{	background: #141414 !important; }
 .fr-popup .fr-link:focus					{	background: #141414 !important; }
-#board-info											{	background: #333 !important;
-																		border-top-color: #2e2e2e !important;
+#board-info											{	border-top-color: #2e2e2e !important;
 																		border-bottom-color: #2e2e2e !important; }
 #board-info>h1>a									{	color: #eee !important; }
 #board-info>a.board-right-menu		{	border-left-color: #2e2e2e !important;
@@ -1077,7 +1071,6 @@ textarea.fr-code									{	background: #333 !important;
 #article-list #article-list-category > a.active,
 #article-list #article-list-category>a:hover	
 																	{	background: #333 !important; }
-#article-list>.article-list-row	{	background: #333 !important; }
 #article-list>.article-list-row:hover	
 																	{	background: #383838 !important; }
 #article-list>.article-list-row.notice	
@@ -1192,9 +1185,6 @@ nav#nav>.nav-header								{ background-image:
 
 
 /* 반전 없이 임의지정한 색상 */
-#main-content,
-body,
-footer														{ background: #0c0c0b !important; }
 nav#nav>.nav-header,
 nav#nav>.nav-header>a						{	color: #eee !important; }
 .pagination>.active>a	,

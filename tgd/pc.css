@@ -462,7 +462,6 @@ header #right-search-form>input[type=text]
 																	{	border-color: #2673e7 !important;
 																		background: #333 !important; }
 header #header-bar>.row					{	border-top-color: #2673e7 !important;
-																		background: #333 !important;
 																		border-bottom-color: #141517 !important;
 																		border-right-color: #141517 !important; }
 header #header-bar a.dropdown-toggle	
@@ -473,14 +472,12 @@ header #header-bar #header-menu-right
 																	{	border-left-color: #2e2e2e !important; }
 header #header-bar #header-top-notice a
 																	{	color: #eee !important; }
-#main #main-content>div.frame		{	background: #333 !important;
-																		border-right-color: #141517 !important;
+#main #main-content>div.frame		{	border-right-color: #141517 !important;
 																		border-bottom-color: #141517 !important; }
 #main .menu-wrapper							{	border-right-color: #141517 !important;
 																		border-bottom-color: #141517 !important; }
 #main .menu-wrapper>.header			{	background: #2673e7 !important; }
-#main .menu-wrapper>a						{	background: #333 !important;
-																		color: #cecece !important;
+#main .menu-wrapper>a						{	color: #cecece !important;
 																		border-bottom-color: #3c3c3c !important; }
 #main .menu-wrapper>a:hover			{	background: #3c3c3c !important; }
 #main .menu-wrapper .spacer			{	background: #101508 !important; }
@@ -731,9 +728,7 @@ header #header-bar #header-top-notice strong.notice-badge
 #board-info h1										{	border-bottom-width: 0px; }
 #board-info 											{	padding: 0; height: calc(50px + 1em);
 																		border: 1em solid transparent; border-bottom-width: 0;
-																		background: url(https://krynen.github.io/yeokka/tgd/board_header.PNG);
-																		background-repeat: no-repeat;
-																		background-position: right; }
+																		background: url(https://krynen.github.io/yeokka/tgd/board_header.PNG) no-repeat right !important; }
 #board-info #board-info-profile-img
 																	{	opacity: 0; }
 
@@ -771,10 +766,10 @@ header #header-bar #header-top-notice strong.notice-badge
 		
 /* 글쓰기 버튼 개조 */
 #comment-write-button-area button
-																	{ border-radius: 0; }
+																	{	border-radius: 0; }
 #comment-write-button-area button.pull-right:hover
-																	{ color: #ddd !important; }
-.btn.square.write									{ color: #ddd !important;
+																	{	color: #ddd !important; }
+.btn.square.write									{	color: #ddd !important;
 																		border-color: #2e6da4; }
 .btn.square.write.focus,
 .btn.square.write:focus					{	background-color: #286090;
@@ -784,9 +779,6 @@ header #header-bar #header-top-notice strong.notice-badge
 
 
 /* 반전 없이 임의지정한 색상 */
-#content-area,
-body,
-footer														{ background: #0c0c0b !important; }
 #main .menu-wrapper>.header,
 #main .menu-wrapper>.header>a		{	color: #eee !important; }
 .pagination>.active>a	,
