@@ -47,6 +47,8 @@
 	{"name":"기타토끼공듀1.png",		"keywords":["토끼공듀", "개노잼", "토끼공듀1"],			"tags":["고인물"]},
 	{"name":"기타토끼공듀2.png",		"keywords":["망겜이다", "토끼공듀2"],				"tags":["고인물"]},
 	{"name":"기타녹색옷.png",		"keywords":["녹색옷", "초록옷"],				"tags":["젤다", "루이지"]},
+	{"name":"기타불편.png",			"keywords":["불편"],						"tags":["게비스콘"]},
+	{"name":"기타편안.png",			"keywords":["편안"],						"tags":["게비스콘"]},
 	{"name":"희키눈물.gif",			"keywords":["희키눈물", "눈물희키"],				"tags":["희키콘", "움짤"]},
 	
 	{"name":"손님빨갱이.gif",		"keywords":["빨갱이", "화남"],					"tags":["롤코타", "손님", "움짤"]},
@@ -350,6 +352,7 @@
 	
 	{"name":"AMD.png",			"keywords":["암드", "AMD", "amd"],				"tags":["컴갤콘"]},
 	{"name":"RYZEN.png", 			"keywords":["라이젠", "RYZEN", "ryzen"], 			"tags":["컴갤콘"]},
+	{"name":"INTEL.png",			"keywords":["인텔", "INTEL", "intel"],				"tags":["컴갤콘"]},
 	
 	{"name":"야인시대4딸라.png",		"keywords":["4딸라"],						"tags":["김두한", "야인시대"]},
 	{"name":"야인시대오케이.png",		"keywords":["오케이땡큐"],					"tags":["김두한", "야인시대"]},
