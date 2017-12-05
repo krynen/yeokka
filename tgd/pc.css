@@ -744,7 +744,7 @@ header #header-bar #header-top-notice strong.notice-badge
 
 
 /* 메뉴 간격 좀 더 좁게 */
-#main .menu-wrapper>a						{	padding: .2em 1.4em .2em 0.7em; }
+#main .menu-wrapper>a						{	padding: .2em .7em .2em .7em; }
 
 
 /* 추천수를 하트표시로 */
