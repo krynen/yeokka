@@ -1,16 +1,20 @@
-﻿@charset 'UTF-8';
+@charset "UTF-8";
 /*
- (c) 2017 kuriyama hibiya <kuriyama@hibiya.moe> all rights reserved
- licensed 
+ (c) 2017 kuriyama hibiya <kuriyama@hibiya.moe>
+ licensed under MIT license 
+ made with <3 for yeokka
+ ==========
+ wkmrgoth.ttf is NOT licensed under any open source license.
+
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 @font-face {
   font-family: 'wkmrgoth';      
   font-style: regular;
   font-weight: 400;
-  src: local('ＷＩＮＫ중환고직'), url(wkmrgoth.ttf);
+  src: local('ＷＩＮＫ중환고직'), url('./wkmrgoth.ttf');
 }
 
 * {
@@ -36,7 +40,7 @@ body {
   /* 폰트 설정
    - wkmrgoth 앞에 영문 폰트 하나, 뒤에 한국어 폰트 한두개 있는 게 좋아요
   */
-  font-family: 'Lato', 'wkmrgoth', 'Noto Sans KR', '맑은 고딕', sans-serif;
+  font-family: 'Nunito', 'wkmrgoth', 'Noto Sans KR', '맑은 고딕', sans-serif;
   line-height: 1.5rem;
   text-shadow: 0 0 0.25rem rgba(0, 0, 0, 1);
   word-wrap: break-word;
@@ -45,17 +49,17 @@ body {
 .chat_outer_box {
   /* 여기를 수정해서 기울기 값을 조정하세요
    - 0deg = 안기울임 / 마이너스 값이 왼쪽
-                    vvvvvvv */
-  transform: rotate(-2.9deg) translate3d(0, 0, 0);
+                    vvvvv */
+  transform: rotate(-3deg) translate3d(0, 0, 0);
   margin: 0.25rem 1.25rem;
   width: calc(100% - 2.5rem);
 }
 .chat_upper_box {
   display: flex;
-  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5), 0 0 0.25rem rgba(0, 0, 0, 1);
 }
 .chat_lower_box {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.5);
   border-top: 0.5rem solid #fff;
   color: #fff;
 
@@ -73,27 +77,28 @@ body {
   flex-grow: 1;
   
   color: #fff !important; /* 강제 닉네임 색상 방지 - 이거 지우면 색 먹음 */
-  font-size: 0.875rem; /* 닉네임 텍스트 크기만 수정하려면 여기 */
+  font-size: 1rem; /* 닉네임 텍스트 크기만 수정하려면 여기 */
 }
 .chat_msg_box {
   padding: 0.25rem;
   max-height: 14rem; /* 텍스트 영역 최대 높이 */
   overflow: hidden;
 
-  font-size: 0.875rem; /* 본문 텍스트 크기만 수정하려면 여기 */
+  font-size: 1rem; /* 본문 텍스트 크기만 수정하려면 여기 */
 }
 .chat_msg_box.image_only {
   text-align: center;
 }
 
 /* Image Sizes */
+.cheer_icon, .twitch_emote, .dccon {
+  vertical-align: bottom;
+}
 .cheer_icon {
   max-height: 1.25rem;
-  vertical-align: bottom;
 }
 .twitch_emote {
   max-height: 2rem;
-  vertical-align: bottom;
 }
 .dccon {
   max-height: 6.25rem;
