@@ -14,7 +14,7 @@
   font-family: 'wkmrgoth';      
   font-style: regular;
   font-weight: 400;
-  src: local('ＷＩＮＫ중환고직'), url('./wkmrgoth.ttf');
+  src: local('ＷＩＮＫ중환고직'), url('wkmrgoth.ttf');
 }
 
 * {
