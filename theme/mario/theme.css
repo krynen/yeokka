@@ -46,7 +46,7 @@ body {
   /* 여기를 수정해서 기울기 값을 조정하세요
    - 0deg = 안기울임 / 마이너스 값이 왼쪽
                     vvvvvvv */
-  transform: rotate(-2.5deg) translate3d(0, 0, 0);
+  transform: rotate(-2.9deg) translate3d(0, 0, 0);
   margin: 0.25rem 1.25rem;
   width: calc(100% - 2.5rem);
 }
@@ -55,7 +55,7 @@ body {
   text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 .chat_lower_box {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.35);
   border-top: 0.5rem solid #fff;
   color: #fff;
 
