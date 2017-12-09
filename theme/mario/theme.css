@@ -1,0 +1,167 @@
+﻿@charset 'UTF-8';
+/*
+ (c) 2017 kuriyama hibiya <kuriyama@hibiya.moe> all rights reserved
+ licensed 
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+  font-family: 'wkmrgoth';      
+  font-style: regular;
+  font-weight: 400;
+  src: local('ＷＩＮＫ중환고직'), url(wkmrgoth.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1rem; /* 전체적 크기 조절 */
+}
+body {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+#chat_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* 폰트 설정
+   - wkmrgoth 앞에 영문 폰트 하나, 뒤에 한국어 폰트 한두개 있는 게 좋아요
+  */
+  font-family: 'Lato', 'wkmrgoth', 'Noto Sans KR', '맑은 고딕', sans-serif;
+  line-height: 1.5rem;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 1);
+  word-wrap: break-word;
+  margin-bottom: 1rem;
+}
+.chat_outer_box {
+  /* 여기를 수정해서 기울기 값을 조정하세요
+   - 0deg = 안기울임 / 마이너스 값이 왼쪽
+                    vvvvvvv */
+  transform: rotate(-2.5deg) translate3d(0, 0, 0);
+  margin: 0.25rem 1.25rem;
+  width: calc(100% - 2.5rem);
+}
+.chat_upper_box {
+  display: flex;
+  text-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+.chat_lower_box {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 0.5rem solid #fff;
+  color: #fff;
+
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
+}
+.chat_badge_box > img {
+  width: 1.375rem;
+  height: 1.375rem;
+  border: 0.125rem solid #fff;
+  border-radius: 50%;
+  margin: 0;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.75);
+}
+.chat_nickname_box {
+  flex-grow: 1;
+  
+  color: #fff !important; /* 강제 닉네임 색상 방지 - 이거 지우면 색 먹음 */
+  font-size: 0.875rem; /* 닉네임 텍스트 크기만 수정하려면 여기 */
+}
+.chat_msg_box {
+  padding: 0.25rem;
+  max-height: 14rem; /* 텍스트 영역 최대 높이 */
+  overflow: hidden;
+
+  font-size: 0.875rem; /* 본문 텍스트 크기만 수정하려면 여기 */
+}
+.chat_msg_box.image_only {
+  text-align: center;
+}
+
+/* Image Sizes */
+.cheer_icon {
+  max-height: 1.25rem;
+  vertical-align: bottom;
+}
+.twitch_emote {
+  max-height: 2rem;
+  vertical-align: bottom;
+}
+.dccon {
+  max-height: 6.25rem;
+}
+
+/* Special Cases */
+@keyframes blinking-text {
+  from { color: #000; }
+  33% { color: #AD4711; }
+  to { color: #FC6C19; }
+}
+.chat_subscribe_box,
+.chat_cheer_box	{
+  text-align: right;
+  font-weight: bold;
+  padding: 0.5rem 0.25rem 0 0.25rem;
+  margin-top: -0.5rem;
+  background: #fff;
+  text-shadow: none;
+  color: #000;
+  animation: blinking-text 1s infinite alternate ease;
+}
+.chat_subscribe_box {
+  margin: -0.75rem -0.25rem 0.25rem -0.25rem;
+}
+.chat_cheer_text {
+  color: #FDCD19;
+  display: inline-block;
+  padding: 0.125rem 0.25rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Clip */
+.chat_clip_box {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  height: 8rem;
+  overflow: hidden;
+  padding: 0.25rem 0.5rem;
+}
+.chat_clip_box.invalid {
+  height: 1.5rem;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.75);
+  text-shadow: none;
+}
+.chat_clip_box > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  max-width: 100%;
+  z-index: 0;
+}
+.chat_clip_title, .chat_clip_by {
+  position: relative;
+}
+.chat_clip_title {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.chat_clip_by {
+  text-align: right;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
