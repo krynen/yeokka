@@ -59,7 +59,7 @@ html								{	font-family: 'cwtexyen', 'Hanna';
 
 
 /* 닉네임, 뱃지 위치 설정 */
-.chat_nickname_box	{	margin-left:-5px; }
+.chat_nickname_box	{	margin:-2px 0 0 -2px; }
 .chat_badge_box 		{	position:absolute; right:calc(.15em + 8px); bottom:5px; }
 .chat_badge_box img	{	margin-right:.15em; height:.7em;}
 
