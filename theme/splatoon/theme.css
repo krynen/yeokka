@@ -38,7 +38,9 @@ img.dccon					{	max-height:100px; }
 
 /* 폰트 설정 */
 html								{	font-family: 'cwtexyen', 'TmonMonsori', serif;
-											font-size:18px; line-height:1em; color:white; }
+											font-size:18px; line-height:1em; color:white;
+											text-shadow: 2px 2px 0 black; }
+.chat_nickname_box	{	font-size:.8em; }
 
 
 /* 채팅창 배경 설정 */
