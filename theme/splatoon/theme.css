@@ -1,0 +1,89 @@
+/* 폰트 로드 */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@font-face {
+  font-family: "TmonMonsori";
+  font-style: normal;
+  font-weight: 400;
+  src:url(TmonMonsori.ttf);
+}
+
+/* 애니메이션 정의 */
+@keyframes Appear {
+	0%	{ opacity:0.4; }
+	to	{ opacity:1; } }
+.chat_outer_box	{ animation:Appear .3s ease forwards; }
+
+/* 위치 기본 설정 */
+html, body 	{	overflow:hidden; }
+body 				{	margin:0; position:absolute;
+							right:0; left:0; bottom:0; }
+				
+img.twitch_emote	{	max-height:50px; }
+img.dccon					{	max-height:100px; }
+
+/* 구독자 및 후원 메세지 설정 */
+@keyframes SubsAni { 50% { color:rgb(5,50,190); } }
+.chat_subscribe_box,
+.chat_cheer_box										{	text-align:center; padding:0.4em 0 0;
+																		animation:SubsAni 6 1s ease; }
+/* 후원 금액 */
+.chat_cheer_text									{ color:color:rgb(5,50,190); display:inline-block; }
+/* 후원 아이콘 */
+.chat_cheer_text img.cheer_icon		{	max-height:1em; vertical-align: middle; }
+
+/* 배경 설정 */
+#background	{	display:none; }
+
+
+
+/* 폰트 설정 */
+html								{	font-family: 'cwtexyen', 'TmonMonsori', serif;
+											font-size:18px; line-height:1em; color:white; }
+
+
+/* 채팅창 배경 설정 */
+.chat_outer_box {
+    background-image:
+			repeating-linear-gradient(
+				135deg,
+				rgba(50,50,50,.5) 0px,  rgba(50,50,50,.5) 15px,
+				rgba(80,80,80,.5) 15px, rgba(80,80,80,.5) 30px
+			),
+			linear-gradient(
+				to right,
+				rgba(50,50,50,.8) 70%, rgba(50,50,50,.5)
+			);
+    border-radius:20px 0 0 20px;
+    padding:20px 0 20px 20px;
+    transform: rotate(3deg);
+    transform-origin: 100% 100%;
+}
+
+
+
+/* 닉네임, 뱃지 위치 설정 */
+.chat_nickname_box	{	margin-left:-5px; }
+.chat_badge_box 		{	position:absolute; left:20px; bottom:5px; }
+.chat_badge_box img	{	margin-right:.15em; height:.7em;}
+
+
+			
+.chat_outer_box						{	margin-top:5px; }
+.chat_msg_box							{	white-space:pre-line; word-break:break-word;
+														width:100%; max-height:124px;
+														box-sizing:border-box; overflow:hidden;
+														padding-bottom:10px; margin-top:-3px; }
+.chat_msg_box.image_only	{	text-align:center; }
+
+
+
+.chat_clip_box						{	position:relative; padding:.4em 0; }	
+
+.chat_clip_box img				{	height:56px; float:left; margin:0 .4em; }
+.chat_clip_title					{	line-height:56px; text-align:center;
+														white-space:pre; overflow:hidden;
+														text-overflow:ellipsis; }
+.chat_clip_by							{	position:absolute; bottom:.4em; right:.4em;
+														font-size:0.7em; }
+.chat_clip_box.text_only,
+.chat_clip_box.invalid		{	text-align:center; }
