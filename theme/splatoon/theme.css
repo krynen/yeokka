@@ -49,11 +49,11 @@ html								{	font-family: 'cwtexyen', 'TmonMonsori', serif;
 			repeating-linear-gradient(
 				135deg,
 				rgba(50,50,50,.5) 0px,  rgba(50,50,50,.5) 15px,
-				rgba(80,80,80,.5) 15px, rgba(80,80,80,.5) 30px
+				rgba(70,70,70,.5) 15px, rgba(70,70,70,.5) 30px
 			),
 			linear-gradient(
 				to right,
-				rgba(50,50,50,.8) 70%, rgba(50,50,50,.5)
+				rgba(30,30,30,.8) 70%, rgba(30,30,30,.5)
 			);
     border-radius:20px 0 0 20px;
     padding:20px 10px 20px 20px;
