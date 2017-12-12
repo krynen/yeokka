@@ -65,7 +65,7 @@ html								{	font-family: 'cwtexyen', 'TmonMonsori', serif;
 
 /* 닉네임, 뱃지 위치 설정 */
 .chat_nickname_box	{	margin-left:-5px; }
-.chat_badge_box 		{	position:absolute; right:20px; bottom:5px; }
+.chat_badge_box 		{	position:absolute; right:calc(.15em + 8px); bottom:5px; }
 .chat_badge_box img	{	margin-right:.15em; height:.7em;}
 
 
