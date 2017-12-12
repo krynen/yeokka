@@ -1,11 +1,11 @@
 /* 폰트 로드 */
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 @font-face {
   font-family: "TmonMonsori";
   font-style: normal;
   font-weight: 400;
   src:url(TmonMonsori.ttf);
 }
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 /* 애니메이션 정의 */
 @keyframes Appear {
@@ -38,7 +38,7 @@ img.dccon					{	max-height:100px; }
 
 /* 폰트 설정 */
 html								{	font-family: 'cwtexyen', 'TmonMonsori', serif;
-											font-size:26px; line-height:1em; color:white;
+											font-size:23px; line-height:1em; color:white;
 											text-shadow: 2px 2px 0 black; }
 .chat_nickname_box	{	font-size:.8em; }
 
@@ -65,7 +65,7 @@ html								{	font-family: 'cwtexyen', 'TmonMonsori', serif;
 
 /* 닉네임, 뱃지 위치 설정 */
 .chat_nickname_box	{	margin-left:-5px; }
-.chat_badge_box 		{	position:absolute; left:20px; bottom:5px; }
+.chat_badge_box 		{	position:absolute; right:20px; bottom:5px; }
 .chat_badge_box img	{	margin-right:.15em; height:.7em;}
 
 
@@ -73,7 +73,7 @@ html								{	font-family: 'cwtexyen', 'TmonMonsori', serif;
 .chat_outer_box						{	margin-top:5px; }
 .chat_msg_box							{	white-space:pre-line; word-break:break-word;
 														width:100%; max-height:124px;
-														padding:.3em 1em .3em .3em; overflow:hidden; }
+														padding:.3em 1em .5em .3em; overflow:hidden; }
 .chat_msg_box.image_only	{	text-align:center; }
 
 
