@@ -74,7 +74,9 @@ html								{	font-family: 'cwtexyen', 'Hanna';
 .chat_msg_box.image_only	{	text-align:center; }
 
 
-.chat_clip_box						{	text-align:center; }	
+.chat_clip_box						{	text-align:center; }
+.chat_clip_box:not(.text_only):not(.invalid)
+													{ margin-top:.5em; }
 .chat_clip_box img				{	width:80%; }
 .chat_clip_title					{	white-space:pre;
 														overflow:hidden; text-overflow:ellipsis; }
