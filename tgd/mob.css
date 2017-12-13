@@ -1189,6 +1189,9 @@ nav#nav>.nav-header								{ background-image:
 																		border-color: #122b40; }
 .btn.square.write:hover					{	background-color: #286090;
 																		border-color: #204d74; }
+																		
+/* 비로그인시 메뉴 아이콘 정렬 */
+.fa-user													{ line-height:24px; }
 
 
 /* 반전 없이 임의지정한 색상 */
