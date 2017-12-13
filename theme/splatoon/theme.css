@@ -74,7 +74,7 @@ html								{	font-family: 'cwtexyen', 'Hanna';
 .chat_msg_box.image_only	{	text-align:center; }
 
 
-
+/*
 .chat_clip_box						{	position:relative; padding:.4em 0; }	
 
 .chat_clip_box img				{	height:56px; float:left; margin:0 .4em; }
@@ -85,3 +85,4 @@ html								{	font-family: 'cwtexyen', 'Hanna';
 														font-size:0.7em; }
 .chat_clip_box.text_only,
 .chat_clip_box.invalid		{	text-align:center; }
+*/
