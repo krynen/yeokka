@@ -42,9 +42,9 @@ html								{	font-family: 'cwtexyen', 'Hanna', sans-serif;
 .chat_outer_box {
     background-image:
 			repeating-linear-gradient(
-				135deg,
-				rgba(50,50,50,.5) 0px,  rgba(50,50,50,.5) 15px,
-				rgba(70,70,70,.5) 15px, rgba(70,70,70,.5) 30px
+				45deg,
+				rgba(50,50,50,.5) 0px,  rgba(50,50,50,.5) 17px,
+				rgba(80,80,80,.5) 17px, rgba(80,80,80,.5) 34px
 			),
 			radial-gradient(
 				ellipse 12% 60% at 100% 50%,
@@ -81,7 +81,7 @@ html								{	font-family: 'cwtexyen', 'Hanna', sans-serif;
 .chat_outer_box::after		{	content:" "; z-index:-1;
 														display:block; position:absolute;
 														top:0; bottom:0; left:0; right:0; }
-.chat_outer_box::before		{	background:black;
+.chat_outer_box::before		{	background:rgba(0,0,0,.8);
 														clip-path: polygon(
 															18px 54px, 8px 60px,
 															6px 59px, 6px 56px, 6px 53.5px,
