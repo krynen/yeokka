@@ -32,7 +32,7 @@ img.dccon					{	max-height:100px; }
 
 
 /* 폰트 설정 */
-html								{	font-family: 'cwtexyen', 'Hanna';
+html								{	font-family: 'cwtexyen', 'Hanna', sans-serif;
 											font-size:22px; line-height:1em; color:white;
 											text-shadow: 2px 2px 0 black; }
 .chat_nickname_box	{	font-size:.8em; }

@@ -711,7 +711,8 @@ span.a-badge i.fa.fa-star					{	color: #efc839 !important; }
 
 
 /* 배경잘림 오류 해결 */
-body															{	min-width: fit-content !important; }
+body															{	min-width: 1100px !important;
+																		min-width: fit-content !important; }
 
 /* 헤더 변경 */
 header .col-xs-8>a:nth-child(1)	{	background: url(https://krynen.github.io/yeokka/tgd/page_header.png);
