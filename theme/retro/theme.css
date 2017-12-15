@@ -43,7 +43,7 @@ img.dccon						{	max-height:90px; }
 
 
 /* 폰트 설정 */
-html								{	font-family:'cwtexyen', 'NeoDungGeunMo', serif;
+html								{	font-family:'cwtexyen', 'NeoDungGeunMo', sans-serif;
 											font-size:19px; color:white; font-smooth:never;
 											text-shadow:	 -1px -1px black, -1px    0 black,
 																		 -1px  1px black,    0  1px black,
