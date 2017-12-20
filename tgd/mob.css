@@ -1167,6 +1167,7 @@ header>#header-area>a>h1				{	background: url(https://krynen.github.io/yeokka/tg
 
 
 /* 광고 흰색 제거 */
+.frame>div:nth-child(1),
 #article-reply-area+div:not(#article-list),
 #article-reply-area+div:not(#article-list)>div>div>div
 																	{ background: #333 !important; }
