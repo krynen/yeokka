@@ -715,10 +715,11 @@ body															{	min-width: 1100px !important;
 																		min-width: fit-content !important; }
 
 /* 헤더 변경 */
-header .col-xs-8>a:nth-child(1)	{	background: url(https://krynen.github.io/yeokka/tgd/page_header.png);
-																		background-repeat:no-repeat;
-																		display:block; height:50px; }
-header .col-xs-8>a>img						{ opacity: 0; }
+header .row>div:nth-child(1)>a			{	background-repeat:no-repeat;
+																				display:block; height:50px;
+																				background-image:
+	url(https://krynen.github.io/yeokka/tgd/page_header.png); }
+header .row>div:nth-child(1)>a>img	{ opacity: 0; }
 
 
 /* 광고아이콘 및 순위 미표시 */
