@@ -717,7 +717,7 @@ span.a-badge i.fa.fa-star					{	color: #efc839 !important; }
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
 }
-* { font-family: 'Nanum Gothic'; font-weight: 400; }
+* { font-family: 'Nanum Gothic'; }
 
 
 /* 배경잘림 오류 해결 */
