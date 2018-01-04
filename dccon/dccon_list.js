@@ -354,6 +354,7 @@
 	{"name":"AMD.png",			"keywords":["암드", "AMD", "amd"],				"tags":["컴갤콘"]},
 	{"name":"RYZEN.png", 			"keywords":["라이젠", "RYZEN", "ryzen"], 			"tags":["컴갤콘"]},
 	{"name":"INTEL.png",			"keywords":["인텔", "INTEL", "intel"],				"tags":["컴갤콘"]},
+	{"name":"DOCOMO.png",			"keywords":["도코모", "DOCOMO", "docomo"],				"tags":["컴갤콘"]},
 	
 	{"name":"야인시대4딸라.png",		"keywords":["4딸라"],						"tags":["김두한", "야인시대"]},
 	{"name":"야인시대오케이.png",		"keywords":["오케이땡큐"],					"tags":["김두한", "야인시대"]},
