@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/*
+ (c) 2017 kuriyama hibiya <kuriyama@hibiya.moe>
+ licensed under MIT license
+ based on 'mario' theme
+*/
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+  font-family: 'nanumsq';
+  font-style: regular;
+  font-weight: 400;
+  src: local('나눔스퀘어'), url('./nanumsq.ttf');
+}
+@font-face {
+  font-family: 'eorine';
+  font-style: regular;
+  font-weight: 700;
+  src: local('a어린이M'), url('./eorine.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+
+}
+#chat_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+.chat_outer_box {
+  margin: 0.25rem;
+  width: calc(100% - 0.5rem);
+}
+/* Nickname / Badge */
+.chat_upper_box {
+  display: flex;
+
+  font-weight: 700;
+  font-family: eorine, 'Noto Sans KR', sans-serif;
+}
+.chat_nickname_box {
+  min-width: 10rem;
+  text-align: center;
+  margin-left: 0.75rem;
+  padding: 0.25rem 1.5rem;
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+  color: #fff !important;
+  font-size: 1.125rem;
+  background: rgba(255, 239, 246, 0.9);
+  text-shadow:
+   -0.10rem -0.15rem 0 #b59,
+   -0.10rem -0.05rem 0 #b59,
+   -0.10rem  0.05rem 0 #b59,
+   -0.10rem  0.15rem 0 #b59,
+   -0.05rem -0.15rem 0 #b59,
+   -0.05rem -0.05rem 0 #b59,
+   -0.05rem  0.05rem 0 #b59,
+   -0.05rem  0.15rem 0 #b59,
+    0.05rem -0.15rem 0 #b59,
+    0.05rem -0.05rem 0 #b59,
+    0.05rem  0.05rem 0 #b59,
+    0.05rem  0.15rem 0 #b59,
+    0.15rem -0.15rem 0 #b59,
+    0.15rem -0.05rem 0 #b59,
+    0.15rem  0.05rem 0 #b59,
+    0.15rem  0.15rem 0 #b59,
+    0        0      0.1rem #b59,
+    0        0      0.1rem #b59;
+}
+.chat_badge_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.25rem;
+  flex-grow: 1;
+}
+.chat_badge_box > img {
+  width: 1.375rem;
+  height: 1.375rem;
+  border: 0.125rem solid #fff;
+  border-radius: 50%;
+  margin: 0;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.75);
+}
+/* Messages */
+.chat_lower_box {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(254, 167, 209, 1), rgba(254, 167, 209, 0.7));
+  border-radius: 0.5rem;
+  border: 0.15rem solid rgba(255, 223, 238, 0.9);
+  color: #fff;
+  font-weight: 400;
+  font-family: nanumsq, 'Noto Sans KR', sans-serif;
+
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  text-shadow:
+   -0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
+   -0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0       0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0       0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
+   -0.05em  0      0.02em rgba(0, 0, 0, 0.25),
+   -0.05em  0      0.02em rgba(0, 0, 0, 0.25),
+    0       0      0.02em rgba(0, 0, 0, 0.25),
+    0       0      0.02em rgba(0, 0, 0, 0.25),
+    0.05em  0      0.02em rgba(0, 0, 0, 0.25),
+    0.05em  0      0.02em rgba(0, 0, 0, 0.25),
+   -0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25),
+   -0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0      -0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0      -0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25),
+    0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25);
+}
+.chat_lower_box::before, .chat_lower_box::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: -1;
+}
+.chat_lower_box::before {
+  background:
+  radial-gradient(rgba(0, 0, 0, 0.1) 20%, transparent 30%) 0 0,
+  radial-gradient(rgba(0, 0, 0, 0.1) 20%, transparent 30%) 1.5rem 1.5rem;
+  background-size: 3rem 3rem;
+}
+.chat_lower_box::after {
+  height: 33%;
+  top: unset;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.chat_msg_box {
+  padding: 0.75rem;
+  max-height: 14rem; /* 텍스트 영역 최대 높이 */
+  overflow: hidden;
+
+  font-size: 1rem; /* 본문 텍스트 크기만 수정하려면 여기 */
+}
+.chat_msg_box.image_only {
+  text-align: center;
+}
+
+/* Image Sizes */
+.cheer_icon, .twitch_emote, .dccon {
+  vertical-align: bottom;
+}
+.cheer_icon {
+  max-height: 1.25rem;
+}
+.twitch_emote {
+  max-height: 2rem;
+}
+.dccon {
+  max-height: 6.25rem;
+}
+
+/* Special Cases */
+@keyframes blinking-text {
+  from { color: #000; }
+  33% { color: #AD4711; }
+  to { color: #FC6C19; }
+}
+.chat_subscribe_box,
+.chat_cheer_box	{ /* TODO: fix outgoing twip donations */
+  text-align: right;
+  font-weight: bold;
+  padding: 0.5rem 0.25rem 0 0.25rem;
+  margin-top: -0.5rem;
+  background: #fff;
+  text-shadow: none;
+  color: #000;
+  animation: blinking-text 1s infinite alternate ease;
+}
+.chat_subscribe_box {
+  margin: -0.75rem -0.25rem 0.25rem -0.25rem;
+}
+.chat_cheer_text {
+  color: #FDCD19;
+  display: inline-block;
+  padding: 0.125rem 0.25rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Clip */
+.chat_clip_box {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  height: 8rem;
+  overflow: hidden;
+  padding: 0.25rem 0.5rem;
+}
+.chat_clip_box.invalid {
+  height: 1.5rem;
+  text-align: center;
+  color: rgba(255, 0, 0, 0.75);
+  text-shadow: none;
+}
+.chat_clip_box > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  max-width: 100%;
+  z-index: 0;
+}
+.chat_clip_title, .chat_clip_by {
+  position: relative;
+}
+.chat_clip_title {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.chat_clip_by {
+  text-align: right;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* add small credit */
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::after {
+  display: block;
+  content: 'Doki-Doki Literature Club! - 정신적 충격 주의';
+  font-size: 0.5rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 -0.5rem -0.5rem -0.5rem;
+  padding: 0 0.5rem 0.25rem 0.5rem
+}
