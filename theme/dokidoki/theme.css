@@ -10,13 +10,13 @@
   font-family: 'nanumsq';
   font-style: regular;
   font-weight: 400;
-  src: local('나눔스퀘어'), url('./nanumsq.ttf');
+  src: local('나눔스퀘어'), url('../_shared/fonts/nanumsq.ttf');
 }
 @font-face {
   font-family: 'eorine';
   font-style: regular;
   font-weight: 700;
-  src: local('a어린이M'), url('./eorine.ttf');
+  src: local('a어린이M'), url('../_shared/fonts/eorine.ttf');
 }
 
 * {

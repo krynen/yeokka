@@ -10,13 +10,13 @@
   font-family: 'SeoulNamsan';
   font-style: regular;
   font-weight: 300;
-  src: local('서울남산체 L'), url('./SeoulNamsanL.otf');
+  src: local('서울남산체 L'), url('../_shared/fonts/SeoulNamsanL.otf');
 }
 @font-face {
   font-family: 'SeoulNamsan';
   font-style: regular;
   font-weight: 600;
-  src: local('서울남산체 B'), url('./SeoulNamsanB.otf');
+  src: local('서울남산체 B'), url('../_shared/fonts/SeoulNamsanB.otf');
 }
 
 * {
