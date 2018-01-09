@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*
+ (c) 2018 kuriyama hibiya <kuriyama@hibiya.moe>
+ licensed under MIT license
+ based on 'mario' and 'xcom' theme
+*/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+@font-face {
+  font-family: 'SeoulNamsan';
+  font-style: regular;
+  font-weight: 300;
+  src: local('서울남산체 L'), url('../_shared/fonts/SeoulNamsanL.otf');
+}
+@font-face {
+  font-family: 'SeoulNamsan';
+  font-style: regular;
+  font-weight: 600;
+  src: local('서울남산체 B'), url('../_shared/fonts/SeoulNamsanB.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Source Code Pro', 'SeoulNamsan', sans-serif;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+#chat_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+.chat_outer_box {
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  width: 100%;
+}
+/* Nickname / Badge */
+.chat_upper_box {
+  position: relative;
+  display: flex;
+  border-bottom: 0.125rem solid rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 0 0.125rem #000);
+}
+.chat_nickname_box {
+  display: flex;
+  padding: 0 0.125rem;
+  margin-bottom: -0.125rem;
+  min-width: 8rem;
+  font-weight: 600;
+  letter-spacing: -0.04rem;
+  color: #fff !important;
+  border-bottom: 0.125rem solid #fff;
+}
+.chat_badge_box {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.chat_badge_box > img {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0 0 0 0.1rem;
+}
+/* Messages */
+.chat_lower_box {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 136, 136, 0.9), rgba(0, 136, 136, 0.7) 50%);
+  margin-top: 0.5rem;
+  border: 0.08rem solid #fff;
+}
+.chat_lower_box::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0.25rem;
+  width: 0.75rem;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.0));
+}
+.chat_msg_box {
+  padding: 0.25rem 1.125rem 0.25rem 0.5rem;
+  max-height: 14rem; /* 텍스트 영역 최대 높이 */
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+.chat_msg_box.image_only {
+  text-align: center;
+}
+.chat_msg_box:empty {
+  display: none;
+}
+
+/* Image Sizes */
+.cheer_icon, .twitch_emote, .dccon {
+  vertical-align: bottom;
+}
+.cheer_icon {
+  max-height: 1.25rem;
+}
+.twitch_emote {
+  max-height: 2rem;
+}
+.dccon {
+  max-height: 6.25rem;
+}
+
+/* Special Cases */
+.chat_subscribe_box,
+.chat_cheer_box	{ /* TODO: fix outgoing twip donations */
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 1rem 1rem 0.25rem;
+  background: rgba(255, 220, 0, 0.5);
+  mix-blend-mode: hard-light;
+  text-shadow: none;
+  color: #000;
+  animation: blinking-text 1s infinite alternate ease;
+}
+.chat_subscribe_box {
+  /* margin: -0.75rem -0.25rem 0.25rem -0.25rem; */
+}
+.chat_cheer_text {
+  color: #5a5;
+  display: inline-block;
+  padding: 0.1rem 0.25rem;
+  margin: 0.08rem;
+  border: 0.08rem solid #5a5;
+  background-color: #000;
+}
+
+/* Clip */
+.chat_clip_box {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  height: 8rem;
+  overflow: hidden;
+  padding: 0.25rem 0.5rem;
+}
+.chat_clip_box.invalid {
+  height: 1.5rem;
+  text-align: center;
+  color: #acc;
+  text-shadow: none;
+}
+.chat_clip_box > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  max-width: 100%;
+  z-index: 0;
+}
+.chat_clip_title, .chat_clip_by {
+  position: relative;
+}
+.chat_clip_title {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.chat_clip_by {
+  text-align: right;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* add small credit */
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::after {
+  display: block;
+  content: 'GDQ2018 theme by hibiyasleep';
+  font-size: 0.5rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 -0.5rem -0.5rem -0.5rem;
+  padding: 0 0.5rem 0.25rem 0.5rem
+}
