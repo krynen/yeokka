@@ -93,6 +93,16 @@ body {
   transform-origin: left;
   z-index: 1;
 }
+.clip_included .chat_upper_box::before, .clip_included .chat_upper_box::after {
+  background: linear-gradient(to right,
+  #000,
+  #000 0.125rem,
+  #e4f58f 0.1875rem,
+  #e4f58f 0.75rem,
+  #32865c 0.75rem,
+  #32865c
+  );
+}
 .chat_upper_box::before {
   top: 0;
   transform: skewX(20deg);
