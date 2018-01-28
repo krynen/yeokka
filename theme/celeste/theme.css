@@ -37,15 +37,12 @@ body {
   border-right: none;
   border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M8,1h18v22h-18l-6,-6v-10z" stroke-width="2" fill="#fff" stroke="#000"/></svg>') 40% stretch;
   background: linear-gradient(to bottom,
-  #fff,
-  #fff 0.8125em,
-  #ececec 0.8125em,
-  #ececec 0.9375rem,
-  #fff 0.9375rem,
+  #f0f0f0 0.125rem,
+  #fff 0.125rem,
   #fff
   );
   background-size: 100% 1.5rem;
-  background-position: bottom;
+  background-position: 0 1.25rem;
   background-repeat: repeat-y;
 }
 /* Nickname / Badge */
@@ -68,8 +65,8 @@ body {
   #000,
   #000 0.125rem,
   #334b71 0.1875rem,
-  #334b71 0.75rem,
-  #6d90ab 0.75rem,
+  #334b71 0.625rem,
+  #6d90ab 0.625rem,
   #6d90ab
   );
   transform-origin: left;
@@ -80,8 +77,8 @@ body {
   #000,
   #000 0.125rem,
   #e4f58f 0.1875rem,
-  #e4f58f 0.75rem,
-  #32865c 0.75rem,
+  #e4f58f 0.625rem,
+  #32865c 0.625rem,
   #32865c
   );
 }
@@ -120,13 +117,14 @@ body {
 /* Messages */
 .chat_lower_box {
   position: relative;
-  margin-left: -0.375rem;
+  margin-left:  -0.375rem;
 }
 .chat_msg_box {
   padding: 0.125rem 1rem;
   max-height: 14rem; /* 텍스트 영역 최대 높이 */
   overflow: hidden;
   font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 .chat_msg_box.image_only {
   text-align: center;
