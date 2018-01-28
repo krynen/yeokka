@@ -43,7 +43,7 @@ body {
   #fff 1.0625rem,
   #fff
   );
-  background-size: 100% 1.75rem;
+  background-size: 100% 1.5rem;
   background-position: bottom;
   background-repeat: repeat-y;
 }
@@ -52,7 +52,7 @@ body {
   content: '';
 
   position: absolute;
-  left: 0.0625rem;
+  left: 0;
   width: calc(100% + 1rem);
   height: 0.25rem;
 
@@ -65,13 +65,13 @@ body {
   );
 }
 .chat_outer_box::before {
-  top: -0.375rem;
-  transform: skewX(-45deg);
+  top: -0.3125rem;
+  transform: skewX(-45deg) translateX(0.03rem);
   border-top: 0.1rem solid #000;
 }
 .chat_outer_box::after {
-  bottom: -0.375rem;
-  transform: skewX(45deg);
+  bottom: -0.3125rem;
+  transform: skewX(45deg) translateX(0.03rem);
   border-bottom: 0.1rem solid #000;
 }
 /* Nickname / Badge */
