@@ -31,24 +31,6 @@ body {
 }
 .chat_outer_box {
   position: relative;
-  margin: 0.75rem 0 0.75rem 1.75rem;
-  padding: 0.125rem 0;
-  width: calc(100% - 1.75rem);
-  border-left: 0.1rem solid #000;
-  background: linear-gradient(to bottom,
-  #fff,
-  #fff 0.9375em,
-  #ececec 0.9375em,
-  #ececec 1.0625rem,
-  #fff 1.0625rem,
-  #fff
-  );
-  background-size: 100% 1.5rem;
-  background-position: bottom;
-  background-repeat: repeat-y;
-}
-.chat_outer_box {
-  position: relative;
   margin: 0.25rem 0 0.25rem 1.75rem;
   width: calc(100% - 1.75rem);
   border: 0.5rem solid #fff;
