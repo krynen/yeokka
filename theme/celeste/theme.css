@@ -65,8 +65,8 @@ body {
   #000,
   #000 0.125rem,
   #334b71 0.1875rem,
-  #334b71 0.625rem,
-  #6d90ab 0.625rem,
+  #334b71 0.5rem,
+  #6d90ab 0.5rem,
   #6d90ab
   );
   transform-origin: left;
@@ -77,20 +77,20 @@ body {
   #000,
   #000 0.125rem,
   #e4f58f 0.1875rem,
-  #e4f58f 0.625rem,
-  #32865c 0.625rem,
+  #e4f58f 0.5rem,
+  #32865c 0.5rem,
   #32865c
   );
 }
 .chat_upper_box::before {
   top: 0;
-  transform: skewX(20deg);
+  transform: skewX(30deg);
   border-top: 0.1rem solid #000;
   border-top-left-radius: 0.2rem;
 }
 .chat_upper_box::after {
   bottom: 0;
-  transform: skewX(-20deg);
+  transform: skewX(-30deg);
   border-bottom: 0.1rem solid #000;
   border-bottom-left-radius: 0.2rem;
 }
