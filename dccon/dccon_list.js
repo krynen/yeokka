@@ -9,6 +9,7 @@
 	{"name":"역가흠.png",			"keywords":["역가흠", "여까흠"],				"tags":["역가"]},
 	{"name":"역가서순.png",			"keywords":["서순"],						"tags":["역가"]},
 	{"name":"역가순서.png",			"keywords":["순서"],						"tags":["역가"]},
+	{"name":"역헤가오.png",			"keywords":["아흑", "vv", "VV"],					"tags":["역가"]},
 	
 	{"name":"역가골든무말모.gif",		"keywords":["골든무말모", "고올든무말모"],			"tags":["역가", "움짤"]},
 	
@@ -50,6 +51,8 @@
 	{"name":"기타불편.png",			"keywords":["불편"],						"tags":["게비스콘"]},
 	{"name":"기타편안.png",			"keywords":["편안"],						"tags":["게비스콘"]},
 	{"name":"희키눈물.gif",			"keywords":["희키눈물", "눈물희키"],				"tags":["희키콘", "움짤"]},
+	{"name":"옵치짜잔.png",			"keywords":["짜잔"],						"tags":["오버워치"]},
+	{"name":"옵치잔짜잔.png",		"keywords":["잔짜잔"],						"tags":["오버워치"]},
 
 	{"name":"젤다녹색옷.png",		"keywords":["녹색옷", "초록옷"],				"tags":["젤다", "루이지"]},
 	{"name":"젤다기도.png",			"keywords":["젤다기도", "링크기도"],				"tags":["젤다"]},
