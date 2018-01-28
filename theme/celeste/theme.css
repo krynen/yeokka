@@ -138,6 +138,7 @@ body {
 /* Messages */
 .chat_lower_box {
   position: relative;
+  margin-left: -0.375rem;
 }
 .chat_msg_box {
   padding: 0.125rem 1rem;
