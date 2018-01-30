@@ -1,3 +1,12 @@
+/* Temporal bugfix against tgd new ad */
+#content-area > .container #weare-out-of-food,
+#content-area > .container #plz-dont-block-me
+																	{	width: unset; }
+
+/* reply image max-width fix */
+.reply-content img
+																	{	max-width: 100%; }
+
 @media print	{
 	.label													{	border-color: #eee !important; }
 }
