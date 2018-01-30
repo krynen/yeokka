@@ -1,7 +1,7 @@
 /* Temporal bugfix against tgd new ad */
 #content-area > .container #weare-out-of-food,
 #content-area > .container #plz-dont-block-me
-																	{	width: calc(50vw - 550px);
+																	{	width: calc(50vw - 560px);
 																		overflow-x: hidden; }
 
 /* reply image max-width fix */
