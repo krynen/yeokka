@@ -51,8 +51,12 @@
 	{"name":"기타불편.png",			"keywords":["불편"],						"tags":["게비스콘"]},
 	{"name":"기타편안.png",			"keywords":["편안"],						"tags":["게비스콘"]},
 	{"name":"희키눈물.gif",			"keywords":["희키눈물", "눈물희키"],				"tags":["희키콘", "움짤"]},
-	{"name":"옵치짜잔.png",			"keywords":["짜잔"],						"tags":["오버워치"]},
-	{"name":"옵치잔짜잔.png",		"keywords":["잔짜잔"],						"tags":["오버워치"]},
+
+	{"name":"제프짜잔.gif",			"keywords":["짜잔", "짜잔1"],					"tags":["오버워치"]},
+	{"name":"제프잔짜잔.gif",		"keywords":["잔짜잔", "잔짜잔1"],				"tags":["오버워치"]},
+	{"name":"제프짜잔.png",			"keywords":["짜잔2"],						"tags":["오버워치"]},
+	{"name":"제프잔짜잔.png",		"keywords":["잔짜잔2"],						"tags":["오버워치"]},
+	{"name":"벤브버그.gif",			"keywords":["버그", "대부분"],					"tags":["하스스톤"]},
 
 	{"name":"젤다녹색옷.png",		"keywords":["녹색옷", "초록옷"],				"tags":["젤다", "루이지"]},
 	{"name":"젤다기도.png",			"keywords":["젤다기도", "링크기도"],				"tags":["젤다"]},
