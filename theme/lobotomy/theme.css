@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/*
+ (c) 2018 kuriyama hibiya <kuriyama@hibiya.moe>
+ licensed under MIT license
+ based on 'xcom' theme which based on 'mario' theme
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+@font-face {
+  font-family: 'nanumbg';
+  font-style: normal;
+  font-weight: 300;
+  src: local('나눔바른고딕'), url('../_shared/fonts/NanumBarunGothic.ttf');
+}
+
+:root {
+  --main-theme-color: hsl(202, 90%, 75%);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto Condensed', 'nanumbg', sans-serif;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+#chat_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25rem;
+  word-wrap: break-word;
+}
+.chat_outer_box {
+  position: relative;
+  margin: 0.25rem 0;
+  padding: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.66);
+  overflow: hidden;
+  clip-path: polygon(4rem 0, 100% 0, 100% 100%, 0 100%, 0 1.0625rem);
+}
+/* Nickname / Badge */
+.chat_upper_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chat_nickname_box {
+  position: absolute;
+  width: 18rem;
+  height: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  left: -6.5rem;
+  top: -0.75rem;
+  background: #000;
+  border: solid var(--main-theme-color);
+  border-width: 0.25rem 0;
+  color: #fff;
+  transform: rotate(-15deg) translate(0.5rem, 1.125rem) translate3d(0, 0, 0);
+  z-index: 5;
+}
+.chat_badge_box {
+  position: absolute;
+  width: 4.5rem;
+  height: 1.75rem;
+  text-align: right;
+  left: 0rem;
+  top: 2.75rem;
+  padding: 0.25rem 0.5rem 0 0;
+  background: var(--main-theme-color);
+  transform: skewY(-15deg) translate3d(0, 0, 0);
+}
+.chat_badge_box > img {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0 0 0 0.1rem;
+  transform: skewY(15deg) rotate(-15deg) translate3d(0, 0, 0);
+  /* mix-blend-mode: luminosity; */
+  /* filter: invert(1); */
+}
+.chat_badge_box::after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 1.875rem;
+  left: 0;
+  width: 3rem;
+  height: 0.5rem;
+  background: var(--main-theme-color);
+}
+/* Messages */
+.chat_lower_box {
+  position: relative;
+  color: #fff;
+}
+.chat_lower_box::before, .chat_lower_box::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background: var(--main-theme-color);
+  transform: skewY(-15deg);
+  mix-blend-mode: screen;
+}
+.chat_lower_box::before {
+  right: -0.25rem;
+  bottom: 0.75rem;
+
+  width: 2rem;
+  height: 0.5rem;
+
+}
+.chat_lower_box::after {
+  position: absolute;
+  display: block;
+  content: '';
+  right: -0.25rem;
+  bottom: 0;
+
+  width: 4rem;
+  height: 0.25rem;
+}
+.chat_msg_box {
+  padding: 2.25rem 0.5rem 0.5rem 5rem;
+  min-height: 4rem;
+  max-height: 14rem;
+  overflow: hidden;
+  font-size: 0.9rem;
+  z-index: -1;
+}
+.chat_msg_box::after {
+  display: inline-block;
+  content: '';
+}
+.chat_msg_box.image_only {
+  padding-top: 1.125rem;
+  padding-bottom:  0.5rem;
+  text-align: center;
+}
+.chat_cheer_box + .chat_msg_box {
+  padding-top: 2.5rem;
+}
+.chat_cheer_box + .chat_msg_box::before {
+  display: inline-block;
+  content: '';
+  width: 3rem;
+}
+
+/* Image Sizes */
+.cheer_icon, .twitch_emote, .dccon {
+  vertical-align: bottom;
+}
+.cheer_icon {
+  max-height: 1.25rem;
+}
+.twitch_emote {
+  max-height: 2rem;
+}
+.dccon {
+  max-height: 6.25rem;
+}
+
+/* Special Cases */
+.chat_subscribe_box,
+.chat_cheer_box	{ /* TODO: fix outgoing twip donations */
+  position: absolute;
+  top: 0.375rem;
+  left: 4.75rem;
+  width: 13rem;
+  height: 1.375rem;
+  /* font-weight: bold; */
+  padding: 0 0 0 0.25rem;
+  background: var(--main-theme-color);
+  text-shadow: none;
+  color: #000;
+  transform: rotate(-15deg);
+  z-index: 2;
+}
+.chat_subscribe_box::after,
+.chat_cheer_box::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -0.3125rem;
+  width: 0.5rem;
+  height: 100%;
+  background: var(--main-theme-color);
+  transform: skew(-15deg);
+  z-index: 1;
+}
+.chat_cheer_text {
+  color: #5a5;
+  display: inline-block;
+  padding: 0.1rem 0.25rem;
+  margin: 0.08rem;
+  border: 0.08rem solid #5a5;
+  background-color: #000;
+}
+.chat_cheer_text:first-of-type {
+  margin-left: -2rem;
+}
+/* Clip */
+.chat_clip_box {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: right;
+  overflow: hidden;
+  padding: 0.625rem 0.5rem;
+  margin: 0;
+  height: 100%;
+  color: #fff
+}
+.clip_included {
+  background: none;
+}
+.clip_included > .chat_msg_box {
+  position: relative;
+  padding: 0;
+  height: 8rem;
+}
+.chat_clip_box.invalid {
+  padding: 1.5rem;
+  text-align: right;
+  color: #fa9;
+  text-shadow: none;
+}
+.chat_clip_box.invalid + .image_only {
+  display: none;
+}
+.chat_clip_box > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0.66;
+  filter: brightness(0.5);
+}
+.chat_clip_title, .chat_clip_by {
+  position: relative;
+}
+.chat_clip_title {
+  overflow: hidden;
+  font-size: 1.25rem;
+}
+.chat_clip_by {
+  font-size: 0.875rem;
+  opacity: 0.5
+}
+/* add small credit */
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box {
+  padding-top: 0.5rem;
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::after {
+  display: block;
+  content: 'Lobotomy Corporation theme by hibiyasleep';
+  font-size: 0.75rem;
+  position: absolute;
+  left:  0;
+  top: 0;
+  bottom: 0;
+  width: 4rem;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 1.75rem 0 1.5rem 0.5rem;
+}
