@@ -90,6 +90,7 @@ body {
   position: relative;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
+  -webkit-clip-path: polygon(0 0.5rem, 0 100%, 100% 100%, 100% 0, 0.5rem 0);
   clip-path: polygon(0 0.5rem, 0 100%, 100% 100%, 100% 0, 0.5rem 0);
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0, 0, 0, 1);
   padding-top: 0.001rem; /* cheer margin-top workaround */
@@ -128,6 +129,7 @@ body {
   background: #aaa;
   color: #ffe800;
   animation: blinking-text 1s infinite alternate ease;
+  -webkit-clip-path: polygon(0 0.5rem, 0 100%, 100% 100%, 100% 0, 0.5rem 0);
   clip-path: polygon(0 0.5rem, 0 100%, 100% 100%, 100% 0, 0.5rem 0);
 }    
 .chat_cheer_text {
