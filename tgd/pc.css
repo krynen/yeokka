@@ -1,4 +1,4 @@
-/* Temporal bugfix against tgd new ad */
+﻿/* Temporal bugfix against tgd new ad */
 #content-area > .container #weare-out-of-food,
 #content-area > .container #plz-dont-block-me
 																	{	width: calc(50vw - 560px);
@@ -740,9 +740,6 @@ header .row>div:nth-child(1)>a			{	background-repeat:no-repeat;
 																				background-image:
 	url(https://krynen.github.io/yeokka/tgd/page_header.png); }
 header .row>div:nth-child(1)>a>img	{	opacity: 0; }
-/* 트게더어워드 디데이 핫픽스 */
-header #header-bar										{	margin-top: -1px; }
-#tgdaward2017_top_banner						{	top: -1px; }
 
 
 /* 광고아이콘 및 순위 미표시 */
@@ -766,6 +763,11 @@ header #header-bar #header-top-notice strong.notice-badge
 #board-info #board-info-bottom	{	text-align: right; padding-right: 130px; }
 #board-info #board-info-bottom a
 																	{	border-right: none; }
+
+
+/* 동시접속자수 표시 제대로 */
+#board-info #viewers-area					{	float:left;
+																		color:#337ab7; font-size:12px; }
 
 
 /* 메뉴 간격 좀 더 좁게 */
