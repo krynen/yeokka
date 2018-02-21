@@ -865,4 +865,5 @@ fieldset[disabled] .btn-primary:hover,
 																	{	color: #83429c !important; }
 																	
 #article-reply-area #reply-real-area .reply.active 
+#board-info #viewers-area { color: #ccc !important; }
 																	{	background-color: #303844 !important; }
