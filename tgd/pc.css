@@ -781,6 +781,8 @@ header #header-bar #header-top-notice strong.notice-badge
 																	color: #cecece !important;
 																	text-align: center;
 																	border-bottom-color: #3c3c3c !important; }
+#main .menu-wrapper>div.game-wrapper a.game:hover
+																{	background: #3c3c3c !important; }
 #main .menu-wrapper a.game>img.icon
 																{	float:left; }
 
