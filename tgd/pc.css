@@ -743,6 +743,7 @@ header .row>div:nth-child(1)>a			{	background-repeat:no-repeat;
 																				background-image:
 	url(https://krynen.github.io/yeokka/tgd/page_header.png); }
 header .row>div:nth-child(1)>a>img	{	opacity: 0; }
+header div#header-bar								{ margin-top:-1px; }
 
 
 /* 광고아이콘 및 순위 미표시 */
