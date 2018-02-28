@@ -145,6 +145,10 @@ body {
   color: #000;
   animation: blinking-text 1s infinite alternate ease;
 }
+.chat_msg_box > .chat_cheer_box {
+  margin: -0.125rem -0.25rem 0.25rem -0.25rem;
+  font-size: 1rem;
+}
 .chat_cheer_box::after {
   display: block;
   content: '';
