@@ -108,6 +108,7 @@ body {
   font-weight: 400;
   font-family: nanumsq, 'Noto Sans KR', sans-serif;
 
+  overflow: hidden;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
   text-shadow:
    -0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
@@ -165,6 +166,9 @@ body {
 .chat_msg_box.image_only {
   text-align: center;
 }
+.chat_msg_box.image_only:empty {
+  display: none;
+}
 
 /* Image Sizes */
 .cheer_icon, .twitch_emote, .dccon {
@@ -181,24 +185,22 @@ body {
 }
 
 /* Special Cases */
-@keyframes blinking-text {
-  from { color: #000; }
-  33% { color: #AD4711; }
-  to { color: #FC6C19; }
-}
 .chat_subscribe_box,
-.chat_cheer_box	{ /* TODO: fix outgoing twip donations */
-  text-align: right;
+.chat_cheer_box { /* TODO: fix outgoing twip donations */
+  text-align: center;
   font-weight: bold;
-  padding: 0.5rem 0.25rem 0 0.25rem;
-  margin-top: -0.5rem;
-  background: #fff;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  background-blend-mode: multiply;
   text-shadow: none;
   color: #000;
-  animation: blinking-text 1s infinite alternate ease;
 }
 .chat_subscribe_box {
-  margin: -0.75rem -0.25rem 0.25rem -0.25rem;
+  padding: 0.75rem 0.5rem;
+}
+.chat_msg_box > .chat_cheer_box {
+  margin: -0.75rem -0.75rem 0.5rem -0.75rem;
+  font-size: 1rem;
 }
 .chat_cheer_text {
   color: #FDCD19;
@@ -231,7 +233,9 @@ body {
   left: 0;
   margin: auto;
 
-  max-width: 100%;
+  width: 100%;
+  max-height: 8rem;
+  object-fit: cover;
   z-index: 0;
 }
 .chat_clip_title, .chat_clip_by {
@@ -244,7 +248,7 @@ body {
 .chat_clip_by {
   text-align: right;
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
 }
 /* add small credit */
 .chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::after {

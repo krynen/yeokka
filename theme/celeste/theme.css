@@ -33,13 +33,15 @@ body {
   position: relative;
   margin: 0.25rem 0 0.25rem 1.75rem;
   width: calc(100% - 1.75rem);
+
   border: 0.5rem solid #fff;
   border-right: none;
   border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M9,1h18v22h-18l-8,-8v-6z" stroke-width="2" fill="#fff" stroke="#000"/></svg>') 45% stretch;
+
   background: linear-gradient(to bottom,
-  #f0f0f0 0.125rem,
-  #fff 0.125rem,
-  #fff
+    #f0f0f0 0.125rem,
+    #fff 0.125rem,
+    #fff
   );
   background-size: 100% 1.5rem;
   background-position: 0 1.25rem;
@@ -122,12 +124,14 @@ body {
 .chat_msg_box {
   padding: 0.125rem 1rem;
   max-height: 14rem; /* 텍스트 영역 최대 높이 */
-  overflow: hidden;
   font-size: 0.9rem;
   line-height: 1.5rem;
 }
 .chat_msg_box.image_only {
   text-align: center;
+}
+.chat_msg_box.image_only:empty {
+  display: none;
 }
 
 /* Image Sizes */
@@ -146,7 +150,7 @@ body {
 
 /* Special Cases */
 .chat_subscribe_box,
-.chat_cheer_box	{
+.chat_cheer_box {
   position: relative;
   text-align: center;
   font-weight: bold;
@@ -178,9 +182,15 @@ body {
   );
   background-size: 2.125rem;
 }
-.chat_subscribe_box {
-  /* margin: -0.75rem -0.25rem 0.25rem -0.25rem; */
+.chat_msg_box > .chat_cheer_box {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  font-size: 1rem;
 }
+.chat_subscribe_box + .chat_msg_box:empty {
+  display: none;
+}
+
 .chat_cheer_text {
   color: #111;
   display: inline-block;
@@ -214,6 +224,8 @@ body {
   margin: auto;
 
   width: 100%;
+  max-height: 8rem;
+  object-fit: cover;
   z-index: 0;
 }
 .chat_clip_title, .chat_clip_by {
@@ -224,7 +236,9 @@ body {
   flex-grow: 1;
   overflow: hidden;
   margin-top: 0.125rem;
+  padding: 0.25rem 0;
   border-bottom: 0.08rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
 }
 .chat_clip_by {
   text-align: right;

@@ -88,6 +88,9 @@ body {
 .chat_msg_box.image_only {
   text-align: center;
 }
+.chat_msg_box.image_only:empty {
+  display: none;
+}
 
 /* Image Sizes */
 .cheer_icon, .twitch_emote, .dccon {
@@ -124,7 +127,7 @@ body {
   margin: -0.25rem -0.25rem 0.25rem -0.25rem;
 }
 .chat_subscribe_box {
-  padding-bottom: 1rem;
+  padding: 1rem 0.25rem;
 }
 /* Clip */
 .chat_clip_box {
@@ -150,7 +153,10 @@ body {
   left: 0;
   margin: auto;
 
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  max-height: 8rem;
+  object-fit: cover;
   z-index: 0;
 }
 .chat_clip_title, .chat_clip_by {

@@ -91,6 +91,9 @@ body {
 .chat_msg_box.image_only {
   text-align: center;
 }
+.chat_msg_box.image_only:empty {
+  display: none;
+}
 
 /* Image Sizes */
 .cheer_icon, .twitch_emote, .dccon {
@@ -123,8 +126,6 @@ body {
   text-shadow: none;
   color: #000;
   animation: blinking-text 1s infinite alternate ease;
-}
-.chat_subscribe_box {
 }
 .chat_cheer_text {
   color: #fff;
@@ -162,7 +163,9 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
 }
 .chat_clip_title, .chat_clip_by {

@@ -53,6 +53,7 @@ body {
   display: flex;
   border-bottom: 0.125rem solid rgba(255, 255, 255, 0.25);
   filter: drop-shadow(0 0 0.125rem #000);
+  margin-bottom: 0.5rem;
 }
 .chat_nickname_box {
   display: flex;
@@ -77,10 +78,9 @@ body {
 }
 /* Messages */
 .chat_lower_box {
-  position: relative;
   color: #fff;
   background: linear-gradient(to bottom, rgba(0, 136, 136, 0.9), rgba(0, 136, 136, 0.7) 50%);
-  margin-top: 0.5rem;
+  position: relative;
   border: 0.08rem solid #fff;
 }
 .chat_lower_box::before {
@@ -122,7 +122,7 @@ body {
 
 /* Special Cases */
 .chat_subscribe_box,
-.chat_cheer_box	{ /* TODO: fix outgoing twip donations */
+.chat_cheer_box {
   text-align: center;
   font-weight: bold;
   padding: 1rem 1rem 1rem 0.25rem;
@@ -132,8 +132,12 @@ body {
   color: #000;
   animation: blinking-text 1s infinite alternate ease;
 }
-.chat_subscribe_box {
-  /* margin: -0.75rem -0.25rem 0.25rem -0.25rem; */
+.chat_msg_box > .chat_cheer_box {
+  margin: -0.25rem -1.125rem 0 -0.5rem;
+  font-size: 1rem;
+}
+.chat_subscribe_box + .chat_msg_box:empty {
+  display: none;
 }
 .chat_cheer_text {
   color: #5a5;
@@ -144,7 +148,7 @@ body {
   background-color: #000;
 }
 
-/* Clip */
+/* Clip - TODO: fix container problem */
 .chat_clip_box {
   display: flex;
   flex-direction: column;
@@ -167,8 +171,9 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
 }
 .chat_clip_title, .chat_clip_by {
@@ -177,6 +182,7 @@ body {
 .chat_clip_title {
   flex-grow: 1;
   overflow: hidden;
+  color: #fff;
 }
 .chat_clip_by {
   text-align: right;
