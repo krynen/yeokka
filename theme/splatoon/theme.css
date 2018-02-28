@@ -82,7 +82,15 @@ html								{	font-family: 'cwtexyen', 'Hanna', sans-serif;
 
 
 /* 박스 디테일 */
-.chat_outer_box 					{	clip-path: polygon(
+.chat_outer_box 					{	-webkit-clip-path: polygon(
+																	0 100%, 100% 100%, 100% 0, 0 0,
+																	0 30px, 2px 34px, 15px 40px, 18px 44px,
+																	18px 54px, 16.5px 57px,
+																	12px 59px, 9px 59px, 8px 57px,
+																	8px 54.5px, 9px 53px, 10.5px 52px,
+																	12px 50px, 12px 49px, 8.5px 46px, 7px 45.5px,
+																	3px 48px, 0 52px, 0 0);
+										clip-path: polygon(
 															0 100%, 100% 100%, 100% 0, 0 0,
 															0 30px, 2px 34px, 15px 40px, 18px 44px,
 															18px 54px, 16.5px 57px,
@@ -96,6 +104,13 @@ html								{	font-family: 'cwtexyen', 'Hanna', sans-serif;
 														display:block; position:absolute;
 														top:0; bottom:0; left:0; right:0; }
 .chat_outer_box::before		{	background:rgba(0,0,0,.8);
+														-webkit-clip-path: polygon(
+															18px 54px, 8px 60px,
+															6px 59px, 6px 56px, 6px 53.5px,
+															7px 52px, 8.5px 51px,
+															10px 49px, 3px 43px, 0 35px,
+															15px 100%, 100% calc(100% - 4px),
+															100% 100%, 15px 100%, 0 35px);
 														clip-path: polygon(
 															18px 54px, 8px 60px,
 															6px 59px, 6px 56px, 6px 53.5px,
@@ -104,6 +119,11 @@ html								{	font-family: 'cwtexyen', 'Hanna', sans-serif;
 															15px 100%, 100% calc(100% - 4px),
 															100% 100%, 15px 100%, 0 35px); }
 .chat_outer_box::after 		{	background:rgba(0,0,0,.25);
+														-webkit-clip-path: polygon(
+															100% 2px, 100% 0,
+															12px 0, 8px 2px, 4px 6px, 2px 10px,
+															0 calc(100% - 10px), 2px calc(100% - 4px), 10px 100%,
+															100% 100%);
 														clip-path: polygon(
 															100% 2px, 100% 0,
 															12px 0, 8px 2px, 4px 6px, 2px 10px,

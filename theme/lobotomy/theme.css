@@ -46,6 +46,7 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.66);
   overflow: hidden;
+  -webkit-clip-path: polygon(4rem 0, 100% 0, 100% 100%, 0 100%, 0 1.0625rem);
   clip-path: polygon(4rem 0, 100% 0, 100% 100%, 0 100%, 0 1.0625rem);
 }
 /* Nickname / Badge */

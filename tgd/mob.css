@@ -1,4 +1,4 @@
-.fa-inverse 											{	color: #333 !important; }
+﻿.fa-inverse 											{	color: #333 !important; }
 a																	{	background-color: transparent; }
 mark															{	color: #eee !important;
 																		background: #ff0; }
@@ -1164,6 +1164,10 @@ header>#header-area>a>h1				{	background: url(https://krynen.github.io/yeokka/tg
 #header-top-notice strong.notice-badge	
 																	{	padding-left: 0; padding-right: 0;
 																		margin-right: -2em; opacity: 0; }
+
+
+/* 동시접속자수 표시 제대로 */
+#board-info #viewers-area					{	color:#337ab7; }
 
 
 /* 추천수를 하트표시로 */
