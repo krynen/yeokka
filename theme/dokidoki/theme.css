@@ -62,24 +62,24 @@ body {
   border-top-left-radius: 0.75rem;
   color: #fff !important;
   font-size: 1.125rem;
-  background: rgba(255, 239, 246, 0.9);
+  background: rgba(255, 239, 246, 0.7);
   text-shadow:
-   -0.10rem -0.15rem 0 #b59,
-   -0.10rem -0.05rem 0 #b59,
-   -0.10rem  0.05rem 0 #b59,
-   -0.10rem  0.15rem 0 #b59,
-   -0.05rem -0.15rem 0 #b59,
+   -0.12rem -0.12rem 0 #b59,
+   -0.12rem -0.05rem 0 #b59,
+   -0.12rem  0.05rem 0 #b59,
+   -0.12rem  0.12rem 0 #b59,
+   -0.05rem -0.12rem 0 #b59,
    -0.05rem -0.05rem 0 #b59,
    -0.05rem  0.05rem 0 #b59,
-   -0.05rem  0.15rem 0 #b59,
-    0.05rem -0.15rem 0 #b59,
+   -0.05rem  0.12rem 0 #b59,
+    0.05rem -0.12rem 0 #b59,
     0.05rem -0.05rem 0 #b59,
     0.05rem  0.05rem 0 #b59,
-    0.05rem  0.15rem 0 #b59,
-    0.15rem -0.15rem 0 #b59,
-    0.15rem -0.05rem 0 #b59,
-    0.15rem  0.05rem 0 #b59,
-    0.15rem  0.15rem 0 #b59,
+    0.05rem  0.12rem 0 #b59,
+    0.12rem -0.12rem 0 #b59,
+    0.12rem -0.05rem 0 #b59,
+    0.12rem  0.05rem 0 #b59,
+    0.12rem  0.12rem 0 #b59,
     0        0      0.1rem #b59,
     0        0      0.1rem #b59;
 }
@@ -111,24 +111,24 @@ body {
   overflow: hidden;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
   text-shadow:
-   -0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
-   -0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0       0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0       0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0.05em  0.05em 0.02em rgba(0, 0, 0, 0.25),
-   -0.05em  0      0.02em rgba(0, 0, 0, 0.25),
-   -0.05em  0      0.02em rgba(0, 0, 0, 0.25),
-    0       0      0.02em rgba(0, 0, 0, 0.25),
-    0       0      0.02em rgba(0, 0, 0, 0.25),
-    0.05em  0      0.02em rgba(0, 0, 0, 0.25),
-    0.05em  0      0.02em rgba(0, 0, 0, 0.25),
-   -0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25),
-   -0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0      -0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0      -0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25),
-    0.05em -0.05em 0.02em rgba(0, 0, 0, 0.25);
+   -0.06em  0.06em 0.01em rgba(31, 31, 31, 0.75),
+   -0.06em  0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0       0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0       0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0.06em  0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0.06em  0.06em 0.01em rgba(31, 31, 31, 0.75),
+   -0.06em  0      0.01em rgba(31, 31, 31, 0.75),
+   -0.06em  0      0.01em rgba(31, 31, 31, 0.75),
+    0       0      0.01em rgba(31, 31, 31, 0.75),
+    0       0      0.01em rgba(31, 31, 31, 0.75),
+    0.06em  0      0.01em rgba(31, 31, 31, 0.75),
+    0.06em  0      0.01em rgba(31, 31, 31, 0.75),
+   -0.06em -0.06em 0.01em rgba(31, 31, 31, 0.75),
+   -0.06em -0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0      -0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0      -0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0.06em -0.06em 0.01em rgba(31, 31, 31, 0.75),
+    0.06em -0.06em 0.01em rgba(31, 31, 31, 0.75);
 }
 .chat_lower_box::before, .chat_lower_box::after {
   display: block;
