@@ -1,183 +1,182 @@
-﻿/* 폰트 로드 */
-@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
-
-
-/* 위치 기본 설정 */
-html
-{
-	/* 송출 소프트웨어의 disable scrollbar 여부에 상관 없이 스크롤바를 나타나지 않게 함 */
-	overflow:hidden;
-}
-
-body
-{
-	position:absolute;
-	
-	/* html의 기본 여백 제거 */
-	margin:0; right:0; left:0;
-	/* 채팅 메세지가 아래에서부터 나타나도록 */
-	bottom:0;
-}
-
-/* 최대(기본) 크기는 112px */
-img.twitch_emote	{	max-height:50px; }
-img.dccon					{	max-height:100px; }
-
-
-/* 구독자 및 후원 메세지 설정 */
+@charset "UTF-8";
 /*
-	구독 메세지
-	<div class="chat_msg_box">
-		<div class="chat_cheer_box">(configData.cheersMsg)</div>
-		우리 스트리머 사랑해!!
-		<div calss="chat_cheer_text">
-			<img class="cheer_icon" src="./images/cheer/cheer100.gif>
-			100
-		</div>
-		사실 테스트하려고 후원하는거지만.
-	</div>
-	
-	후원 메세지
-	<div class="chat_msg_box">
-		<div class="chat_subscribe_box">(configData.subMonthsMsg)</div>
-		구독인 줄 알았지만 테스트였습니다 Kappa Kappa
-	</div>	
+ (c) 2018 kuriyama hibiya <kuriyama@hibiya.moe>
+ licensed under MIT license
+ based on 'xcom' theme which based on 'mario' theme
 */
-@keyframes SubsAni { 50%	{ color:red; } }
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@font-face {
+  font-family: 'SeoulNamsan';
+  font-style: regular;
+  font-weight: 300;
+  src: local('서울남산체 L'), url('../_shared/fonts/SeoulNamsanL.otf');
+}
+@font-face {
+  font-family: 'SeoulNamsan';
+  font-style: regular;
+  font-weight: 600;
+  src: local('서울남산체 B'), url('../_shared/fonts/SeoulNamsanB.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Lato', 'SeoulNamsan', sans-serif;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+#chat_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+.chat_outer_box {
+  margin: 0.25rem 0;
+  padding: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.125);
+  text-shadow: 0 0 0.25rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000;
+  position: relative;
+  overflow: hidden;
+}
+/* Nickname / Badge */
+.chat_upper_box {
+  position: relative;
+  padding: 0.25rem;
+  background: rgba(0, 0, 0, 0.125);
+  display: flex;
+  z-index: 10;
+}
+.chat_nickname_box {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 0.25rem;
+  color: #fff !important;
+  font-weight: 600;
+}
+.chat_badge_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 0.25rem;
+}
+.chat_badge_box > img {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0 0 0 0.1rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.5);
+}
+/* Messages */
+.chat_lower_box {
+  position: relative;
+  color: #fff;
+}
+.chat_msg_box {
+  padding: 0.25rem 0.5rem;
+  max-height: 14rem; /* 텍스트 영역 최대 높이 */
+  font-size: 0.9rem;
+}
+.chat_msg_box.image_only {
+  text-align: center;
+}
+.chat_msg_box.image_only:empty {
+  display: none;
+}
+
+/* Image Sizes */
+.cheer_icon, .twitch_emote, .dccon {
+  vertical-align: bottom;
+}
+.cheer_icon {
+  max-height: 1.25rem;
+}
+.twitch_emote {
+  max-height: 2rem;
+}
+.dccon {
+  max-height: 6.25rem;
+}
+
+/* Special Cases */
+@keyframes blinking-text {
+  from { color: #000; }
+  to { color: rgba(0, 0, 0, 0.5); }
+}
 .chat_subscribe_box,
-.chat_cheer_box			{	text-align:center; 
-											animation:SubsAni 6 1s ease; }
-/* 후원 금액 */
-.chat_cheer_text									{ color:red; display:inline-block; }
-/* 후원 아이콘 */
-.chat_cheer_text img.cheer_icon		{	max-height:1em; vertical-align: middle; }
-
-
-
-/* 배경 설정. 전체적인 배경이 필요할 때 이용 */
-/*
-	<div id="background"></div>
-	<div id="chat_wrapper">
-	...
-*/
-#background	{	position:absolute; left:0; right:0; top:0; bottom:0; }
-
-
-
-/* 폰트 설정 */
-html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
-											font-size:20px; color: white;
-											text-shadow:
-						-1px -1px 1px black, -1px   0 1px black,
-						-1px  1px 1px black,    0 1px 1px black,
- 						 1px  1px 1px black,  1px   0 1px black,
-						 1px -1px 1px black,   0 -1px 1px black,
-    
-						 -1px -1px 3px grey, -1px   0 3px grey,
-						 -1px  1px 3px grey,    0 1px 3px grey,
-						  1px  1px 3px grey,  1px   0 3px grey,
-						  1px -1px 3px grey,   0 -1px 3px grey; }
-.chat_nickname_box	{	font-size:0.8em; }
-
-
-.chat_outer_box			{	position:relative; z-index:0; overflow:hidden;
-											margin-top:8px; border:1px solid grey; padding:4px; }
-.chat_inner_box,	/* SOON DEPRECATED */
-.chat_upper_box			{	margin-bottom:3px; }
-											
-.chat_nickname_box,
-.chat_badge_box 		{	display:inline-block; }
-.chat_badge_box			{ float:right; }
-.chat_outer_box .chat_msg_box,
-.chat_lower_box			{ clear:right; }
-
-.chat_msg_box							{	white-space:pre-line; word-break:break-word;
-														max-height:100px; padding:0 0 5px 0; }
-.chat_msg_box.image_only	{	text-align:center; }
-
-
-
-/* 클립이 포함된 채팅 메세지에 대한 설정 */
-/* 크롬 등 보안설정된 브라우저에선 디버그가 불가능하므로 유의 */
-/*
-	<div class="chat_outer_box clip_included">
-		<div class="chat_inner_box">
-			...
-		</div>
-		<div class="chat_msg_box">
-			<div class="chat_clip_box">
-				<img src="https://clips-media-assets.twitch.tv/*-preview.jpg">
-				<div class="chat_clip_title">이걸 스트리머가 또</div>
-				<div class="chat_clip_by">Clipped by 맛물</div>
-			</div>
-			...
-	클립 로드에 실패했을 경우
-			<div class="chat_clip_box text_only invalid text_only">
-				Invalid Clip
-			</div>
-			...
-	클립 미리보기를 미표시설정했을 경우(configData.loadClipPreview == false)
-			<div class="chat_clip_box text_only">
-				(configData.clipReplaceMsg)
-			</div>
-			...
-	0.3.0 버전과 그 이후
-	<div class="chat_outer_box clip_included">
-		<div class="chat_upper_box">
-			...
-		</div>
-		<div class="chat_lower_box">
-			<div class="chat_clip_box">
-				<img src...>
-				<div class="chat_clip_title">...</div>
-				<div class="chat_clip_by">...</div>
-			</div>
-			<div class="chat_msg_box">
-			</div>
-			...
-*/
-.clip_included .chat_msg_box /* SOON DEPRECATED */
-{
-	/* 클립과 일반 텍스트를 같이 보냈을 경우를 위해 높이를 높여준다 */
-	max-height:160px;
+.chat_cheer_box	{ /* TODO: fix outgoing twip donations */
+  text-align: center;
+  font-weight: bold;
+  padding: 3rem 0.5rem 1rem 0.5rem;
+  margin-top: -2.5rem;
+  font-size: 1rem;
+  background: rgba(170, 204, 204, 0.5);
+  background-blend-mode: multiply;
+  text-shadow: none;
+  color: #000;
+  animation: blinking-text 1s infinite alternate ease;
+}
+.chat_cheer_text {
+  color: #fff;
+  display: inline-block;
+  padding: 0.1rem 0.25rem;
+  margin: 0.08rem;
+  border: 0.08rem solid #fff;
+  background-color: rgba(0, 0, 0, 0.125);
+}
+.chat_msg_box > .chat_cheer_box {
+  margin: -2.5rem -0.5rem 0 -0.5rem;
+}
+.chat_subscribe_box + .chat_msg_box:empty {
+  display: none;
 }
 
-.chat_clip_box
-{	
-	/* .chat_clip_by의 absolute position을 위해 설정 */
-	position:relative;
-}	
-
-.chat_clip_box img
-{
-	/* 사실상 이 속성으로 .chat_clip_box의 높이를 조절 */
-	height:56px;
-	/* .chat_clip_box의 나머지 DOM을 오른쪽에 배치시키기 위해 float을 이용 */
-	float:left;
+/* Clip */
+.chat_clip_box {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
 }
-.chat_clip_title
-{
-	/* 가로세로로 모두 가운데정렬하기 위해 사용. .chat_clip_box img의 높이와 맞춰준다 */
-	line-height:56px;
-	text-align:center;
-	
-	/* 제목이 길 경우를 대비 */
-	white-space:pre;
-	overflow:hidden;
-	text-overflow:ellipsis;
+.chat_clip_box.invalid {
+  height: 1.5rem;
+  text-align: center;
+  color: #acc;
+  text-shadow: none;
 }
-
-.chat_clip_by
-{
-	/* .chat_clip_box의 우하단에 배치 */
-	position:absolute; bottom:0; right:0;
-	/* config client로 조절하지 않는 글꼴크기이므로 .chat_msg_box에서 상속받아 조절 */
-	font-size:0.7em;
+.chat_clip_box > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
-
-.chat_clip_box.text_only
-{
-	text-align:center;
+.chat_clip_title, .chat_clip_by {
+  position: relative;
+}
+.chat_clip_title {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.chat_clip_by {
+  text-align: right;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
 }
