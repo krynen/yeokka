@@ -234,7 +234,8 @@ fieldset[disabled] .btn-success:hover
 																		border-color: #ddd; }
 @media (min-width: 768px)	{
 	.nav-tabs.nav-justified>.active>a,
-	.nav-tabs.nav-justified>.active>a:focus,	.nav-tabs.nav-justified>.active>a:hover
+	.nav-tabs.nav-justified>.active>a:focus,
+	.nav-tabs.nav-justified>.active>a:hover
 																	{	border-bottom-color: #333 !important; } 
 }
 .nav-pills>li.active>a,
@@ -620,11 +621,15 @@ textarea.fr-code									{	background: #333 !important;
 #board-info #board-info-bottom #addFavoriteBtn i
 																	{	color: #efc839 !important; }
 #article-list #article-list-category
-																	{	border-top-color: #1f6fe6 !important;
-																		background: #f6f0ff; }
-#article-list #article-list-category > a.active,
+																	{	border-style: solid; border-width: 2px 1px 1px;
+																		border-color: #2e2e2e !important;		
+																		border-top-color: #1f6fe6 !important;
+																		background: none !important; }
+#article-list #article-list-category>a
+																	{ background: none !important; }
+#article-list #article-list-category>a.active,
 #article-list #article-list-category>a:hover
-																	{	background: #333 !important; }
+																	{	background: #383838 !important; }
 #article-list>.article-list-row	{	border-right-color: #2e2e2e !important; }
 #article-list>.article-list-row:first-of-type
 																	{	border-top-color: #2673e7 !important; }

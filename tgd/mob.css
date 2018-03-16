@@ -1074,9 +1074,12 @@ textarea.fr-code									{	background: #333 !important;
 																		color: #eee !important; }
 #board-info>a.board-right-menu:hover	
 																	{	background: #eaeaea; }
-#article-list #article-list-category > a.active,
+#article-list #article-list-category,
+#article-list #article-list-category>a
+																	{ background: none !important; }
+#article-list #article-list-category>a.active,
 #article-list #article-list-category>a:hover	
-																	{	background: #333 !important; }
+																	{	background: #383838 !important; }
 #article-list>.article-list-row	{	background: #333 !important; }
 #article-list>.article-list-row:hover	
 																	{	background: #383838 !important; }
@@ -1230,6 +1233,8 @@ nav#nav>.nav-header>a						{	color: #eee !important; }
 #article-list>.article-list-row>.item>a.list-title>.list-writer>span
 																	{ color: #aaa !important; }
 
+/* 글쓰기 화면 배경색 재지정 */
+#main-content>.frame						{ background: #333 !important; }
 																	
 a,
 .text-primary,
