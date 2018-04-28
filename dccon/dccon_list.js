@@ -11,6 +11,7 @@
 	{"name":"역가순서.png",			"keywords":["순서"],						"tags":["역가"]},
 	{"name":"역헤가오.png",			"keywords":["아흑", "vv", "VV"],				"tags":["역가"]},
 	{"name":"역-헤가오.png",		"keywords":["아헤가오"],					"tags":["역가"]},
+	{"name":"기타두근두근.png",		"keywords":["두근두근", "데챠"],				"tags":["검열"]},
 	
 	{"name":"역가골든무말모.gif",		"keywords":["골든무말모", "고올든무말모"],			"tags":["역가", "움짤"]},
 	
