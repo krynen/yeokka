@@ -1180,7 +1180,7 @@ header>#header-area>a>h1				{	background: url(https://krynen.github.io/yeokka/tg
 #article-list>.article-list-row>.item>.list-header:not(.v0)>span:after
 																	{	font-family: FontAwesome; font-weight: 400;
 																		content: " \f004"; color: #5f87e3;
-																		display: inline-block; transform: scale(.6,.6);}
+																		display: inline-block; transform: scale(.6,.6); }
 
 
 /* 광고 흰색 제거 */
@@ -1188,6 +1188,10 @@ header>#header-area>a>h1				{	background: url(https://krynen.github.io/yeokka/tg
 #article-reply-area+div:not(#article-list),
 #article-reply-area+div:not(#article-list)>div>div>div
 																	{ background: #333 !important; }
+                                  
+                                  
+/* 글제목에서 카테고리 구분 */
+#article-info h2 .category				{ border-right: 1px dotted #ccc; padding-right: 4px; }
 																	
 																	
 /* 메뉴헤더에 보라테달기 */
