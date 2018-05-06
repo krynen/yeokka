@@ -825,7 +825,12 @@ header #header-bar #header-top-notice strong.notice-badge
 																		border-color: #122b40; }
 .btn.square.write:hover					{	background-color: #286090;
 																		border-color: #204d74; }
-
+                                    
+/* 베스트 댓글 배경색 연하게 */
+#article-reply-area #reply-best-area .reply>.reply-header
+                                { background-color:#f7f7f720; }
+#article-reply-area #reply-best-area div.reply-content
+                                { background-color:#fff4ef30; }
 
 /* 반전 없이 임의지정한 색상 */
 #content-area,

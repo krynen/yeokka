@@ -1211,6 +1211,12 @@ nav#nav>.nav-header								{ background-image:
 																		border-color: #122b40; }
 .btn.square.write:hover					{	background-color: #286090;
 																		border-color: #204d74; }
+                                    
+/* 베스트 댓글 배경색 연하게 */
+#article-reply-area #reply-best-area .reply>.reply-header
+                                { background-color:#f7f7f720; }
+#article-reply-area #reply-best-area div.reply-content
+                                { background-color:#fff4ef30; }
 																		
 /* 비로그인시 메뉴 아이콘 정렬 */
 .fa-user													{ line-height:24px; }
