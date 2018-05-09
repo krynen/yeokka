@@ -1074,9 +1074,12 @@ textarea.fr-code									{	background: #333 !important;
 																		color: #eee !important; }
 #board-info>a.board-right-menu:hover	
 																	{	background: #eaeaea; }
-#article-list #article-list-category > a.active,
+#article-list #article-list-category,
+#article-list #article-list-category>a
+																	{ background: none !important; }
+#article-list #article-list-category>a.active,
 #article-list #article-list-category>a:hover	
-																	{	background: #333 !important; }
+																	{	background: #383838 !important; }
 #article-list>.article-list-row	{	background: #333 !important; }
 #article-list>.article-list-row:hover	
 																	{	background: #383838 !important; }
@@ -1177,7 +1180,7 @@ header>#header-area>a>h1				{	background: url(https://krynen.github.io/yeokka/tg
 #article-list>.article-list-row>.item>.list-header:not(.v0)>span:after
 																	{	font-family: FontAwesome; font-weight: 400;
 																		content: " \f004"; color: #5f87e3;
-																		display: inline-block; transform: scale(.6,.6);}
+																		display: inline-block; transform: scale(.6,.6); }
 
 
 /* 광고 흰색 제거 */
@@ -1185,6 +1188,10 @@ header>#header-area>a>h1				{	background: url(https://krynen.github.io/yeokka/tg
 #article-reply-area+div:not(#article-list),
 #article-reply-area+div:not(#article-list)>div>div>div
 																	{ background: #333 !important; }
+                                  
+                                  
+/* 글제목에서 카테고리 구분 */
+#article-info h2 .category				{ border-right: 1px dotted #ccc; padding-right: 4px; }
 																	
 																	
 /* 메뉴헤더에 보라테달기 */
@@ -1204,6 +1211,12 @@ nav#nav>.nav-header								{ background-image:
 																		border-color: #122b40; }
 .btn.square.write:hover					{	background-color: #286090;
 																		border-color: #204d74; }
+                                    
+/* 베스트 댓글 배경색 연하게 */
+#article-reply-area #reply-best-area .reply>.reply-header
+                                { background-color:#f7f7f720; }
+#article-reply-area #reply-best-area div.reply-content
+                                { background-color:#fff4ef30; }
 																		
 /* 비로그인시 메뉴 아이콘 정렬 */
 .fa-user													{ line-height:24px; }
@@ -1230,6 +1243,8 @@ nav#nav>.nav-header>a						{	color: #eee !important; }
 #article-list>.article-list-row>.item>a.list-title>.list-writer>span
 																	{ color: #aaa !important; }
 
+/* 글쓰기 화면 배경색 재지정 */
+#main-content>.frame						{ background: #333 !important; }
 																	
 a,
 .text-primary,

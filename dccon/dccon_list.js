@@ -9,7 +9,9 @@
 	{"name":"역가흠.png",			"keywords":["역가흠", "여까흠"],				"tags":["역가"]},
 	{"name":"역가서순.png",			"keywords":["서순"],						"tags":["역가"]},
 	{"name":"역가순서.png",			"keywords":["순서"],						"tags":["역가"]},
-	{"name":"역헤가오.png",			"keywords":["아흑", "vv", "VV"],					"tags":["역가"]},
+	{"name":"역헤가오.png",			"keywords":["아흑", "vv", "VV"],				"tags":["역가"]},
+	{"name":"역-헤가오.png",		"keywords":["아헤가오"],					"tags":["역가"]},
+	{"name":"기타두근두근.png",		"keywords":["두근두근", "데챠"],				"tags":["검열"]},
 	
 	{"name":"역가골든무말모.gif",		"keywords":["골든무말모", "고올든무말모"],			"tags":["역가", "움짤"]},
 	
@@ -169,6 +171,7 @@
 	{"name":"RYZEN.png", 			"keywords":["라이젠", "RYZEN", "ryzen"], 			"tags":["컴갤콘"]},
 	{"name":"INTEL.png",			"keywords":["인텔", "INTEL", "intel"],				"tags":["컴갤콘"]},
 	{"name":"DOCOMO.png",			"keywords":["도코모", "DOCOMO", "docomo"],			"tags":["컴갤콘"]},
+	{"name":"LG.png",			"keywords":["엘지", "엘쥐", "LG", "lg"],			"tags":["컴갤콘"]},
 	
 	{"name":"야인시대4딸라.png",		"keywords":["4딸라"],						"tags":["김두한", "야인시대"]},
 	{"name":"야인시대오케이.png",		"keywords":["오케이땡큐"],					"tags":["김두한", "야인시대"]},
