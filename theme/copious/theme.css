@@ -172,6 +172,7 @@ body {
   background-position: right top;
   background-repeat: no-repeat;
   z-index: 9;
+  pointer-events: none;
 }
 .chat_msg_box {
   padding: 0.25rem 0.5rem;
