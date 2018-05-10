@@ -172,7 +172,7 @@ body {
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.25) 4rem,
+    rgba(255, 255, 255, 0.25) 3rem,
     rgba(255, 255, 255, 0.8) 25%,
     rgba(255, 255, 255, 0.9) 100%
   );
