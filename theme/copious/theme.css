@@ -198,8 +198,9 @@ body {
 
 /* Special Cases */
 .chat_subscribe_box, .chat_cheer_box {
+  text-align: right;
   font-weight: 200;
-  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+  padding: 1rem 0.5rem 0.25rem 0.5rem;
   font-size: 1.625rem;
   background: linear-gradient(
     to bottom,
@@ -207,21 +208,22 @@ body {
     rgba(12, 21, 47, 0.3)
   );
   background-blend-mode: multiply;
-  text-shadow: none;
+  text-shadow: 0 0 0.25rem rgba(12, 21, 47, 0.75);
+
   color: #fff;
-  animation: blinking-text 1s infinite alternate ease;
 }
-.chat_subscribe_box::before, .chat_cheer_box::before {
+.chat_subscribe_box::after, .chat_cheer_box::after {
   display: block;
   font-size: 0.75rem;
-  margin-bottom: 0.25rem;
-  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0.25rem;
+  color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.15rem;
+  text-shadow: none;
 }
-.chat_subscribe_box::before {
+.chat_subscribe_box::after {
   content: 'SUBSCRIPTION';
 }
-.chat_cheer_box::before {
+.chat_cheer_box::after {
   content: 'DONATION';
 }
 .chat_cheer_text {
