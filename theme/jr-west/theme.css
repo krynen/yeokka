@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/*
+ (c) 2018 kuriyama hibiya <kuriyama@hibiya.moe>
+ licensed under MIT license
+ based on 'xcom' theme which based on 'mario' theme
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@font-face {
+  font-family: 'SeoulNamsan';
+  font-style: regular;
+  font-weight: 300;
+  src: local('서울남산체 L'), url('../_shared/fonts/SeoulNamsanL.otf');
+}
+
+:root {
+  --bg: #eee;
+  --fg: #111;
+  --tint: hsla(210, 75%, 60%, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Lato', 'SeoulNamsan', sans-serif;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+}
+#chat_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+.chat_outer_box {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25rem 0.5rem;
+  padding: 0;
+  width: calc(100% - 1rem);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.25);
+}
+/* Nickname / Badge */
+.chat_upper_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.25rem;
+  height: 2.25rem;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><polygon fill="#fff" points="19,8 12,8 21,16 0,16 0,20 21,20 12,28 19,28 30,18"/></svg>');
+  background-color: hsla(210, 75%, 60%, 1);
+  background-color: var(--tint, hsla(210, 75%, 60%, 1));
+  background-repeat: no-repeat;
+  background-position: right center;
+  z-index: 10;
+  order: 1;
+}
+.chat_nickname_box {
+  display: flex;
+  flex-grow: 1;
+  padding: 0 0.25rem;
+  color: #fff !important;
+  font-weight: 600;
+}
+.chat_badge_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2.5rem;
+}
+.chat_badge_box > img {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0 0 0 0.1rem;
+  mix-blend-mode: screen;
+  filter: grayscale(1);
+}
+/* Messages */
+.chat_lower_box {
+  position: relative;
+  color: #111;
+  color: var(--fg, #111);
+  background: #eee;
+  background: var(--bg, #eee);
+}
+.chat_msg_box {
+  padding: 0.5rem;
+  max-height: 14rem; /* 텍스트 영역 최대 높이 */
+}
+.chat_msg_box.image_only {
+  text-align: center;
+}
+.chat_msg_box.image_only:empty {
+  display: none;
+}
+
+/* Image Sizes */
+.cheer_icon, .twitch_emote, .dccon {
+  vertical-align: bottom;
+}
+.cheer_icon {
+  max-height: 1.25rem;
+}
+.twitch_emote {
+  max-height: 2rem;
+}
+.dccon {
+  max-height: 6.25rem;
+}
+
+/* Special Cases */
+@keyframes blinking-text {
+  0% { color: hsla(40, 100%, 50%, 1) }
+  49.9999% { color: hsla(40, 100%, 50%, 1) }
+  50% { color: hsla(25, 100%, 50%, 1) }
+  100% { color: hsla(25, 100%, 50%, 1) }
+}
+.chat_subscribe_box,
+.chat_cheer_box	{
+  position: relative;
+  text-align: center;
+  padding: 0.875rem 0.5rem 0.875rem 3.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-shadow: none;
+  color: hsla(40, 100%, 50%, 1);
+  animation: blinking-text infinite reverse 2s;
+
+  background: linear-gradient(to bottom,
+    #111,
+    #444
+  );
+}
+.chat_subscribe_box::after,
+.chat_cheer_box::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+
+  width: 2.25rem;
+  height: 2.25rem;
+
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"><path fill="#0f0" stroke="#fff" stroke-width="1.5" d="M18,17L29.7,5.3C31.3,3.7,30.2,1,28,1H7.8C5.6,1,4.5,3.7,6.1,5.3L18,17zM19,18l11.7,11.7c1.6,1.6,4.3,0.5,4.3-1.8V8c0-2.2-2.7-3.3-4.3-1.8L19,18zM18,19L6.3,30.7C4.7,32.3,5.8,35,8,35H28c2.2,0,3.3-2.7,1.8-4.3L18,19zM17,18L5.3,6.3C3.7,4.7,1,5.8,1,8V28c0,2.2,2.7,3.3,4.3,1.8L17,18z"/></svg>');
+}
+.chat_cheer_text {
+  color: #111;
+  color: var(--fg, #111);
+  display: inline-block;
+  padding: 0.125rem 0.25rem;
+  margin: 0.08rem;
+  border: 0.125rem solid #111;
+  border-color: var(--fg, #111);
+  background-color: #eee;
+  background-color: var(--bg, #eee);
+}
+.chat_msg_box > .chat_cheer_box {
+  margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+}
+.chat_subscribe_box + .chat_msg_box:empty {
+  display: none;
+}
+
+/* Clip */
+.chat_clip_box {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+}
+.chat_clip_box.invalid {
+  height: 1.5rem;
+  text-align: center;
+  color: #111;
+  color: var(--fg, #111);
+  text-shadow: none;
+}
+.chat_clip_box > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.chat_clip_title, .chat_clip_by {
+  position: relative;
+}
+.chat_clip_title {
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+.chat_clip_by {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+}
