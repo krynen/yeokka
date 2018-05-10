@@ -212,3 +212,72 @@ body {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.75);
 }
+
+
+/* credit */
+.chat_upper_box[style="display: none;"] {
+  display: block !important;
+  background-color: #1ce;
+}
+.chat_upper_box[style="display: none;"] .chat_badge_box {
+  display: none;
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box {
+  position: relative;
+  padding: 0;
+  height: 5.25rem;
+
+  color: #111;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="24"><path fill="#1ce" d="M0,8.7h5.4v6.6c0,1.5,3.7,1.5,4.6,1.5c0.8,0,5.5-0.1,5.5-1.9V0h20.2C39.3,0,40,5.2,40,6.5c0,1.3-0.6,6.9-4,6.9h-2.1l6.1,7.6h-6.8L23.3,8.7h10.2c1.2,0,1.2-1.6,1.2-2c0-0.3-0.1-1.8-1.2-1.8H20.9v11c0,4.8-7.6,5.8-10.5,5.8c-4,0-10.4-1.3-10.4-5.4L0,8.7"/></svg>');
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: .5rem .5rem;
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box {
+  font-size: 0;
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box::before,
+.chat_upper_box[style="display: none;"] + .chat_lower_box::after {
+  position: absolute;
+  width: 100%;
+  display: block;
+  word-break: keep-all;
+  text-align: center;
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box::before {
+  content: 'BridgeBBCC';
+  font-size: 1.75rem;
+  height: 4rem;
+  top: 1rem;
+  margin: auto;
+
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box::after {
+  content: '브릿지비비씨씨';
+  top: 3rem;
+  font-size: 1rem;
+  text-shadow: none;
+}
+
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::before,
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::after {
+  display: inline-block;
+
+  position: absolute;
+  bottom: -1.875rem;
+  width: 5rem;
+  font-size: 1rem;
+  font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+
+  color: #fff;
+  z-index: 10;
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::before {
+  content: 'JR西日本';
+  left: 0.5rem;
+}
+.chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box::after {
+  content: 'ヒビヤ';
+  right: 0.75rem;
+}
