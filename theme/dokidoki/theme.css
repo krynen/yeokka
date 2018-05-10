@@ -175,13 +175,13 @@ body {
   vertical-align: bottom;
 }
 .cheer_icon {
-  max-height: 1.25rem;
+  height: 1.25rem;
 }
 .twitch_emote {
   height: 2rem;
 }
 .dccon {
-  max-height: 6.25rem;
+  height: 6.25rem;
 }
 
 /* Special Cases */
