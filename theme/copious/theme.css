@@ -65,7 +65,7 @@ body {
 .chat_upper_box {
   display: flex;
   position: relative;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="36"><path fill="none" stroke="#fff" d="M107.3,18l9,18 M35,19l14,3l23-9l35,6l20-10l2-9"/><path fill="#fff" d="M32.5,19l2.5,2.5l2.5-2.5L35,16.5L32.5,19z M45.5,22l3.5,3.5l3.5-3.5L49,18.5L45.5,22z M69.5,13l2.5,2.5l2.5-2.5L72,10.5L69.5,13z M102.5,18l4.5,4.5l4.5-4.5l-4.5-4.5L102.5,18z M123.5,9l3.5,3.5l3.5-3.5L127,5.5L123.5,9zM17,9.5l2.5,2.5L22,9.5L19.5,7L17,9.5z"/>l2.5-2.5l-2.5-2.5L217-22.5z"/></svg>'),
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="36"><path fill="none" stroke="#aaa" d="M107.3,18l9,18z"/><path fill="none" stroke="#fff" d="M35,19l14,3l23-9l35,6l20-10l2-9"/><path fill="#fff" d="M32.5,19l2.5,2.5l2.5-2.5L35,16.5L32.5,19z M45.5,22l3.5,3.5l3.5-3.5L49,18.5L45.5,22z M69.5,13l2.5,2.5l2.5-2.5L72,10.5L69.5,13z M102.5,18l4.5,4.5l4.5-4.5l-4.5-4.5L102.5,18z M123.5,9l3.5,3.5l3.5-3.5L127,5.5L123.5,9zM17,9.5l2.5,2.5L22,9.5L19.5,7L17,9.5z"/></svg>'),
   linear-gradient(
     to bottom,
     rgba(12, 21, 47, 0.9),
