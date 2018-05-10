@@ -96,7 +96,7 @@ body {
   max-height: 1.25rem;
 }
 .twitch_emote {
-  max-height: 2rem;
+  height: 2rem;
 }
 .dccon {
   max-height: 6.25rem;
