@@ -231,7 +231,7 @@ body {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="24"><path fill="#1ce" d="M0,8.7h5.4v6.6c0,1.5,3.7,1.5,4.6,1.5c0.8,0,5.5-0.1,5.5-1.9V0h20.2C39.3,0,40,5.2,40,6.5c0,1.3-0.6,6.9-4,6.9h-2.1l6.1,7.6h-6.8L23.3,8.7h10.2c1.2,0,1.2-1.6,1.2-2c0-0.3-0.1-1.8-1.2-1.8H20.9v11c0,4.8-7.6,5.8-10.5,5.8c-4,0-10.4-1.3-10.4-5.4L0,8.7"/></svg>');
   background-color: #eee;
   background-repeat: no-repeat;
-  background-size: 2rem;
+  background-size: 2.5rem 1.5rem;
   background-position: .5rem .5rem;
 }
 .chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box {
