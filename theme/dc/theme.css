@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/*
+ (c) 2018 kuriyama hibiya <kuriyama@hibiya.moe>
+ licensed under MIT license
+ based on 'xcom' theme which based on 'mario' theme
+*/
+
+* {
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'NanumGothic', sans-serif;
+}
+body {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  background-size: 1rem 1rem;
+}
+#chat_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+  word-wrap: break-word;
+}
+.chat_outer_box {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  letter-spacing: -0.0625rem;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 0.0625rem solid #d3d3d3;
+}
+/* Nickname / Badge */
+.chat_upper_box {
+  position: relative;
+  padding: 0.125rem 0.5rem 0 0.5rem;
+  font-size: 0.875rem;
+  display: flex;
+  z-index: 10;
+}
+.user_twipkr .chat_upper_box {
+  font-weight: bold;
+}
+/* Twip -> 댓글돌이 */
+.user_twipkr .chat_upper_box::before {
+  display: inline-block;
+  content: '';
+  width: 1.25rem;
+  height: 1.125rem;
+  margin: 0.25rem 0.25rem 0 0;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAMAAABsDg4iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAIiUExURUxpcQAAABAMDP///wAAAAAAADw5OQIAAP///xwYGLCurllWVgAAAAUBAQAAAP///1pXVyQhIQAAABkXFwAAAPv7+97d3RURETMvLwQAAAoGBgAAAFtZWdPS0v///1tYWJ+enszKymhmZikmJjo3NxcTEwAAAP///wAAAFZSUgAAAE5MTJaVlfDu7gAAAD86OklGRgQAAAoFBf///yUhIQgFBa+vrwAAAAUAAF1aWkRBQQcDAwYBAQMAAAsGBhAMDAwICFRRUQwICAYAAP///7Cvr////+zs7PX19dDPz////9va2v///////6upqf///////////7a1tZKRkf///////5eWlv////////////////b29sXExP7+/tjX1/z8/Pf29vr6+s7NzbCvr2ZkZPPz883MzLSzs8fGxurp6eTj4/X19WlnZ/Hx8f39/YWDg+Li4sTDwzs4OK+urr++vpeVle7u7qelpVJPT21ra8HAwNnY2Ovr67i3t62traytrY6MjEhFRWViYuHh4ezr6+fm5nZzc6yrq25ra6uqqi8rK+Tk5Obl5dnZ2fj4+Ojo6OPi4qajo1BOTuvs7FhBQmIRFkoXGrq4uPf392BdXevq6oeFhYF/f2FfX11aWu7t7Xx6evPy8uLh4ZeWlv3+/ryPks67vLtxdmxqakxJSf7///n8/EtJSWRiYlxZWXl2dnRxcYmHh4SCgoKAgIaEhIiHh2QRYQkAAABadFJOUwA0qgFOBO1xH87i+RCAKUb61g/GL0vDtOZslBf4sBv8yInh9f7FFRkO+Vj6+5oF7vdvkWfTj2cjYvaNipuWn9mS/ssmCfBKs53iDtgGLfJZIorv+4aP+XB4TBFMm2cAAAEmSURBVBjTY2AAA2c7W3snGyM1BiSg5zDXcUHOTG1JZEEt/ZjMRbMmpAsywoV42CXSpy+M6W+uKuVkYYWI8TFxp+UmRaW1RCdFF7PxCoHERITzy6Ji46MS86Lio6LiBKQ0GBikxRsSo5BAq6YhAwO7TGoUCsgwMWdQ7YyKio7LBvNjC7KAHEsLBuXeqKiYohKwYHRKZV9U1Bxrhq7uqKia5MyE2vq66qjCjNioqNmmDCoxYEWTp0ydNhHMmpFixaCUA7ZoybLlS+eDBdsNzBgU5dt6wJzVq0BkQnmjAgeDnGzHpMVxuXkgkeys5KYKLlGgjzh0XVesWbdh88b89WtXztMR42cG+dPFzcM7KGzrpi3Bfp7uxuqwYPIJiAwPCQ2M8Pf1AvMBICJpcOZU5xcAAAAASUVORK5CYII=');
+}
+.user_twipkr .chat_badge_box::before {
+  content: '[댓글돌이';
+}
+.user_twipkr .chat_nickname_box, .user_twipkr .chat_badge_box > img {
+  display: none !important;
+}
+.user_twipkr .chat_msg_box {
+  font-weight: 600;
+}
+/* [...] */
+.chat_nickname_box::before {
+  content: '[';
+}
+.chat_badge_box::after {
+  content: ']'
+}
+.chat_badge_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.chat_badge_box > img {
+  width: 1.125rem;
+  height: 1.125rem;
+  margin: 0 0 0 0.125rem;
+}
+.chat_badge_box > img {
+  padding-left: 1.125rem;
+  background-position: center;
+  background-size: 0.75rem;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  display: none;
+}
+.chat_badge_box > img[src="./images/badge/broadcaster.png"] {
+  display: inline-block;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURUxpcf///11EGvWJH/+uAP/sAXBgO0jmNiUAAAABdFJOUwBA5thmAAAASElEQVQY02NgwA2UYACdo+QCA0pYOIIggI0DZAARKRxjsHZjY2NMDhDg4EBVIXPM0tLSIMqAwCw0NAyVA/OcGiYHCthQOEDTAH7LKKU2BDTMAAAAAElFTkSuQmCC');
+}
+.chat_badge_box > img[src^="./images/badge/subs"] {
+  display: inline-block;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURUxpcf///2tra6SkpMnJyf/sAXBgOxhpRPYAAAABdFJOUwBA5thmAAAASElEQVQY02NgwA2UYACdo+QCA0pYOIIggI0DZAARKRxjsHZjY2NMDhDg4EBVIXPM0tLSIMqAwCw0NAyVA/OcGiYHCthQOEDTAH7LKKU2BDTMAAAAAElFTkSuQmCC');
+}
+.chat_badge_box > img[src="./images/badge/mod.png"] {
+  display: inline-block;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAVUExURUxpcVCf5P///x5LrSV1wv/sAXBgO/Nfa5gAAAABdFJOUwBA5thmAAAASElEQVQY02NgwA2MYQCdYywIA8ZYOEoggI0DZAARKRwXsHYXFxdMDhDg4EBVIXPc0tLSIMqAwC00NAyVA/OcGSYHCthQOEDTALb3KfTU8hHeAAAAAElFTkSuQmCC');
+}
+.chat_badge_box > img[src^="./images/badge/bit"] {
+  display: inline-block;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURUxpcf///2tra6SkpMnJyTFXMQwAAAABdFJOUwBA5thmAAAAN0lEQVQY02NgwA2UYACdo+QCA0pYOIIggI0DZAARKRxjsHZjY2NMDhDg4EBVYeHAADoHt09xAgCYciJngBtGwAAAAABJRU5ErkJggg==');
+}
+.chat_badge_box > img[src="./images/badge/broadcaster.png"] + img[src^="./images/badge/subs"],
+.chat_badge_box > img[src^="./images/badge/subs"] ~ img[src^="./images/badge/bit"],
+.chat_badge_box > img:not([src]) {
+  display: none !important;
+}
+
+/* Messages */
+.chat_lower_box {
+  position: relative;
+  font-size:
+}
+.chat_msg_box, .chat_subscribe_box, .chat_clip_box {
+  padding: 0 0.5rem 0.25rem 0.5rem;
+  max-height: 14rem; /* 텍스트 영역 최대 높이 */
+  font-size: 0.875rem;
+}
+.chat_msg_box.image_only:empty {
+  display: none;
+}
+
+/* Image Sizes */
+.cheer_icon, .twitch_emote, .dccon {
+  vertical-align: bottom;
+}
+.cheer_icon {
+  height: 1.25rem;
+}
+.twitch_emote {
+  height: 2rem;
+}
+.dccon {
+  height: 6.25rem;
+}
+
+/* Special Cases */
+.chat_cheer_box	{ /* TODO: fix outgoing twip donations */
+  text-align: right;
+  padding: 0.25rem 0.5rem;
+  margin-top: -1.75rem;
+  font-size: 0.875rem;
+  background-blend-mode: multiply;
+  text-shadow: none;
+  color: #989898;
+  font-weight: 300 !important;
+}
+.chat_subscribe_box {
+  font-weight: 600;
+}
+.chat_cheer_text {
+  display: inline-block;
+  font-weight: 600;
+}
+.chat_cheer_text > img {
+  display: none;
+}
+.chat_msg_box > .chat_cheer_box {
+  margin: -1.75rem -0.5rem 0 -0.5rem;
+}
+.chat_subscribe_box + .chat_msg_box:empty {
+  display: none;
+}
+
+/* Clip */
+.chat_clip_box {
+}
+.chat_clip_box.invalid {
+  height: 1.5rem;
+  text-align: center;
+  color: #000;
+  text-shadow: none;
+  font-size: 0;
+}
+.chat_clip_box.invalid::before {
+  content: '클립뻑남;';
+  font-size: 1rem;
+}
+.chat_clip_box > img {
+  display: block;
+  width: 6.25rem;
+  height: 6.25rem;
+  object-fit: cover;
+  z-index: 0;
+}
+.chat_clip_title, .chat_clip_by {
+  position: relative;
+}
+.chat_clip_title, .chat_clip_by {
+  display: inline;
+}
+.chat_clip_by::before {
+  display: inline;
+  content: ' - Clip by '
+}
