@@ -307,6 +307,13 @@ body {
   line-height: 1.375rem;
   padding-bottom: 10rem;
 }
+.chat_upper_box[style="display: none;"] + .chat_lower_box::after {
+  display: block;
+  content: '전체댓글 ↺';
+  padding: 0.5rem 0.625rem;
+  background: #3f4040;
+  color: #fff;
+}
 .chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box > center > div {
   font-size: 0 !important;
 }
