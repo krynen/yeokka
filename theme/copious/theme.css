@@ -342,3 +342,8 @@ body {
   font-size: 0.625rem;
   text-shadow: none;
 }
+
+/* remove original background for credit */
+center > * {
+  display:none !important;
+}

@@ -240,3 +240,8 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
   top: 5rem;
   font-size: 1rem;
 }
+
+/* remove original background for credit */
+center > * {
+  display:none !important;
+}
