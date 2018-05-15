@@ -5,6 +5,11 @@
  based on 'default -> xcom -> mario' theme
 */
 
+:root {
+  --gall-name: '트위치';
+  --gall-name-suffix: '와';
+  --gall-type: 'm. 갤러리';
+}
 * {
   box-sizing: border-box;
 }
@@ -240,11 +245,15 @@ body {
 }
 .chat_upper_box[style="display: none;"] > .chat_nickname_box::before {
   content: '트위치 m.갤러리 ↺';
+  content: var(--gall-name, '트위치') ' ' var(--gall-type, 'm.갤러리') ' ↺';
   margin-left: 1.5rem;
   line-height: 2.25rem;
   font-size: 0.8125rem;
   color: #fff;
   font-weight: 600;
+}
+.chat_upper_box[style="display: none;"] .chat_badge_box {
+  flex-grow: 0;
 }
 .chat_upper_box[style="display: none;"] .chat_badge_box > img {
   display: none;
@@ -271,6 +280,7 @@ body {
   font-size: 0.9375rem;
   display: block;
   content: '트위치에 관련된 사진과 내용을 올려주시기 바랍니다.';
+  content: var(--gall-name, '트위치') '에 관련된 사진과 내용을 올려주시기 바랍니다.';
   margin: 0.75rem 0.5rem 0.25rem 0.5rem;
 }
 
@@ -309,6 +319,10 @@ body {
   display: block;
   white-space: pre-wrap;
   content: '안녕하세요. 디시인사이드 운영자입니다. 트위치와 관련된 사진과 내용이 있어야 합니다. \a비방, 욕설, 음란물 등록 시 삭제 및 차단 조치가 되고 민, 형사상의 불이익을 받으실 수 있습니다.\a기타 자세한 사항은 갤러리 상단의 갤러리 이용안내를 참고해 주시기 바랍니다.\a감사합니다.';
+  content: '안녕하세요. 디시인사이드 운영자입니다. '
+  var(--gall-name, '트위치')
+  var(--gall-name-suffix, '와')
+  ' 관련된 사진과 내용이 있어야 합니다. \a비방, 욕설, 음란물 등록 시 삭제 및 차단 조치가 되고 민, 형사상의 불이익을 받으실 수 있습니다.\a기타 자세한 사항은 갤러리 상단의 갤러리 이용안내를 참고해 주시기 바랍니다.\a감사합니다.';
   line-height: 1.375rem;
   padding-bottom: 10rem;
 }
