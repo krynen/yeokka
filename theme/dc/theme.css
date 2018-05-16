@@ -183,32 +183,49 @@ body {
 }
 
 /* Clip */
+.chat_clip_box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
 .chat_clip_box.invalid {
-  height: 1.5rem;
-  color: #666;
-  text-shadow: none;
   font-size: 0;
 }
+.chat_clip_box::before, .chat_clip_box::after, .chat_clip_by {
+  display: inline-block;
+  padding: 0.125rem 1rem;
+  margin-right: 0.3125rem;
+  border-radius: 0.1875rem;
+  font-size: 0.75rem;
+
+  border: 0.0625rem solid #bebebe;
+  color: #535ea9;
+  background: linear-gradient(to bottom, #fff, #d5d6d8);
+  text-shadow: 0.0625rem 0.0625rem 0 #fff;
+}
+.chat_clip_box::before {
+  content: '소스복사';
+  order: 3;
+}
+.chat_clip_box::after {
+  content: '공유';
+  order: 4;
+}
 .chat_clip_box.invalid::before {
-  content: '(클립 뻑남)';
-  font-size: 0.875rem;
+  content: '재생할 수 없는 리플입니다.';
+  font-weight: 600;
 }
-.chat_clip_box > img {
-  display: block;
-  width: 6.25rem;
-  height: 6.25rem;
-  object-fit: cover;
-  z-index: 0;
+.chat_clip_box.invalid::after,.chat_clip_box > img, .chat_clip_title {
+  display: none;
 }
-.chat_clip_title, .chat_clip_by {
-  position: relative;
-}
-.chat_clip_title, .chat_clip_by {
-  display: inline;
+.chat_clip_by {
+  min-width: 10rem;
+  text-align: center;
+  font-weight: 600;
 }
 .chat_clip_by::before {
   display: inline;
-  content: ' - Clip by '
+  content: '▶ 클립: ';
 }
 
 
