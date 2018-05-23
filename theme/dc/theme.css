@@ -118,6 +118,7 @@ body {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURUxpcf///2tra6SkpMnJyTFXMQwAAAABdFJOUwBA5thmAAAAN0lEQVQY02NgwA2UYACdo+QCA0pYOIIggI0DZAARKRxjsHZjY2NMDhDg4EBVYeHAADoHt09xAgCYciJngBtGwAAAAABJRU5ErkJggg==');
 }
 .chat_badge_box > img[src="./images/badge/broadcaster.png"] ~ img,
+.chat_badge_box > img[src="./images/badge/mod.png"] ~ img,
 .chat_badge_box > img[src^="./images/badge/subs"] ~ img,
 .chat_badge_box > img:not([src]) {
   display: none !important;
