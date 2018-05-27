@@ -1278,3 +1278,6 @@ fieldset[disabled] .btn-primary:hover,
 
 #article-reply-area #reply-real-area .reply.active 
 																	{	background-color: #303844 !important; }
+                                  
+/* YPT 화면 */
+.frame .frame         {	background: #0c0c0b !important; }
