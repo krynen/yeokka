@@ -342,8 +342,6 @@ body {
   font-size: 0.625rem;
   text-shadow: none;
 }
-
-/* remove original background for credit */
-center > * {
-  display:none !important;
+.chat_lower_box > center > * {
+  display: none !important;
 }

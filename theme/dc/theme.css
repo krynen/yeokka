@@ -5,6 +5,11 @@
  based on 'default -> xcom -> mario' theme
 */
 
+:root {
+  --gall-name: '트위치';
+  --gall-name-suffix: '와';
+  --gall-type: 'm. 갤러리';
+}
 * {
   box-sizing: border-box;
 }
@@ -56,11 +61,12 @@ body {
   content: '';
   width: 1.25rem;
   height: 1.125rem;
+  font-soze: 0.875rem !important;
   margin: 0.25rem 0.25rem 0 0;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAMAAABsDg4iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAIiUExURUxpcQAAABAMDP///wAAAAAAADw5OQIAAP///xwYGLCurllWVgAAAAUBAQAAAP///1pXVyQhIQAAABkXFwAAAPv7+97d3RURETMvLwQAAAoGBgAAAFtZWdPS0v///1tYWJ+enszKymhmZikmJjo3NxcTEwAAAP///wAAAFZSUgAAAE5MTJaVlfDu7gAAAD86OklGRgQAAAoFBf///yUhIQgFBa+vrwAAAAUAAF1aWkRBQQcDAwYBAQMAAAsGBhAMDAwICFRRUQwICAYAAP///7Cvr////+zs7PX19dDPz////9va2v///////6upqf///////////7a1tZKRkf///////5eWlv////////////////b29sXExP7+/tjX1/z8/Pf29vr6+s7NzbCvr2ZkZPPz883MzLSzs8fGxurp6eTj4/X19WlnZ/Hx8f39/YWDg+Li4sTDwzs4OK+urr++vpeVle7u7qelpVJPT21ra8HAwNnY2Ovr67i3t62traytrY6MjEhFRWViYuHh4ezr6+fm5nZzc6yrq25ra6uqqi8rK+Tk5Obl5dnZ2fj4+Ojo6OPi4qajo1BOTuvs7FhBQmIRFkoXGrq4uPf392BdXevq6oeFhYF/f2FfX11aWu7t7Xx6evPy8uLh4ZeWlv3+/ryPks67vLtxdmxqakxJSf7///n8/EtJSWRiYlxZWXl2dnRxcYmHh4SCgoKAgIaEhIiHh2QRYQkAAABadFJOUwA0qgFOBO1xH87i+RCAKUb61g/GL0vDtOZslBf4sBv8yInh9f7FFRkO+Vj6+5oF7vdvkWfTj2cjYvaNipuWn9mS/ssmCfBKs53iDtgGLfJZIorv+4aP+XB4TBFMm2cAAAEmSURBVBjTY2AAA2c7W3snGyM1BiSg5zDXcUHOTG1JZEEt/ZjMRbMmpAsywoV42CXSpy+M6W+uKuVkYYWI8TFxp+UmRaW1RCdFF7PxCoHERITzy6Ji46MS86Lio6LiBKQ0GBikxRsSo5BAq6YhAwO7TGoUCsgwMWdQ7YyKio7LBvNjC7KAHEsLBuXeqKiYohKwYHRKZV9U1Bxrhq7uqKia5MyE2vq66qjCjNioqNmmDCoxYEWTp0ydNhHMmpFixaCUA7ZoybLlS+eDBdsNzBgU5dt6wJzVq0BkQnmjAgeDnGzHpMVxuXkgkeys5KYKLlGgjzh0XVesWbdh88b89WtXztMR42cG+dPFzcM7KGzrpi3Bfp7uxuqwYPIJiAwPCQ2M8Pf1AvMBICJpcOZU5xcAAAAASUVORK5CYII=');
 }
 .user_twipkr .chat_badge_box::before {
-  content: '[댓글돌이';
+  content: '[댓글돌이' !important;
 }
 .user_twipkr .chat_nickname_box, .user_twipkr .chat_badge_box > img {
   display: none !important;
@@ -78,6 +84,7 @@ body {
 .chat_badge_box {
   display: flex;
   align-items: center;
+  flex-grow:  1;
   justify-content: flex-start;
 }
 .chat_badge_box > img {
@@ -111,6 +118,7 @@ body {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAPUExURUxpcf///2tra6SkpMnJyTFXMQwAAAABdFJOUwBA5thmAAAAN0lEQVQY02NgwA2UYACdo+QCA0pYOIIggI0DZAARKRxjsHZjY2NMDhDg4EBVYeHAADoHt09xAgCYciJngBtGwAAAAABJRU5ErkJggg==');
 }
 .chat_badge_box > img[src="./images/badge/broadcaster.png"] ~ img,
+.chat_badge_box > img[src="./images/badge/mod.png"] ~ img,
 .chat_badge_box > img[src^="./images/badge/subs"] ~ img,
 .chat_badge_box > img:not([src]) {
   display: none !important;
@@ -119,7 +127,6 @@ body {
 /* Messages */
 .chat_lower_box {
   position: relative;
-  font-size:
 }
 .chat_msg_box, .chat_subscribe_box, .chat_clip_box {
   padding: 0 0.5rem 0.25rem 0.5rem;
@@ -149,11 +156,15 @@ body {
   text-align: right;
   padding: 0.25rem 0.5rem;
   margin-top: -1.75rem;
-  font-size: 0.875rem;
-  background-blend-mode: multiply;
+  font-size: 0.75rem;
+  width: calc(100% - 8rem);
+  margin-left: 8rem;
   text-shadow: none;
   color: #989898;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
+  background:  #fff;
+  position: relative;
+  z-index:  10;
 }
 .chat_subscribe_box {
   font-weight: 600;
@@ -166,39 +177,56 @@ body {
   display: none;
 }
 .chat_msg_box > .chat_cheer_box {
-  margin: -1.75rem -0.5rem 0 -0.5rem;
+  margin: -1.75rem -0.5rem 0 8.5rem;
 }
 .chat_subscribe_box + .chat_msg_box:empty {
   display: none;
 }
 
 /* Clip */
+.chat_clip_box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
 .chat_clip_box.invalid {
-  height: 1.5rem;
-  color: #666;
-  text-shadow: none;
   font-size: 0;
 }
+.chat_clip_box::before, .chat_clip_box::after, .chat_clip_by {
+  display: inline-block;
+  padding: 0.125rem 1rem;
+  margin-right: 0.3125rem;
+  border-radius: 0.1875rem;
+  font-size: 0.75rem;
+
+  border: 0.0625rem solid #bebebe;
+  color: #535ea9;
+  background: linear-gradient(to bottom, #fff, #d5d6d8);
+  text-shadow: 0.0625rem 0.0625rem 0 #fff;
+}
+.chat_clip_box::before {
+  content: '소스복사';
+  order: 3;
+}
+.chat_clip_box::after {
+  content: '공유';
+  order: 4;
+}
 .chat_clip_box.invalid::before {
-  content: '(클립 뻑남)';
-  font-size: 0.875rem;
+  content: '재생할 수 없는 리플입니다.';
+  font-weight: 600;
 }
-.chat_clip_box > img {
-  display: block;
-  width: 6.25rem;
-  height: 6.25rem;
-  object-fit: cover;
-  z-index: 0;
+.chat_clip_box.invalid::after,.chat_clip_box > img, .chat_clip_title {
+  display: none;
 }
-.chat_clip_title, .chat_clip_by {
-  position: relative;
-}
-.chat_clip_title, .chat_clip_by {
-  display: inline;
+.chat_clip_by {
+  min-width: 10rem;
+  text-align: center;
+  font-weight: 600;
 }
 .chat_clip_by::before {
   display: inline;
-  content: ' - Clip by '
+  content: '▶ 클립: ';
 }
 
 
@@ -235,11 +263,15 @@ body {
 }
 .chat_upper_box[style="display: none;"] > .chat_nickname_box::before {
   content: '트위치 m.갤러리 ↺';
+  content: var(--gall-name, '트위치') ' ' var(--gall-type, 'm.갤러리') ' ↺';
   margin-left: 1.5rem;
   line-height: 2.25rem;
   font-size: 0.8125rem;
   color: #fff;
   font-weight: 600;
+}
+.chat_upper_box[style="display: none;"] .chat_badge_box {
+  flex-grow: 0;
 }
 .chat_upper_box[style="display: none;"] .chat_badge_box > img {
   display: none;
@@ -251,7 +283,8 @@ body {
   background-color: #575757;
   background: linear-gradient(to bottom, #5f5f5f, #2d3132);
   color: #fff;
-  padding: 0 0.375rem 0 0.25rem
+  padding: 0 0.375rem 0 0.25rem;
+  border-radius: 0.125rem;
 }
 .chat_upper_box[style="display: none;"] .chat_badge_box::before {
   content: '연관';
@@ -266,6 +299,7 @@ body {
   font-size: 0.9375rem;
   display: block;
   content: '트위치에 관련된 사진과 내용을 올려주시기 바랍니다.';
+  content: var(--gall-name, '트위치') '에 관련된 사진과 내용을 올려주시기 바랍니다.';
   margin: 0.75rem 0.5rem 0.25rem 0.5rem;
 }
 
@@ -304,6 +338,10 @@ body {
   display: block;
   white-space: pre-wrap;
   content: '안녕하세요. 디시인사이드 운영자입니다. 트위치와 관련된 사진과 내용이 있어야 합니다. \a비방, 욕설, 음란물 등록 시 삭제 및 차단 조치가 되고 민, 형사상의 불이익을 받으실 수 있습니다.\a기타 자세한 사항은 갤러리 상단의 갤러리 이용안내를 참고해 주시기 바랍니다.\a감사합니다.';
+  content: '안녕하세요. 디시인사이드 운영자입니다. '
+  var(--gall-name, '트위치')
+  var(--gall-name-suffix, '와')
+  ' 관련된 사진과 내용이 있어야 합니다. \a비방, 욕설, 음란물 등록 시 삭제 및 차단 조치가 되고 민, 형사상의 불이익을 받으실 수 있습니다.\a기타 자세한 사항은 갤러리 상단의 갤러리 이용안내를 참고해 주시기 바랍니다.\a감사합니다.';
   line-height: 1.375rem;
   padding-bottom: 10rem;
 }
@@ -318,3 +356,51 @@ body {
 .chat_upper_box[style="display: none;"] + .chat_lower_box > .chat_msg_box > center > div {
   font-size: 0 !important;
 }
+
+/* 통피 */
+#chat_wrapper > [class^="chat_outer_box user_"]:not(.user_twipkr) .chat_badge_box.empty::before {
+  display: inline-block;
+  color: #989898;
+  font-size: 0.75rem;
+  flex-grow: 10;
+  text-align: right;
+  order: 10;
+}
+
+#chat_wrapper > [class*="user_a"] .chat_badge_box.empty::before { content: '121.190.*.*' }
+#chat_wrapper > [class*="user_b"] .chat_badge_box.empty::before { content: '39.7.*.*' }
+#chat_wrapper > [class*="user_c"] .chat_badge_box.empty::before { content: '211.234.*.*' }
+#chat_wrapper > [class*="user_d"] .chat_badge_box.empty::before { content: '122.202.*.*' }
+#chat_wrapper > [class*="user_e"] .chat_badge_box.empty::before { content: '210.125.*.*' }
+#chat_wrapper > [class*="user_f"] .chat_badge_box.empty::before { content: '106.102.*.*' }
+#chat_wrapper > [class*="user_g"] .chat_badge_box.empty::before { content: '175.202.*.*' }
+#chat_wrapper > [class*="user_h"] .chat_badge_box.empty::before { content: '223.38.*.*' }
+#chat_wrapper > [class*="user_i"] .chat_badge_box.empty::before { content: '61.43.*.*' }
+#chat_wrapper > [class*="user_j"] .chat_badge_box.empty::before { content: '175.252.*.*' }
+#chat_wrapper > [class*="user_k"] .chat_badge_box.empty::before { content: '39.7.*.*' }
+#chat_wrapper > [class*="user_l"] .chat_badge_box.empty::before { content: '211.36.*.*' }
+#chat_wrapper > [class*="user_m"] .chat_badge_box.empty::before { content: '203.226.*.*' }
+#chat_wrapper > [class*="user_n"] .chat_badge_box.empty::before { content: '223.62.*.*' }
+#chat_wrapper > [class*="user_o"] .chat_badge_box.empty::before { content: '223.39.*.*' }
+#chat_wrapper > [class*="user_p"] .chat_badge_box.empty::before { content: '223.38.*.*' }
+#chat_wrapper > [class*="user_q"] .chat_badge_box.empty::before { content: '115.161.*.*' }
+#chat_wrapper > [class*="user_r"] .chat_badge_box.empty::before { content: '117.111.*.*' }
+#chat_wrapper > [class*="user_s"] .chat_badge_box.empty::before { content: '175.223.*.*' }
+#chat_wrapper > [class*="user_t"] .chat_badge_box.empty::before { content: '223.62.*.*' }
+#chat_wrapper > [class*="user_u"] .chat_badge_box.empty::before { content: '223.57.*.*' }
+#chat_wrapper > [class*="user_v"] .chat_badge_box.empty::before { content: '223.32.*.*' }
+#chat_wrapper > [class*="user_w"] .chat_badge_box.empty::before { content: '223.39.*.*' }
+#chat_wrapper > [class*="user_x"] .chat_badge_box.empty::before { content: '110.70.*.*' }
+#chat_wrapper > [class*="user_y"] .chat_badge_box.empty::before { content: '223.33.*.*' }
+#chat_wrapper > [class*="user_z"] .chat_badge_box.empty::before { content: '122.32.*.*' }
+#chat_wrapper > [class*="user__"] .chat_badge_box.empty::before { content: '2001:2d8.*.*' }
+#chat_wrapper > [class*="user_1"] .chat_badge_box.empty::before { content: '223.38.*.*' }
+#chat_wrapper > [class*="user_2"] .chat_badge_box.empty::before { content: '114.200.*.*' }
+#chat_wrapper > [class*="user_3"] .chat_badge_box.empty::before { content: '106.10.*.*' }
+#chat_wrapper > [class*="user_4"] .chat_badge_box.empty::before { content: '117.111.*.*' }
+#chat_wrapper > [class*="user_5"] .chat_badge_box.empty::before { content: '121.190.*.*' }
+#chat_wrapper > [class*="user_6"] .chat_badge_box.empty::before { content: '122.202.*.*' }
+#chat_wrapper > [class*="user_7"] .chat_badge_box.empty::before { content: '175.202.*.*' }
+#chat_wrapper > [class*="user_8"] .chat_badge_box.empty::before { content: '223.38.*.*' }
+#chat_wrapper > [class*="user_9"] .chat_badge_box.empty::before { content: '210.125.*.*' }
+#chat_wrapper > [class*="user_0"] .chat_badge_box.empty::before { content: '211.36.*.*' }

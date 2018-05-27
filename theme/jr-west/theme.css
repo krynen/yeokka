@@ -281,8 +281,6 @@ body {
   content: 'ヒビヤ';
   right: 0.75rem;
 }
-
-/* remove original background for credit */
-center > * {
-  display:none !important;
+.chat_lower_box > center > * {
+  display: none !important;
 }
