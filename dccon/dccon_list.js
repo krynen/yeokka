@@ -161,7 +161,8 @@
 	{"name":"벤브꼬우면.gif",		"keywords":["꼬우면"],						"tags":["하스스톤", "움짤"]},
 	{"name":"벤브리틀.gif",			"keywords":["리틀성기"],					"tags":["하스스톤", "움짤"]},
 	{"name":"벤브의도.gif",			"keywords":["의도된"],						"tags":["하스스톤", "움짤"]},
-	{"name":"기타어케.gif",			"keywords":["어케이김"],					"tags":["움짤"]},
+	{"name":"벤브어케1.gif",		"keywords":["어케이김", "어케이겼노"],				"tags":["하스스톤", "움짤"]},
+	{"name":"벤브어케2.gif",		"keywords":["어케함", "어케했노"],				"tags":["하스스톤", "움짤"]},
 	
 	{"name":"핫산발상.png",			"keywords":["핫산발상"], 					"tags":["핫산"]},
 	{"name":"핫산쾅.png",			"keywords":["핫산쾅"], 						"tags":["핫산"]},
