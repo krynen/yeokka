@@ -105,6 +105,7 @@ body {
 .chat_lower_box {
   position: relative;
   color: #000;
+  background: #fff;
 }
 .chat_msg_box {
   padding: 0.5rem 0.625rem;
