@@ -44,6 +44,17 @@
   {"name":"뿌요빠요엔2.gif",            "keywords":["빠요엔2"],                                               "tags":["빠요엔"]},
   {"name":"뿌요빠요엔3.gif",            "keywords":["빠요엔3"],                                               "tags":["빠요엔"]},
 
+  {"name":"흠.png",                     "keywords":["흠"],                                                    "tags":["흠"]},
+  {"name":"흠스웩.png",                 "keywords":["스웩흠"],                                                "tags":["흠"]},
+  {"name":"흠흠흠.png",                 "keywords":["흠흠흠"],                                                "tags":["흠"]},
+  {"name":"흠란.gif",                   "keywords":["혼란흠"],                                                "tags":["흠","움짤"]},
+  {"name":"흠회전1.gif",                "keywords":["회전흠", "회전흠1"],                                     "tags":["흠","움짤"]},
+  {"name":"흠회전2.gif",                "keywords":["회전흠2"],                                               "tags":["흠","움짤"]},
+  {"name":"흠회전3.gif",                "keywords":["회전흠3"],                                               "tags":["흠","움짤"]},
+  {"name":"흠발퀄.png",                 "keywords":["발퀄흠"],                                                "tags":["흠"]},
+  {"name":"흠고퀄.png",                 "keywords":["고퀄흠"],                                                "tags":["흠"]},
+  {"name":"흠왜곡.gif",                 "keywords":["왜곡흠"],                                                "tags":["흠","움짤"]},
+
   {"name":"개구리빵야1.png",            "keywords":["개구리빵야1"],                                           "tags":["개구리"]},
   {"name":"개구리빵야2.png",            "keywords":["개구리빵야2"],                                           "tags":["개구리"]},
   {"name":"개구리화남.png",             "keywords":["개구리화남"],                                            "tags":["개구리"]},
