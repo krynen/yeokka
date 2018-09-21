@@ -635,7 +635,7 @@ textarea.fr-code									{	background: #333 !important;
 																	{	border-top-color: #2673e7 !important; }
 #article-list>.article-list-row:hover
 																	{	background: #383838 !important; }
-#article-list>.article-list-row.notice
+#article-list>.article-list-row.notice, #article-list>.article-list-row.hot
 																	{	background-color: #3f3f3f !important; }
 #article-list>.article-list-row.active
 																	{	background-color: #32496c !important; }
