@@ -649,7 +649,7 @@ textarea.fr-code									{	background: #333 !important;
 #article-list>.article-list-row>.item>.list-header
 																	{	border-left-color: #383838 !important; }
 #article-list>.article-list-row>.item>.list-header>strong,
-#article-list>.article-list-row>.item>.list-header>
+#article-list>.article-list-row>.item>.list-header>b
 																	{	color: #fffefe !important; }
 #article-list>.article-list-row>.item>.list-header.v0>span
 																	{	background-color: #333 !important;
