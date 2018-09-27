@@ -73,6 +73,7 @@
   {"name":"기타토끼공듀2.png",          "keywords":["망겜이다", "토끼공듀2"],                                 "tags":["고인물"]},
   {"name":"기타불편.png",               "keywords":["불편"],                                                  "tags":["게비스콘"]},
   {"name":"기타편안.png",               "keywords":["편안"],                                                  "tags":["게비스콘"]},
+  {"name":"기타가능.png",               "keywords":["가능"],                                                  "tags":[]},
   {"name":"희키눈물.gif",               "keywords":["희키눈물", "눈물희키"],                                  "tags":["희키콘", "움짤"]},
 
   {"name":"젤다녹색옷.png",             "keywords":["녹색옷", "초록옷"],                                      "tags":["젤다"]},
