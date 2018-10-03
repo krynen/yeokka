@@ -66,20 +66,13 @@ body {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAMAAABsDg4iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAIiUExURUxpcQAAABAMDP///wAAAAAAADw5OQIAAP///xwYGLCurllWVgAAAAUBAQAAAP///1pXVyQhIQAAABkXFwAAAPv7+97d3RURETMvLwQAAAoGBgAAAFtZWdPS0v///1tYWJ+enszKymhmZikmJjo3NxcTEwAAAP///wAAAFZSUgAAAE5MTJaVlfDu7gAAAD86OklGRgQAAAoFBf///yUhIQgFBa+vrwAAAAUAAF1aWkRBQQcDAwYBAQMAAAsGBhAMDAwICFRRUQwICAYAAP///7Cvr////+zs7PX19dDPz////9va2v///////6upqf///////////7a1tZKRkf///////5eWlv////////////////b29sXExP7+/tjX1/z8/Pf29vr6+s7NzbCvr2ZkZPPz883MzLSzs8fGxurp6eTj4/X19WlnZ/Hx8f39/YWDg+Li4sTDwzs4OK+urr++vpeVle7u7qelpVJPT21ra8HAwNnY2Ovr67i3t62traytrY6MjEhFRWViYuHh4ezr6+fm5nZzc6yrq25ra6uqqi8rK+Tk5Obl5dnZ2fj4+Ojo6OPi4qajo1BOTuvs7FhBQmIRFkoXGrq4uPf392BdXevq6oeFhYF/f2FfX11aWu7t7Xx6evPy8uLh4ZeWlv3+/ryPks67vLtxdmxqakxJSf7///n8/EtJSWRiYlxZWXl2dnRxcYmHh4SCgoKAgIaEhIiHh2QRYQkAAABadFJOUwA0qgFOBO1xH87i+RCAKUb61g/GL0vDtOZslBf4sBv8yInh9f7FFRkO+Vj6+5oF7vdvkWfTj2cjYvaNipuWn9mS/ssmCfBKs53iDtgGLfJZIorv+4aP+XB4TBFMm2cAAAEmSURBVBjTY2AAA2c7W3snGyM1BiSg5zDXcUHOTG1JZEEt/ZjMRbMmpAsywoV42CXSpy+M6W+uKuVkYYWI8TFxp+UmRaW1RCdFF7PxCoHERITzy6Ji46MS86Lio6LiBKQ0GBikxRsSo5BAq6YhAwO7TGoUCsgwMWdQ7YyKio7LBvNjC7KAHEsLBuXeqKiYohKwYHRKZV9U1Bxrhq7uqKia5MyE2vq66qjCjNioqNmmDCoxYEWTp0ydNhHMmpFixaCUA7ZoybLlS+eDBdsNzBgU5dt6wJzVq0BkQnmjAgeDnGzHpMVxuXkgkeys5KYKLlGgjzh0XVesWbdh88b89WtXztMR42cG+dPFzcM7KGzrpi3Bfp7uxuqwYPIJiAwPCQ2M8Pf1AvMBICJpcOZU5xcAAAAASUVORK5CYII=');
 }
 .user_twipkr .chat_badge_box::before {
-  content: '[댓글돌이' !important;
+  content: '댓글돌이' !important;
 }
 .user_twipkr .chat_nickname_box, .user_twipkr .chat_badge_box > img {
   display: none !important;
 }
 .user_twipkr .chat_msg_box {
   font-weight: 600;
-}
-/* [...] */
-.chat_nickname_box::before {
-  content: '[';
-}
-.chat_badge_box::after {
-  content: ']'
 }
 .chat_badge_box {
   display: flex;
