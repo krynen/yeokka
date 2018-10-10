@@ -1074,6 +1074,8 @@ textarea.fr-code									{	background: #333 !important;
 																		color: #eee !important; }
 #board-info>a.board-right-menu:hover	
 																	{	background: #eaeaea; }
+#article-option-area-toggle-btn														{	background: transparent !important; }
+
 #article-list #article-list-category,
 #article-list #article-list-category>a
 																	{ background: none !important; }
