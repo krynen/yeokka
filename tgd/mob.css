@@ -1192,8 +1192,8 @@ header>#header-area>a>h1          { background: url(https://krynen.github.io/yeo
 
 /* 광고 흰색 제거 */
 .frame>div:nth-child(1),
-#article-reply-area+div:not(#article-list),
-#article-reply-area+div:not(#article-list)>div>div>div
+#article-neighbor-list+div:not(#article-list),
+#article-neighbor-list+div:not(#article-list)>div>div>div
                                   { background: #333 !important; }
                                   
                                   
@@ -1283,8 +1283,18 @@ fieldset[disabled] .btn-primary:hover,
 .btn-primary                      { color: #ddd !important; }
 .fr-separator                     { background: #ddd !important; }
 
+
+#article-neighbor-list            { background: #333 !important; }
+#article-neighbor-list>div>a      { color: #ccc; }
+#article-neighbor-list>div:hover  { background: #2e2e2e; }
+
+
 #article-reply-area #reply-real-area .reply.active 
                                   { background-color: #303844 !important; }
                                   
 /* YPT 화면 */
 .frame .frame                     { background: #0c0c0b !important; }
+
+
+/* 모더레이터 뱃지 표시 해제 */
+img[alt="Moderator"]              { display:none; }

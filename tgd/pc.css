@@ -801,8 +801,9 @@ header #header-bar #header-top-notice strong.notice-badge
                                     
 
 /* 광고 흰색 제거 */
-#article-reply-area+div:not(#article-list)>div>div>div
-                                  { background: #333 !important; }
+#article-neighbor-list+div:not(#article-list),
+#article-neighbor-list+div:not(#article-list)>div>div>div
+                                  { background:#333; !important; }
                                   
                                   
 /* 메뉴헤더에 보라테달기 */
@@ -881,6 +882,11 @@ fieldset[disabled] .btn-primary:hover,
 .fr-separator                     { background: #ddd !important; }
 
 
+#article-neighbor-list            { background: #333 !important; }
+#article-neighbor-list>div>a      { color: #ccc; }
+#article-neighbor-list>div:hover  { background: #2e2e2e; }
+
+
 #main .menu-wrapper>a>em,
 #main .menu-wrapper>a>i.fa.fa-square
                                   { color: #83429c !important; }
@@ -891,3 +897,7 @@ fieldset[disabled] .btn-primary:hover,
 
 /* 댓글 영역 이미지 크기 수정 */
 .reply-content img                { max-width: 100%; }
+
+
+/* 모더레이터 뱃지 표시 해제 */
+img[alt="Moderator"]              { display:none; }
