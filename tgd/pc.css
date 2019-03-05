@@ -803,7 +803,7 @@ header #header-bar #header-top-notice strong.notice-badge
 /* 광고 흰색 제거 */
 #article-neighbor-list+div:not(#article-list),
 #article-neighbor-list+div:not(#article-list)>div>div>div
-                                  { background:#333; !important; }
+                                  { background:#333 !important; }
                                   
                                   
 /* 메뉴헤더에 보라테달기 */
