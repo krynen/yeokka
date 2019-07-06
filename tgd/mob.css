@@ -1,4 +1,4 @@
-﻿.fa-inverse                       { color: #333 !important; }
+.fa-inverse                       { color: #333 !important; }
 a                                 { background-color: transparent; }
 mark                              { color: #eee !important;
                                     background: #ff0; }
@@ -845,18 +845,18 @@ body                              { background: #0c0c0b !important; }
 .pagination>li>a:hover,
 .pagination>li>span:focus,
 .pagination>li>span:hover         { color: #1f6fe6 !important; }
-header                            { border-bottom-color: #2673e7 !important;
+header                            { border-bottom-color: #3e6bc7 !important;
                                     background: #0c0c0b !important; }
 header>#header-area>#header-bar-link  
                                   { color: #aeaea6;
                                     padding: 0 16px 8px; }
 header>#header-area>#header-search-link 
-                                  { color: #2673e7 !important;
+                                  { color: #3e6bc7 !important;
                                     padding: 0 16px 8px; }
 header > #header-search-bar #header-search-input  
-                                  { border-color: #2673e7 !important; }
+                                  { border-color: #3e6bc7 !important; }
 header > #header-search-bar #header-search-btn  
-                                  { color: #2673e7 !important; }
+                                  { color: #3e6bc7 !important; }
 #header-top-notice                { background: #333 !important; }
 nav#nav                           { background: #0c0c0b !important;
                                     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); }
@@ -868,11 +868,11 @@ nav#nav > #nav-upper #userDropdownContainer a
                                   { color: #eee !important; }
 nav#nav>#nav-upper-shortcut>.dropdown>a 
                                   { color: #eee !important; }
-nav#nav>.nav-header               { background: #2673e7 !important; }
+nav#nav>.nav-header               { background: #3e6bc7 !important; }
 nav#nav > .nav-menu-area a        { color: #ddd !important; }
 nav#nav > .nav-menu-area a:hover,
 nav#nav > .nav-menu-area a.active 
-                                  { color: #2673e7 !important; }
+                                  { color: #3e6bc7 !important; }
 nav#nav>a.schedule-more           { color: #ccc !important; }
 nav#nav>#nav-schedule-list>a      { color: #cecece !important;
                                     border-bottom-color: #3c3c3c !important; }
@@ -880,7 +880,7 @@ nav#nav>#nav-schedule-list>a:hover
                                   { background: #3c3c3c !important; }
 #header-top-notice a              { color: #eee !important; }
 #header-top-notice strong.notice-badge  
-                                  { background: #2673e7 !important;
+                                  { background: #3e6bc7 !important;
                                     color: #333 !important; }
 .fr-box.fr-basic .fr-element      { color: #eee !important; }
 .fr-box a.fr-floating-btn         { -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 1px 1px rgba(0, 0, 0, .16);
@@ -1085,7 +1085,7 @@ textarea.fr-code                  { background: #333 !important;
 #article-list>.article-list-row   { background: #333 !important; }
 #article-list>.article-list-row:hover 
                                   { background: #383838 !important; }
-#article-list>.article-list-row.notice  
+#article-list>.article-list-row.notice, #article-list>.article-list-row.hot
                                   { background-color: #3f3f3f !important; }
 #article-list>.article-list-row.active  
                                   { background-color: #32496c !important; }
@@ -1096,7 +1096,8 @@ textarea.fr-code                  { background: #333 !important;
 #article-list>.article-list-row>.item>.list-blocked,
 #article-list>.article-list-row>.item>.list-time  
                                   { border-bottom-color: #2e2e2e !important; }
-#article-list>.article-list-row>.item>.list-header>strong 
+#article-list>.article-list-row>.item>.list-header>strong,
+#article-list>.article-list-row>.item>.list-header>b
                                   { color: #fffefe !important; }
 #article-list>.article-list-row>.item>.list-header.v0>span  
                                   { background-color: #333 !important;
@@ -1129,11 +1130,15 @@ span.a-badge i.fa.fa-star         { color: #efc839 !important; }
 #article-reply-area               { background: #333 !important; }
 #article-reply-area > .header h5 
                                   { color: #5f8cee !important; }
+#article-reply-area #reply-real-area .reply
+                                  { border-color: #3c3c3c !important; }
 #article-reply-area #reply-real-area .reply>.reply-header 
                                   { background: #3b3b3b !important;
                                     border-bottom-color: #434343 !important; }
 #article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged 
-                                  { color: #2673e7 !important; }
+                                  { color: #3e6bc7 !important; }
+#article-reply-area #reply-real-area .reply>.reply-header>small.code
+                                  { color: #aaa; }
 
                                   
                                   
@@ -1175,6 +1180,8 @@ header>#header-area>a>h1          { background: url(https://krynen.github.io/yeo
                                   { padding-left: 0; padding-right: 0;
                                     margin-right: -2em; opacity: 0; }
 
+/* 게시판 점수 미표시*/
+#board-info span#score-area { display:none; }
 
 /* 동시접속자수 표시 제대로 */
 #board-info #viewers-area         { color:#337ab7; }
@@ -1203,7 +1210,7 @@ header>#header-area>a>h1          { background: url(https://krynen.github.io/yeo
                                   
 /* 메뉴헤더에 보라테달기 */
 nav#nav>.nav-header               { background-image:
-                                    linear-gradient(120deg,#83429c 17%,transparent 18%) !important; }
+                                    linear-gradient(120deg,#7f4fa6 17%,transparent 18%) !important; }
     
     
 /* 글쓰기 버튼 개조 */
