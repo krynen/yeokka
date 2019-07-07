@@ -771,7 +771,7 @@ header #header-bar #header-top-notice strong.notice-badge
                                   { border-right: none; }
 
 /* 게시판 점수 미표시*/
-#board-info span#score-area { display:none; }
+#board-info span#score-area       { display:none; }
 
 /* 동시접속자수 표시 제대로 */
 #board-info #viewers-area         { float:left;
@@ -895,6 +895,8 @@ fieldset[disabled] .btn-primary:hover,
                                   
 #article-reply-area #reply-real-area .reply.active 
                                   { background-color: #303844 !important; }
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged
+                                  { color:#ccc !important; }
 
 
 /* 댓글 영역 이미지 크기 수정 */

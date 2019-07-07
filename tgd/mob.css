@@ -1181,7 +1181,7 @@ header>#header-area>a>h1          { background: url(https://krynen.github.io/yeo
                                     margin-right: -2em; opacity: 0; }
 
 /* 게시판 점수 미표시*/
-#board-info span#score-area { display:none; }
+#board-info span#score-area       { display:none; }
 
 /* 동시접속자수 표시 제대로 */
 #board-info #viewers-area         { color:#337ab7; }
@@ -1298,6 +1298,8 @@ fieldset[disabled] .btn-primary:hover,
 
 #article-reply-area #reply-real-area .reply.active 
                                   { background-color: #303844 !important; }
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged
+                                  { color:#ccc !important; }
                                   
 /* YPT 화면 */
 .frame .frame                     { background: #0c0c0b !important; }
