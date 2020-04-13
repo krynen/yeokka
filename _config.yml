@@ -1,4 +1,0 @@
-# Jekyll config for github pages
-
-include:
-  - theme/_shared/
