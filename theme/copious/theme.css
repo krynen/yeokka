@@ -65,7 +65,8 @@ body {
 .chat_upper_box {
   display: flex;
   position: relative;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="170" height="36"><path fill="none" stroke="#aaa" d="M107.3,18l9,18z"/><path fill="none" stroke="#fff" d="M35,19l14,3l23-9l35,6l20-10l2-9"/><path fill="#fff" d="M32.5,19l2.5,2.5l2.5-2.5L35,16.5L32.5,19z M45.5,22l3.5,3.5l3.5-3.5L49,18.5L45.5,22z M69.5,13l2.5,2.5l2.5-2.5L72,10.5L69.5,13z M102.5,18l4.5,4.5l4.5-4.5l-4.5-4.5L102.5,18z M123.5,9l3.5,3.5l3.5-3.5L127,5.5L123.5,9zM17,9.5l2.5,2.5L22,9.5L19.5,7L17,9.5z"/></svg>'),
+  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="170" height="36"><path fill="none" stroke="#aaa" d="M107.3,18l9,18z"/><path fill="none" stroke="#fff" d="M35,19l14,3l23-9l35,6l20-10l2-9"/><path fill="#fff" d="M32.5,19l2.5,2.5l2.5-2.5L35,16.5L32.5,19z M45.5,22l3.5,3.5l3.5-3.5L49,18.5L45.5,22z M69.5,13l2.5,2.5l2.5-2.5L72,10.5L69.5,13z M102.5,18l4.5,4.5l4.5-4.5l-4.5-4.5L102.5,18z M123.5,9l3.5,3.5l3.5-3.5L127,5.5L123.5,9zM17,9.5l2.5,2.5L22,9.5L19.5,7L17,9.5z"/></svg>'), */
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzAiIGhlaWdodD0iMzYiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2FhYSIgZD0iTTEwNy4zLDE4bDksMTh6Ii8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBkPSJNMzUsMTlsMTQsM2wyMy05bDM1LDZsMjAtMTBsMi05Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTMyLjUsMTlsMi41LDIuNWwyLjUtMi41TDM1LDE2LjVMMzIuNSwxOXogTTQ1LjUsMjJsMy41LDMuNWwzLjUtMy41TDQ5LDE4LjVMNDUuNSwyMnogTTY5LjUsMTNsMi41LDIuNWwyLjUtMi41TDcyLDEwLjVMNjkuNSwxM3ogTTEwMi41LDE4bDQuNSw0LjVsNC41LTQuNWwtNC41LTQuNUwxMDIuNSwxOHogTTEyMy41LDlsMy41LDMuNWwzLjUtMy41TDEyNyw1LjVMMTIzLjUsOXpNMTcsOS41bDIuNSwyLjVMMjIsOS41TDE5LjUsN0wxNyw5LjV6Ii8+PC9zdmc+'),
   linear-gradient(
     to bottom,
     rgba(12, 21, 47, 0.9),
@@ -83,7 +84,8 @@ body {
   right: 0;
   width: 11.5rem;
   height: 2.25rem;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="170" height="36"><polyline fill="none" stroke="#ccc" points="86.3,28 121.3,11 116.3,0"/><path fill="#ccc" d="M118.5,11l2.5,2.5l2.5-2.5L121,8.5L118.5,11z M83.5,28l2.5,2.5l2.5-2.5L86,25.5L83.5,28z M72,8l4,4l4-4l-4-4L72,8z"/></svg>');
+  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="170" height="36"><polyline fill="none" stroke="#ccc" points="86.3,28 121.3,11 116.3,0"/><path fill="#ccc" d="M118.5,11l2.5,2.5l2.5-2.5L121,8.5L118.5,11z M83.5,28l2.5,2.5l2.5-2.5L86,25.5L83.5,28z M72,8l4,4l4-4l-4-4L72,8z"/></svg>'); */
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzAiIGhlaWdodD0iMzYiPjxwb2x5bGluZSBmaWxsPSJub25lIiBzdHJva2U9IiNjY2MiIHBvaW50cz0iODYuMywyOCAxMjEuMywxMSAxMTYuMywwIi8+PHBhdGggZmlsbD0iI2NjYyIgZD0iTTExOC41LDExbDIuNSwyLjVsMi41LTIuNUwxMjEsOC41TDExOC41LDExeiBNODMuNSwyOGwyLjUsMi41bDIuNS0yLjVMODYsMjUuNUw4My41LDI4eiBNNzIsOGw0LDRsNC00bC00LTRMNzIsOHoiLz48L3N2Zz4=');
   background-position: right top;
   background-repeat: no-repeat;
   mix-blend-mode: hard-light;
@@ -303,7 +305,8 @@ body {
   padding: 0;
   height: 10rem;
 
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160"><path fill="none" stroke="#FFFFFF" d="M296,54l-32,13l-19,55l-54,13l-27-16 M28.7,32l106,23"/><polygon fill="#FC6D51" points="29.2,35.5 32.7,32 29.2,28.5 25.7,32"/><path fill="#fff" d="M191,132.5l-2.5,2.5l2.5,2.5l2.5-2.5L191,132.5z M164,115.5l-3.5,3.5l3.5,3.5l3.5-3.5L164,115.5zM296,51.5l-2.5,2.5l2.5,2.5l2.5-2.5L296,51.5z M264,62.5l-4.5,4.5l4.5,4.5l4.5-4.5L264,62.5z M245,118.5l-3.5,3.5l3.5,3.5l3.5-3.5L245,118.5z M134.7,57.5l2.5-2.5l-2.5-2.5l-2.5,2.5L134.7,57.5z M78.2,128l2.5,2.5l2.5-2.5l-2.5-2.5L78.2,128z M208.2,68l2.5,2.5l2.5-2.5l-2.5-2.5L208.2,68z M25.2,106l2.5,2.5l2.5-2.5l-2.5-2.5L25.2,106z M295.2,151l2.5,2.5l2.5-2.5l-2.5-2.5L295.2,151z"/></svg>'),
+  /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160"><path fill="none" stroke="#FFFFFF" d="M296,54l-32,13l-19,55l-54,13l-27-16 M28.7,32l106,23"/><polygon fill="#FC6D51" points="29.2,35.5 32.7,32 29.2,28.5 25.7,32"/><path fill="#fff" d="M191,132.5l-2.5,2.5l2.5,2.5l2.5-2.5L191,132.5z M164,115.5l-3.5,3.5l3.5,3.5l3.5-3.5L164,115.5zM296,51.5l-2.5,2.5l2.5,2.5l2.5-2.5L296,51.5z M264,62.5l-4.5,4.5l4.5,4.5l4.5-4.5L264,62.5z M245,118.5l-3.5,3.5l3.5,3.5l3.5-3.5L245,118.5z M134.7,57.5l2.5-2.5l-2.5-2.5l-2.5,2.5L134.7,57.5z M78.2,128l2.5,2.5l2.5-2.5l-2.5-2.5L78.2,128z M208.2,68l2.5,2.5l2.5-2.5l-2.5-2.5L208.2,68z M25.2,106l2.5,2.5l2.5-2.5l-2.5-2.5L25.2,106z M295.2,151l2.5,2.5l2.5-2.5l-2.5-2.5L295.2,151z"/></svg>'), */
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iMTYwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIGQ9Ik0yOTYsNTRsLTMyLDEzbC0xOSw1NWwtNTQsMTNsLTI3LTE2IE0yOC43LDMybDEwNiwyMyIvPjxwb2x5Z29uIGZpbGw9IiNGQzZENTEiIHBvaW50cz0iMjkuMiwzNS41IDMyLjcsMzIgMjkuMiwyOC41IDI1LjcsMzIiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTkxLDEzMi41bC0yLjUsMi41bDIuNSwyLjVsMi41LTIuNUwxOTEsMTMyLjV6IE0xNjQsMTE1LjVsLTMuNSwzLjVsMy41LDMuNWwzLjUtMy41TDE2NCwxMTUuNXpNMjk2LDUxLjVsLTIuNSwyLjVsMi41LDIuNWwyLjUtMi41TDI5Niw1MS41eiBNMjY0LDYyLjVsLTQuNSw0LjVsNC41LDQuNWw0LjUtNC41TDI2NCw2Mi41eiBNMjQ1LDExOC41bC0zLjUsMy41bDMuNSwzLjVsMy41LTMuNUwyNDUsMTE4LjV6IE0xMzQuNyw1Ny41bDIuNS0yLjVsLTIuNS0yLjVsLTIuNSwyLjVMMTM0LjcsNTcuNXogTTc4LjIsMTI4bDIuNSwyLjVsMi41LTIuNWwtMi41LTIuNUw3OC4yLDEyOHogTTIwOC4yLDY4bDIuNSwyLjVsMi41LTIuNWwtMi41LTIuNUwyMDguMiw2OHogTTI1LjIsMTA2bDIuNSwyLjVsMi41LTIuNWwtMi41LTIuNUwyNS4yLDEwNnogTTI5NS4yLDE1MWwyLjUsMi41bDIuNS0yLjVsLTIuNS0yLjVMMjk1LjIsMTUxeiIvPjwvc3ZnPg=='),
   linear-gradient(
     to bottom,
     rgba(12, 21, 47, 0.9),

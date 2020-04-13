@@ -36,7 +36,8 @@ body {
 
   border: 0.5rem solid #fff;
   border-right: none;
-  border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M9,1h18v22h-18l-8,-8v-6z" stroke-width="2" fill="#fff" stroke="#000"/></svg>') 45% stretch;
+  /* border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M9,1h18v22h-18l-8,-8v-6z" stroke-width="2" fill="#fff" stroke="#000"/></svg>') 45% stretch; */
+  border-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTksMWgxOHYyMmgtMThsLTgsLTh2LTZ6IiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMCIvPjwvc3ZnPg==') 45% stretch;
 
   background: linear-gradient(to bottom,
     #f0f0f0 0.125rem,
