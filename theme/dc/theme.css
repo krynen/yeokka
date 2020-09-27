@@ -99,31 +99,85 @@ body {
   background-size: 0.75rem;
   background-repeat: no-repeat;
   overflow: hidden;
+
+  display: none;
 }
-.chat_badge_box > img[src="./images/badge/broadcaster.png"],
-.chat_badge_box > img[src^="./images/badge/subs"],
-.chat_badge_box > img[src="./images/badge/mod.png"],
-.chat_badge_box > img[src^="./images/badge/bit"] {
+.chat_badge_box > img[src*="5527c58c-fb7d-422d-b71b-f309dcb85cc1"] { /* 노딱 */
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAA0CAMAAAA5fQ8nAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABsUExURUxpcR5LrV1EGmtrawAAAG9vb////29vb2tra2pqaiV1wlCf5P+uAPWJH6SkpMnJyf/sAXBgO8zMzG9vb1NFJKqqqnV1df/gB8fHx/TWCfz8/KampqGhofr6+tDQ0KysrLGxsampqerNC6+vr4U95W4AAAAKdFJOUwD///8BIP8Q8B/fmO2dAAABUklEQVRYw+2W21KDMBRFC1FiUYIEorbV1sv//6OQe3KShw4nHZ12PZyXMyyYDRP2ZvMfoSTmwV/XAH9bAcqLyUsf8+bUdf0EcOqqegRYtRFzC66YN4Z9Smy3TUrsthcTSy0/LtpUFEqoJhQroZpJsZz71Mu7FvHIhM3+Q3wxxt59cde5V9NJfHHbum0ryYgZwxQrRE6syIkVGbFY+MEX2yj0s2eiMLdIR2FukRdPiox4UGTE/tZmbJi+dzNTHIVmeF4Y4ig0/haKd68z68V0Gx3zgRgc9IEYHPTBlpYS39GQSBwRic/ZBl8FvNT/Ks7c3rhAEyK0UBPCESeaUE9ImSaEKnaFpeEJMUYTQhVL7VFPGMXKXsF7Na9XPB5OLvzP02HGF+M0oUbI3x6WWJMTr21CAl8swiByUaxoQthiQCoKRyoKR3kxvR8BW/qX/yA3CvMLFwVc7DUzVJoAAAAASUVORK5CYII=');
   background-size: 2.75rem 1.625rem;
-}
-.chat_badge_box > img[src="./images/badge/broadcaster.png"] { /* 노딱 */
+  display: block !important;
   background-position: -0.9375rem 0;
 }
-.chat_badge_box > img[src^="./images/badge/subs"] { /* 고닉 */
+.chat_badge_box > img[src*="5d9f2208-5dd8-11e7-8513-2ff4adfae661"],
+.chat_badge_box > img[src*="2e2a990c-7c70-45b2-a3db-f6bfb3d73e70"],
+.chat_badge_box > img[src*="03f77d1d-951b-42a4-990b-3c1cd644e82a"],
+.chat_badge_box > img[src*="1b6ffb50-657b-4236-8e1c-3a7929f13e3a"],
+.chat_badge_box > img[src*="5db5aa82-b6b0-451a-a56c-52820bb8d144"],
+.chat_badge_box > img[src*="a725579b-9503-4ec3-ba86-47102d75c77c"],
+.chat_badge_box > img[src*="28044984-bfa0-4656-bb17-a956b349425d"],
+.chat_badge_box > img[src*="94f91bf7-55a6-4a10-aa5b-3fe3712930f5"],
+.chat_badge_box > img[src*="da2bcc22-5bc1-4397-9de5-ca5524295389"],
+.chat_badge_box > img[src*="17c06ba2-17fe-4048-8ff4-4c97fc67db1e"],
+.chat_badge_box > img[src*="9c8c7952-b47c-4013-9086-21629b769d58"],
+.chat_badge_box > img[src*="9cf424d7-f66e-4ee7-965d-8033d4f0d40d"],
+.chat_badge_box > img[src*="b42df6c0-7ba3-43eb-9787-38e36a3c49cb"],
+.chat_badge_box > img[src*="2b45c9fb-04f9-4e73-9b88-827e1a73fad7"],
+.chat_badge_box > img[src*="31fb469d-1b84-4a75-ad3c-119b4cb19d10"],
+.chat_badge_box > img[src*="55bea0a9-0ab8-4a1b-9de1-ce7d07674738"],
+.chat_badge_box > img[src*="636b78b3-3514-4cb2-a64d-ca4fd2fd1793"],
+.chat_badge_box > img[src*="f05c0cc0-c5a7-46df-a431-71812318d77b"],
+.chat_badge_box > img[src*="a658a2aa-5c94-44eb-8d17-667bb95082a4"],
+.chat_badge_box > img[src*="cc3a8027-593b-4a87-8613-710cf1024cc5"],
+.chat_badge_box > img[src*="e3b614b5-32d1-476d-9b68-c6eb729a314b"],
+.chat_badge_box > img[src*="f60a3641-6bac-4dfd-ba74-37b57b9a2606"] { /* 고닉 */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAA0CAMAAAA5fQ8nAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABsUExURUxpcR5LrV1EGmtrawAAAG9vb////29vb2tra2pqaiV1wlCf5P+uAPWJH6SkpMnJyf/sAXBgO8zMzG9vb1NFJKqqqnV1df/gB8fHx/TWCfz8/KampqGhofr6+tDQ0KysrLGxsampqerNC6+vr4U95W4AAAAKdFJOUwD///8BIP8Q8B/fmO2dAAABUklEQVRYw+2W21KDMBRFC1FiUYIEorbV1sv//6OQe3KShw4nHZ12PZyXMyyYDRP2ZvMfoSTmwV/XAH9bAcqLyUsf8+bUdf0EcOqqegRYtRFzC66YN4Z9Smy3TUrsthcTSy0/LtpUFEqoJhQroZpJsZz71Mu7FvHIhM3+Q3wxxt59cde5V9NJfHHbum0ryYgZwxQrRE6syIkVGbFY+MEX2yj0s2eiMLdIR2FukRdPiox4UGTE/tZmbJi+dzNTHIVmeF4Y4ig0/haKd68z68V0Gx3zgRgc9IEYHPTBlpYS39GQSBwRic/ZBl8FvNT/Ks7c3rhAEyK0UBPCESeaUE9ImSaEKnaFpeEJMUYTQhVL7VFPGMXKXsF7Na9XPB5OLvzP02HGF+M0oUbI3x6WWJMTr21CAl8swiByUaxoQthiQCoKRyoKR3kxvR8BW/qX/yA3CvMLFwVc7DUzVJoAAAAASUVORK5CYII=');
+  background-size: 2.75rem 1.625rem;
+  display: block !important;
   background-position: 0.125rem 0;
 }
-.chat_badge_box > img[src="./images/badge/mod.png"] { /* 파딱 */
+.chat_badge_box > img[src*="3267646d-33f0-4b17-b3df-f923a41db1d0"],
+.chat_badge_box > img[src*="9384c43e-4ce7-4e94-b2a1-b93656896eba"] { /* 파딱 */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAA0CAMAAAA5fQ8nAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABsUExURUxpcR5LrV1EGmtrawAAAG9vb////29vb2tra2pqaiV1wlCf5P+uAPWJH6SkpMnJyf/sAXBgO8zMzG9vb1NFJKqqqnV1df/gB8fHx/TWCfz8/KampqGhofr6+tDQ0KysrLGxsampqerNC6+vr4U95W4AAAAKdFJOUwD///8BIP8Q8B/fmO2dAAABUklEQVRYw+2W21KDMBRFC1FiUYIEorbV1sv//6OQe3KShw4nHZ12PZyXMyyYDRP2ZvMfoSTmwV/XAH9bAcqLyUsf8+bUdf0EcOqqegRYtRFzC66YN4Z9Smy3TUrsthcTSy0/LtpUFEqoJhQroZpJsZz71Mu7FvHIhM3+Q3wxxt59cde5V9NJfHHbum0ryYgZwxQrRE6syIkVGbFY+MEX2yj0s2eiMLdIR2FukRdPiox4UGTE/tZmbJi+dzNTHIVmeF4Y4ig0/haKd68z68V0Gx3zgRgc9IEYHPTBlpYS39GQSBwRic/ZBl8FvNT/Ks7c3rhAEyK0UBPCESeaUE9ImSaEKnaFpeEJMUYTQhVL7VFPGMXKXsF7Na9XPB5OLvzP02HGF+M0oUbI3x6WWJMTr21CAl8swiByUaxoQthiQCoKRyoKR3kxvR8BW/qX/yA3CvMLFwVc7DUzVJoAAAAASUVORK5CYII=');
+  background-size: 2.75rem 1.625rem;
+  display: block !important;
   background-position: -2rem 0;
 }
-.chat_badge_box > img[src^="./images/badge/bit"] { /* 반고닉 */
+.chat_badge_box > img[src*="22e7f97f-17ff-41ba-a01a-34e96d58e246"],
+.chat_badge_box > img[src*="9cd92420-a32d-4749-aa36-614c82807077"],
+.chat_badge_box > img[src*="44288a60-a572-4121-844b-a6b88b7fd4fa"],
+.chat_badge_box > img[src*="20c0d623-3a23-41b8-a14e-c7d554e12c11"],
+.chat_badge_box > img[src*="73b5c3fb-24f9-4a82-a852-2f475b59411c"],
+.chat_badge_box > img[src*="09d93036-e7ce-431c-9a9e-7044297133f2"],
+.chat_badge_box > img[src*="0d85a29e-79ad-4c63-a285-3acd2c66f2ba"],
+.chat_badge_box > img[src*="57cd97fc-3e9e-4c6d-9d41-60147137234e"],
+.chat_badge_box > img[src*="68af213b-a771-4124-b6e3-9bb6d98aa732"],
+.chat_badge_box > img[src*="64ca5920-c663-4bd8-bfb1-751b4caea2dd"],
+.chat_badge_box > img[src*="62310ba7-9916-4235-9eba-40110d67f85d"],
+.chat_badge_box > img[src*="ce491fa4-b24f-4f3b-b6ff-44b080202792"],
+.chat_badge_box > img[src*="96f0540f-aa63-49e1-a8b3-259ece3bd098"],
+.chat_badge_box > img[src*="4a0b90c4-e4ef-407f-84fe-36b14aebdbb6"],
+.chat_badge_box > img[src*="ac13372d-2e94-41d1-ae11-ecd677f69bb6"],
+.chat_badge_box > img[src*="a8f393af-76e6-4aa2-9dd0-7dcc1c34f036"],
+.chat_badge_box > img[src*="f6932b57-6a6e-4062-a770-dfbd9f4302e5"],
+.chat_badge_box > img[src*="4d908059-f91c-4aef-9acb-634434f4c32e"],
+.chat_badge_box > img[src*="a1d2a824-f216-4b9f-9642-3de8ed370957"],
+.chat_badge_box > img[src*="5ec2ee3e-5633-4c2a-8e77-77473fe409e6"],
+.chat_badge_box > img[src*="088c58c6-7c38-45ba-8f73-63ef24189b84"],
+.chat_badge_box > img[src*="494d1c8e-c3b2-4d88-8528-baff57c9bd3f"],
+.chat_badge_box > img[src*="ce217209-4615-4bf8-81e3-57d06b8b9dc7"],
+.chat_badge_box > img[src*="c4eba5b4-17a7-40a1-a668-bc1972c1e24d"],
+.chat_badge_box > img[src*="183f1fd8-aaf4-450c-a413-e53f839f0f82"],
+.chat_badge_box > img[src*="7ea89c53-1a3b-45f9-9223-d97ae19089f2"],
+.chat_badge_box > img[src*="cf061daf-d571-4811-bcc2-c55c8792bc8f"],
+.chat_badge_box > img[src*="5671797f-5e9f-478c-a2b5-eb086c8928cf"],
+.chat_badge_box > img[src*="c3d218f5-1e45-419d-9c11-033a1ae54d3a"],
+.chat_badge_box > img[src*="79fe642a-87f3-40b1-892e-a341747b6e08"],
+.chat_badge_box > img[src*="736d4156-ac67-4256-a224-3e6e915436db"],
+.chat_badge_box > img[src*="3f085f85-8d15-4a03-a829-17fca7bf1bc2"] { /* 반고닉 */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAA0CAMAAAA5fQ8nAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABsUExURUxpcR5LrV1EGmtrawAAAG9vb////29vb2tra2pqaiV1wlCf5P+uAPWJH6SkpMnJyf/sAXBgO8zMzG9vb1NFJKqqqnV1df/gB8fHx/TWCfz8/KampqGhofr6+tDQ0KysrLGxsampqerNC6+vr4U95W4AAAAKdFJOUwD///8BIP8Q8B/fmO2dAAABUklEQVRYw+2W21KDMBRFC1FiUYIEorbV1sv//6OQe3KShw4nHZ12PZyXMyyYDRP2ZvMfoSTmwV/XAH9bAcqLyUsf8+bUdf0EcOqqegRYtRFzC66YN4Z9Smy3TUrsthcTSy0/LtpUFEqoJhQroZpJsZz71Mu7FvHIhM3+Q3wxxt59cde5V9NJfHHbum0ryYgZwxQrRE6syIkVGbFY+MEX2yj0s2eiMLdIR2FukRdPiox4UGTE/tZmbJi+dzNTHIVmeF4Y4ig0/haKd68z68V0Gx3zgRgc9IEYHPTBlpYS39GQSBwRic/ZBl8FvNT/Ks7c3rhAEyK0UBPCESeaUE9ImSaEKnaFpeEJMUYTQhVL7VFPGMXKXsF7Na9XPB5OLvzP02HGF+M0oUbI3x6WWJMTr21CAl8swiByUaxoQthiQCoKRyoKR3kxvR8BW/qX/yA3CvMLFwVc7DUzVJoAAAAASUVORK5CYII=');
+  background-size: 2.75rem 1.625rem;
+  display: block !important;
   background-position: 0.125rem -0.875rem;
-}
-.chat_badge_box > img[src="./images/badge/broadcaster.png"] ~ img,
-.chat_badge_box > img[src="./images/badge/mod.png"] ~ img,
-.chat_badge_box > img[src^="./images/badge/subs"] ~ img,
-.chat_badge_box > img:not([src]) {
-  display: none !important;
 }
 
 /* Messages */
