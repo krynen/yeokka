@@ -524,8 +524,8 @@ fieldset[disabled] .btn-danger:hover
                                   { color: #333 !important; }
 .navbar-inverse .btn-link:focus,
 .navbar-inverse .btn-link:hover   { color: #333 !important; }
-.pagination>li>a,
-.pagination>li>span               { color: #337ab7;
+#main-content .pagination>li>a,
+#main-content .pagination>li>span               { color: #337ab7;
                                     background-color: #333 !important;
                                     border-color: #ddd; }
 .pagination>li>a:focus,
@@ -1318,7 +1318,7 @@ img[alt="Moderator"]              { display:none; }
 /* 글목록 광고 다크모드 테두리 해제 */
 .darkmode #main-content #article-list>div:nth-child(3)
                                             { background: #3f3f3f !important;
-                                             border-top-width: 0;
+                                              border-top-width: 0;
                                               border-bottom-width: 0; }
 
 /* 글목록 카테고리 영역 다크모드 글씨색 해제
@@ -1327,10 +1327,12 @@ img[alt="Moderator"]              { display:none; }
 
 /* 글목록 글쓰기 버튼 테두리 다크모드 해제 */
 #main-content #article-list #article-list-menu>.btn.write
-                                            { border-width: 1px; }
+                                              { border-width: 1px; }
 
 /* 글목록 최하단 검색창 다크모드 해제 */
-div.pagination-area .input-group .btn.square { border-color: #e5e5e5; }
+#main-content .btn.btn-default                { border-color: #e5e5e5; } 
+div.pagination-area .input-group .btn.square  { border-color: #e5e5e5; }
+
 #main-content #article-list #boardSearchForm .form-control
-                                            { border: 1px solid #ccc; }
-#main-content .input-group-btn i.fa-search  { color: #ccc; }
+                                              { border: 1px solid #ccc; }
+#main-content .input-group-btn i.fa-search    { color: #ccc; }
