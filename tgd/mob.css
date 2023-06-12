@@ -1206,7 +1206,11 @@ header>#header-area>a>h1          { background: url(https://krynen.github.io/yeo
 ad-shield-inventory div,
 #main-content .frame>div[style="background:#f3f2f0;"]
                                   { background: #242424 !important; }
-                                  
+
+/* 본문 문장 다크모드 테두리 해제 */
+.darkmode #article-content-wrapper #article-content p,
+.darkmode #article-content-wrapper #article-content span
+                                            { background: none !important; }
                                   
 /* 글제목에서 카테고리 구분 */
 #article-info h2 .category        { border-right: 1px dotted #ccc; padding-right: 4px; }
@@ -1293,7 +1297,8 @@ fieldset[disabled] .btn-primary:hover
                                     border: 1px solid #3a3f46 !important; }
 #article-content-wrapper #article-content,
 #article-content-wrapper>.vote-area
-                                  { border-color: #3a3f46 !important; }
+                                  { background: none !important;
+                                    border-color: #3a3f46 !important; }
 .fr-toolbar.fr-top                { border:1px solid #ddd !important;
                                     border-bottom-width:0 !important; }
 .fr-box.fr-basic.fr-top .fr-wrapper,
