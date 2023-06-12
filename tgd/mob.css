@@ -1205,7 +1205,7 @@ header>#header-area>a>h1          { background: url(https://krynen.github.io/yeo
 /* 광고 흰색 제거 */
 ad-shield-inventory div,
 #main-content .frame>div[style="background:#f3f2f0;"]
-                                  { background: #333 !important; }
+                                  { background: #242424 !important; }
                                   
                                   
 /* 글제목에서 카테고리 구분 */
