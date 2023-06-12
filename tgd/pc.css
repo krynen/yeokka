@@ -891,6 +891,9 @@ fieldset[disabled] .btn-primary:hover
                                     border-color: #3a3f46 !important; }
 #article-content-wrapper #article-content p,
 #article-content-wrapper #article-content span
+                                  { color: #ccc; }
+.darkmode #article-content-wrapper #article-content p,
+.darkmode #article-content-wrapper #article-content span
                                   { color: #ccc !important; }
 #article-content-wrapper>.vote-area
                                   { border-color: #3a3f46 !important; }
