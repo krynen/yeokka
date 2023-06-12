@@ -651,8 +651,10 @@ textarea.fr-code                  { background: #333 !important;
 #article-list>.article-list-row>.item>.list-header.v0>span
                                   { background-color: #333 !important;
                                     color: #333 !important; }
-#article-list>.article-list-row>.item>.list-title>a
+#main #article-list>.article-list-row>.item>.list-title>a
                                   { color: #eee !important; }
+#main #article-list>.article-list-row>.item>.list-title>a:visited
+                                  { color: #a9a9a9 !important; }
 #article-list>.article-list-row>.item>.list-title>small.comment-count 
                                   { color: #1f6fe6 !important; }
 #article-list>.article-list-row>.item>.list-title>.list-category

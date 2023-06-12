@@ -848,7 +848,7 @@ body                              { background: #0c0c0b !important; }
 header                            { border-bottom-color: #3e6bc7 !important;
                                     background: #0c0c0b !important; }
 header>#header-area>#header-bar-link  
-                                  { color: #aeaea6;
+                                  { color: #aeaea6 !important;
                                     padding: 0 16px 8px; }
 header>#header-area>#header-search-link 
                                   { color: #3e6bc7 !important;
@@ -1089,6 +1089,8 @@ textarea.fr-code                  { background: #333 !important;
                                   { background-color: #3f3f3f !important; }
 #article-list>.article-list-row.active  
                                   { background-color: #32496c !important; }
+#article-list>.article-list-row>.item>.list-header
+                                  { border-left: none !important; }
 #article-list>.article-list-row>.item>.list-header,
 #article-list>.article-list-row>.item>.list-thumbnail,
 #article-list>.article-list-row>.item>.list-category,
@@ -1102,11 +1104,14 @@ textarea.fr-code                  { background: #333 !important;
 #article-list>.article-list-row>.item>.list-header.v0>span  
                                   { background-color: #333 !important;
                                     color: #333 !important; }
-#article-list>.article-list-row>.item>a.list-title  
-                                  { color: #eee !important;
-                                    max-width: calc(100vw - 100px);
+#main-content #article-list>.article-list-row>.item>a.list-title
+                                  { max-width: calc(100vw - 100px);
                                     overflow: hidden;
                                     text-overflow: ellipsis; }
+#main-content #article-list>.article-list-row>.item>a.list-title span.title-value
+                                  { color: #eee !important; }
+#main-content #article-list>.article-list-row>.item>a.list-title:visited span.title-value
+                                  { color: #a2a2a2 !important; }
 #article-list>.article-list-row>.item>a.list-title>small.comment-count  
                                   { color: #1f6fe6 !important; }
 #article-list>.article-list-row>.item>a.list-title>.title-value
@@ -1171,7 +1176,7 @@ span.a-badge i.fa.fa-star         { color: #efc839 !important; }
 
 /* 헤더 변경 */
 header>#header-area>a>h1          { background: url(https://krynen.github.io/yeokka/tgd/page_header.png) no-repeat;
-                                    background-size: 89px 32px; }
+                                    background-size: 89px 32px; filter:none !important; }
 
 
 /* 광고아이콘 및 순위 미표시 */
@@ -1198,9 +1203,8 @@ header>#header-area>a>h1          { background: url(https://krynen.github.io/yeo
 
 
 /* 광고 흰색 제거 */
-.frame>div:nth-child(1),
-#article-neighbor-list+div:not(#article-list),
-#article-neighbor-list+div:not(#article-list)>div>div>div
+ad-shield-inventory div,
+#main-content .frame>div[style="background:#f3f2f0;"]
                                   { background: #333 !important; }
                                   
                                   
